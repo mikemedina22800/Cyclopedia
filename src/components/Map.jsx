@@ -3,7 +3,7 @@ import { divIcon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import hurdat2 from "../hurdat2";
 
-function Map({year}) {
+function Map({year, setName}) {
 
   const dot = (color) => {
     return (
@@ -19,26 +19,27 @@ function Map({year}) {
     return (
       new divIcon({
         className: 'bg-opacity-0',
-        html: `<svg fill=${color}
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:svg="http://www.w3.org/2000/svg"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.0"
-        viewBox="-264 -264 528 528">
-       <metadata>
-         <rdf:RDF>
-           <cc:Work rdf:about="">
-             <dc:format>image/svg+xml</dc:format>
-             <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-           </cc:Work>
-         </rdf:RDF>
-       </metadata>
-       <polygon stroke="black" stroke-width="20"
-          points="-36.16358,-87.30662 0,-233.85776 36.16358,-87.30662 165.36241,-165.36241 87.30662,-36.16358 233.85776,0 87.30662,36.16358 165.36241,165.36241 36.16358,87.30662 0,233.85776 -36.16358,87.30662 -165.36241,165.36241 -87.30662,36.16358 -233.85776,0 -87.30662,-36.16358 -165.36241,-165.36241 -36.16358,-87.30662 " />
-     </svg>`,
-        iconSize: [30, 30]
+        html: 
+          `<svg fill=${color}
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.0"
+              viewBox="-264 -264 528 528">
+            <metadata>
+              <rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <polygon stroke="black" stroke-width="20"
+                points="-36.16358,-87.30662 0,-233.85776 36.16358,-87.30662 165.36241,-165.36241 87.30662,-36.16358 233.85776,0 87.30662,36.16358 165.36241,165.36241 36.16358,87.30662 0,233.85776 -36.16358,87.30662 -165.36241,165.36241 -87.30662,36.16358 -233.85776,0 -87.30662,-36.16358 -165.36241,-165.36241 -36.16358,-87.30662 " />
+          </svg>`,
+        iconSize: [40, 40]
       })
     )
   }
@@ -64,7 +65,7 @@ function Map({year}) {
       const lng = -parseFloat(lngArray.join(''))
       const coords = [lat, lng]
       positions.push(coords)
-      const wind = parseInt(point.max_wind_kt)
+      const wind = point.max_wind_kt
       let status
       let color
       if (point.status === 'LO') {
@@ -104,11 +105,11 @@ function Map({year}) {
           status = 'Category 1 Hurricane'
           color = 'yellow'
         }
-        if (wind > 82 && wind <= 100) {
+        if (wind > 82 && wind <= 95) {
           status = 'Category 2 Hurricane'
           color = 'orange'
         }
-        if (wind > 100 && wind <= 110) {
+        if (wind > 95 && wind <= 110) {
           status = 'Category 3 Hurricane'
           color = 'red'
         }
@@ -128,17 +129,16 @@ function Map({year}) {
         icon = dot(color)
       }
       return (
-        <Marker key={i} position={coords} icon={icon}>
+        <Marker key={i} position={coords} icon={icon} eventHandlers={{click: () => {setName(name)}}}>
           <Popup className="w-64 font-bold">
             <h1 className="text-md">{status} {name}</h1>
             <h1 className="my-1">{date} at {time} UTC</h1>
             <h1>Maximum Wind: {wind} kt</h1>
-            <h1>Minimum Pressure: {parseInt(point.min_pressure_mb)} mb</h1>
+            <h1>Minimum Pressure: {point.min_pressure_mb} mb</h1>
           </Popup>
         </Marker>
       )
     })
-    console.log(positions)
     return (
       <div key={i}>
         <Polyline positions={positions} color="gray" opacity={.25}/>
@@ -148,7 +148,7 @@ function Map({year}) {
   })  
   
   return (
-    <MapContainer className="w-[calc(100%-24rem)] h-full" maxBounds={[[90, 180], [-90, -180]]} center={[30, -60]} maxZoom={15} minZoom={5} zoom={5}>
+    <MapContainer className="w-[calc(100%-48rem)] h-full" maxBounds={[[90, 180], [-90, -180]]} center={[30, -60]} maxZoom={15} minZoom={5} zoom={5}>
       <TileLayer url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'/>  
       {storms}
     </MapContainer>
