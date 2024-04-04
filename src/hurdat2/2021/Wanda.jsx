@@ -1,5 +1,10 @@
 const Wanda = [
-  'Wanda',
+  {
+    "name": "Wanda",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Wanda_2021-11-03_1340Z.jpg/800px-Wanda_2021-11-03_1340Z.jpg",
+    "id": "AL212021_Wanda",
+  },
   {
     "date": 20211025,
     "time_utc": 1800,

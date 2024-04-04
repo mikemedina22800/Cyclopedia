@@ -1,5 +1,10 @@
 const Peter = [
-  'Peter',
+  {
+    "name": "Peter",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Peter_2021-09-19_2020Z.jpg/800px-Peter_2021-09-19_2020Z.jpg",
+    "id": "AL162021_Peter",
+  },
   {
     "date": 20210919,
     "time_utc": "0000",

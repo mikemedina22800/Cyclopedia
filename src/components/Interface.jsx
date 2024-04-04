@@ -18,7 +18,7 @@ const Interface = ({year, setYear, name}) => {
     plugins: {
       title: {
         display: true,
-        text: 'Storm Intensity'
+        text: 'Intensity'
       },
     },
     scales: {
@@ -38,7 +38,7 @@ const Interface = ({year, setYear, name}) => {
     },
   };
 
-  const storm = hurdat2[2022 - year].find(array => array[0] === name)
+  const storm = hurdat2[2022 - year].find(array => array[0].name === name)
 
   const dates = storm?.map((point) => {
     if (point.date) {
@@ -57,15 +57,15 @@ const Interface = ({year, setYear, name}) => {
     return point.min_pressure_mb
   })
 
-  const radii34kt = storm?.map((point) => {
+  const radius34kt = storm?.map((point) => {
     return Math.max(point["34kt_wind_radius_nm_ne"], point["34kt_wind_radius_nm_nw"], point["34kt_wind_radius_nm_se"], point["34kt_wind_radius_nm_sw"])
   })
 
-  const radii50kt = storm?.map((point) => {
+  const radius50kt = storm?.map((point) => {
     return Math.max(point["50kt_wind_radius_nm_ne"], point["50kt_wind_radius_nm_nw"], point["50kt_wind_radius_nm_se"], point["50kt_wind_radius_nm_sw"])
   })
 
-  const radii64kt = storm?.map((point) => {
+  const radius64kt = storm?.map((point) => {
     return Math.max(point["64kt_wind_radius_nm_ne"], point["64kt_wind_radius_nm_nw"], point["64kt_wind_radius_nm_se"], point["64kt_wind_radius_nm_sw"])
   })
 
@@ -96,7 +96,7 @@ const Interface = ({year, setYear, name}) => {
     plugins: {
       title: {
         display: true,
-        text: 'Wind Radii Maximum from Center (nm)'
+        text: 'Wind Radius Maximum (nm)'
       },
     },
   };
@@ -106,19 +106,19 @@ const Interface = ({year, setYear, name}) => {
     datasets: [
       {
         label: '34-49 kt (Low-End TS)',
-        data: radii34kt,
+        data: radius34kt,
         borderColor: 'gold',
         backgroundColor: 'lightyellow'
       },
       {
         label: '50-63 kt (High-End TS)',
-        data: radii50kt,
+        data: radius50kt,
         borderColor: 'orange',
         backgroundColor: 'rgb(255, 213, 128)',
       },
       {
         label: '64+ kt (HU)',
-        data: radii64kt,
+        data: radius64kt,
         borderColor: 'red',
         backgroundColor: 'pink',
       }
@@ -136,6 +136,7 @@ const Interface = ({year, setYear, name}) => {
         })}
       </Select>
       <div className="bg-white">
+        <img className="w-96"/>
         <Line options={options} data={data}/>
         <Line options={options2} data={data2}/>
       </div>

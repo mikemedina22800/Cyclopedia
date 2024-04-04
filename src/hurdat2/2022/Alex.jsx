@@ -1,5 +1,10 @@
 const Alex = [
-  'Alex',
+  {
+    "name": "Alex",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Alex_2022-06-05_1745Z.jpg/800px-Alex_2022-06-05_1745Z.jpg",
+    "id": "AL012022_Alex",
+  },
   {
     "date": 20220602,
     "time_utc": 1800,

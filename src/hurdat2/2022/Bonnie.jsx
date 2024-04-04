@@ -1,5 +1,10 @@
 const Bonnie = [
-  'Bonnie',
+  {
+    "name": "Bonnie",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bonnie_2022-07-01_1845Z.jpg/800px-Bonnie_2022-07-01_1845Z.jpg",
+    "id": "AL022022_Bonnie",
+  },
   {
     "date": 20220627,
     "time_utc": 1800,

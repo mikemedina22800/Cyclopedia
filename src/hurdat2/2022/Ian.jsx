@@ -1,5 +1,10 @@
 const Ian = [
-  'Ian',
+  {
+    "name": "Ian",
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Ian_2022-09-28_1256Z.jpg/800px-Ian_2022-09-28_1256Z.jpg",
+    "id": "AL092022_Ian",
+  },
   {
     "date": 20220922,
     "time_utc": 1800,

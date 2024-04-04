@@ -1,5 +1,10 @@
 const Claudette = [
-  'Claudette',
+  {
+    "name": "Claudette",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Claudette_2021-06-21_1740Z.jpg/800px-Claudette_2021-06-21_1740Z.jpg",
+    "id": "AL032021_Claudette",
+  },
   {
     "date": 20210617,
     "time_utc": 1800,

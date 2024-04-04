@@ -1,5 +1,10 @@
 const Colin = [
-  'Colin',
+  {
+    "name": "Colin",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Colin_2022-07-02_1600Z.jpg/800px-Colin_2022-07-02_1600Z.jpg",
+    "id": "AL032022_Colin",
+  },
   {
     "date": 20220701,
     "time_utc": 1800,

@@ -1,5 +1,10 @@
 const Mindy = [
-  'Mindy',
+  {
+    "name": "Mindy",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mindy_2021-09-08_2200Z.jpg/800px-Mindy_2021-09-08_2200Z.jpg",
+    "id": "AL132021_Mindy",
+  },
   {
     "date": 20210908,
     "time_utc": 1800,

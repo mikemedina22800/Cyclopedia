@@ -1,5 +1,10 @@
 const Nicholas = [
-  'Nicholas',
+  {
+    "name": "Nicholas",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nicholas_2021-09-14_0404Z.png/800px-Nicholas_2021-09-14_0404Z.png",
+    "id": "AL142021_Nicholas",
+  },
   {
     "date": 20210912,
     "time_utc": 1200,

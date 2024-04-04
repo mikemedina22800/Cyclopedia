@@ -1,5 +1,10 @@
 const Henri = [
-  'Henri',
+  {
+    "name": "Henri",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Henri_2021-08-21_1805Z.jpg/800px-Henri_2021-08-21_1805Z.jpg",
+    "id": "AL082021_Henri",
+  },
   {
     "date": 20210815,
     "time_utc": "0000",

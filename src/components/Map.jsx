@@ -45,7 +45,7 @@ function Map({year, setName}) {
   }
 
   const storms = hurdat2[2022 - year].map((storm, i) => {
-    const name = storm[0]
+    const name = storm[0].name
     const positions = []
     const points = storm.slice(1).map((point, i) => {
       const dateArray = point.date.toString().split('')

@@ -1,5 +1,10 @@
 const Lisa = [
-  'Lisa',
+  {
+    "name": "Lisa",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Lisa_2022-11-02_1910Z.jpg/800px-Lisa_2022-11-02_1910Z.jpg",
+    "id": "AL152022_Lisa",
+  },
   {
     "date": 20221030,
     "time_utc": 1800,

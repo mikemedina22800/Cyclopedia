@@ -1,5 +1,10 @@
 const Hermine = [
-  'Hermine',
+  {
+    "name": "Hermine",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Hermine_2022-09-23_1455Z.jpg/800px-Hermine_2022-09-23_1455Z.jpg",
+    "id": "AL102022_Hermine",
+  },
   {
     "date": 20220923,
     "time_utc": "0600",

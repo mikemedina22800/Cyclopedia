@@ -1,5 +1,10 @@
 const Earl = [
-  'Earl',
+  {
+    "name": "Earl",
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Earl_2022-09-10_0515Z_%28Colored%29.jpg/800px-Earl_2022-09-10_0515Z_%28Colored%29.jpg",
+    "id": "AL052022_Earl",
+  },
   {
     "date": 20220902,
     "time_utc": 1800,
