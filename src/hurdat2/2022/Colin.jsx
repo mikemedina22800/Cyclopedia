@@ -3,6 +3,8 @@ const Colin = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Colin_2022-07-02_1600Z.jpg/800px-Colin_2022-07-02_1600Z.jpg",
     "id": "AL032022_Colin",
+    "fatalaties":1,
+    "cost_usd":0
   },
   {
     "date": 20220701,

@@ -3,6 +3,8 @@ const Lisa = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Lisa_2022-11-02_1910Z.jpg/800px-Lisa_2022-11-02_1910Z.jpg",
     "id": "AL152022_Lisa",
+    "fatalaties":0,
+    "cost_usd":100000000
   },
   {
     "date": 20221030,

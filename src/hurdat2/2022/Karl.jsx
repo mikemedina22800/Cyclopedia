@@ -3,6 +3,8 @@ const Karl = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Karl_2022-10-12_1945Z.jpg/800px-Karl_2022-10-12_1945Z.jpg",
     "id": "AL142022_Karl",
+    "fatalaties":3,
+    "cost_usd":0
   },
   {
     "date": 20221011,

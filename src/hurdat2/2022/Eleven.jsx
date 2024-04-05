@@ -3,6 +3,8 @@ const Eleven = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/11L_2022-09-28_1555Z.jpg/800px-11L_2022-09-28_1555Z.jpg",
     "id": "AL112022_Eleven",
+    "fatalaties":0,
+    "cost_usd":0
   },
   {
     "date": 20220926,

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import hurdat2 from "../hurdat2";
 import { MenuItem, Select } from "@mui/material"
-import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
-import { Line } from "react-chartjs-2";
+import { Chart, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from "chart.js";
+import { Line, Bar } from "react-chartjs-2";
 import retiredImage from "../images/retired.png"
 
 const Interface = ({year, setYear, id}) => {
@@ -25,7 +25,9 @@ const Interface = ({year, setYear, id}) => {
   const [title, setTitle] = useState(null)
   const [textColor, setTextColor] = useState(null)
   const [imageUrl, setImageUrl] = useState(null)
-
+  const [daysAsTC, setDaysAsTC] = useState(null)
+  const [costUSD, setCostUSD] = useState(null)
+  const [fatalaties, setFatalaties] = useState(null)
 
   useEffect(() => {
     const name = id.split("_")[1]
@@ -84,8 +86,7 @@ const Interface = ({year, setYear, id}) => {
       const startMonth = startArray.slice(4,6).join('')
       const startDay = startArray.slice(-2).join('')
       const start = `${startMonth}/${startDay}/${startYear}`
-      const lastIndex = storm.pop()
-      const endArray = lastIndex.date.toString().split('')
+      const endArray = storm.pop().date.toString().split('')
       const endYear = endArray.slice(0,4).join('')
       const endMonth = endArray.slice(4,6).join('')
       const endDay = endArray.slice(-2).join('')
@@ -93,8 +94,8 @@ const Interface = ({year, setYear, id}) => {
       const duration = `${start}-${end}`
       setDuration(duration)
 
-      let landfalls = 0
-      storm.forEach((point) => {
+      let landfalls=0
+      stormTrack.forEach((point) => {
         if (point.record == "L") {
           landfalls += 1
         }
@@ -102,7 +103,8 @@ const Interface = ({year, setYear, id}) => {
       setLandfalls(landfalls)
 
       const windAsTC = stormTrack?.map((point) => {
-        if (point.status.includes("D") || point.status.includes("S") || point.status === "HU") {
+        const status = point.status
+        if (status.includes("D") || status.includes("S") || status === "HU") {
           return point.max_wind_kt
         } else {
           return 0
@@ -112,7 +114,8 @@ const Interface = ({year, setYear, id}) => {
       setMaxWind(maxWind)
 
       const pressureAsTC = stormTrack?.map((point) => {
-        if (point.status.includes("D") || point.status.includes("S") || point.status === "HU") {
+        const status = point.status
+        if (status.includes("D") || status.includes("S") || status === "HU") {
           return point.min_pressure_mb
         } else {
           return 9999
@@ -189,10 +192,90 @@ const Interface = ({year, setYear, id}) => {
 
       const imageUrl = storm[0].imageUrl
       setImageUrl(imageUrl)
+      
+      let i=1
+      let hoursAsTS=0
+      let hoursAsH1=0
+      let hoursAsH2=0
+      let hoursAsH3=0
+      let hoursAsH4=0
+      let hoursAsH5=0
+      const toHours = ((point) => {
+        const dateArray = point.date.toString().split('')
+        const year = dateArray.slice(0,4).join('')
+        const month = dateArray.slice(4,6).join('')
+        const day = dateArray.slice(-2).join('')
+        const timeArray = point.time_utc.toString().split('')
+        const hour = timeArray.slice(0,2).join('')
+        const minute = timeArray.slice(-2).join('')
+        const date = new Date(`${year}-${month}-${day}:${hour}:${minute}:00`)
+        const milliseconds = date.getTime()
+        const hours = milliseconds/(3600000)
+        return hours
+      })
+
+      stormTrack.slice(1).forEach((point) => {
+        const prevPoint=stormTrack[i-1]
+        const prevStatus=prevPoint.status
+        const status=point.status
+        if (status.includes("D") || status.includes("S") || status === "HU") {
+          if (prevStatus.includes("D") || prevStatus.includes("S") || prevStatus === "HU") {
+            const wind=point.max_wind_kt
+            const hours = toHours(point) - toHours(prevPoint)
+            if (wind >= 34) {
+              hoursAsTS += hours
+            } if (wind >= 64) {
+              hoursAsTS += hours
+              hoursAsH1 += hours
+            } if (wind >= 83) {
+              hoursAsTS += hours
+              hoursAsH1 += hours
+              hoursAsH2 += hours
+            } if (wind >= 100) {
+              hoursAsTS += hours
+              hoursAsH1 += hours
+              hoursAsH2 += hours
+              hoursAsH3 += hours
+            } if (wind >= 110) {
+              hoursAsTS += hours
+              hoursAsH1 += hours
+              hoursAsH2 += hours
+              hoursAsH3 += hours
+              hoursAsH4 += hours
+            } if (wind >= 135) {
+              hoursAsTS += hours
+              hoursAsH1 += hours
+              hoursAsH2 += hours
+              hoursAsH3 += hours
+              hoursAsH4 += hours
+              hoursAsH5 += hours
+            }
+          }
+        }
+        i+=1
+      })
+      const toDays = ((hours) => {
+        const days = (hours/24).toFixed(1)
+        return days
+      })
+      const daysAsTS = toDays(hoursAsTS)
+      const daysAsH1 = toDays(hoursAsH1)
+      const daysAsH2 = toDays(hoursAsH2)
+      const daysAsH3 = toDays(hoursAsH3)
+      const daysAsH4 = toDays(hoursAsH4)
+      const daysAsH5 = toDays(hoursAsH5)
+      const daysAsTC = [daysAsTS, daysAsH1, daysAsH2, daysAsH3, daysAsH4, daysAsH5]
+      setDaysAsTC(daysAsTC)
+    
+      const costUSD = storm[0].cost_usd.toLocaleString()
+      setCostUSD(costUSD)
+  
+      const fatalaties = storm[0].fatalaties.toLocaleString()
+      setFatalaties(fatalaties)
     }
   }, [storm])
 
-  Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+  Chart.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
 
   const intensityData = {
     labels: dates,
@@ -200,19 +283,21 @@ const Interface = ({year, setYear, id}) => {
       {
         label: "Maximum Wind (kt)",
         data: wind,
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderColor: "red",
+        backgroundColor: "pink",
         yAxisID: "y"
       },
       {
         label: "Minimum Pressure (mb)",
         data: pressure,
-        borderColor: "rgb(53, 162, 235)",
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
+        borderColor: "blue",
+        backgroundColor: "lightblue",
         yAxisID: "y1"
       },
     ]
   }
+
+  console.log(daysAsTC)
 
   const intensityOptions = {
     responsive: true,
@@ -279,6 +364,31 @@ const Interface = ({year, setYear, id}) => {
     },
   };
 
+  const durationData = {
+    labels: ["Tropical Storm","Category 1","Category 2","Category 3","Category 4","Category 5"],
+    datasets: [
+      {
+        label: "",
+        data: daysAsTC,
+        borderColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
+        backgroundColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
+      },
+    ]
+  }
+
+  const durationOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Days as Tropical Cyclone',
+      },
+    },
+  };
+
   const years = new Array(2022 - 1850).fill(0)
 
   return (
@@ -302,26 +412,20 @@ const Interface = ({year, setYear, id}) => {
               <h1>Minimum Pressure: {minPressure} mb</h1>
               <h1>Landfalls: {landfalls}</h1>
               {landfalls > 0 && 
-              <>
-                <h1>Maximum Wind at Landfall: {maxWindAtLandfall} kt</h1>
-                <h1>Minimum Pressure at Landfall: {minPressureAtLandfall} mb</h1>
-              </>
+                <>
+                  <h1>Maximum Wind at Landfall: {maxWindAtLandfall} kt</h1>
+                  <h1>Minimum Pressure at Landfall: {minPressureAtLandfall} mb</h1>
+                </>
               }
-              <h1>Deaths: </h1>
-              <h1>Cost Estimate (USD): </h1>
-              {maxWind >= 34 && <h1>Days as <span className="text-[lime]">Tropical Storm</span>{maxWind >= 64 && <span> or Higher</span>}:</h1>}
-              {maxWind >= 64 && <h1>Days as <span className="text-[yellow]">Category 1</span>{maxWind >= 83 && <span> or Higher</span>}:</h1>}
-              {maxWind >= 83 && <h1>Days as <span className="text-[orange]">Category 2</span>{maxWind >= 100 && <span> or Higher</span>}:</h1>}
-              {maxWind >= 100 && <h1>Days as <span className="text-[red]">Category 3 </span>{maxWind >= 110 && <span> or Higher</span>}:</h1>}
-              {maxWind >= 110 &&<h1>Days as <span className="text-[hotpink]">Category 4 </span>{maxWind >= 135 && <span> or Higher</span>}:</h1>}
-              {maxWind >= 135 &&<h1>Days as <span className="text-[pink]">Category 5</span>:</h1>}
-              {maxWind >= 34 && <h1>Accumulated Cyclone Energy: </h1>}
+              <h1>Fatalaties: {fatalaties}</h1>
+              <h1>Cost Estimate (USD): {costUSD}</h1>
             </div>
           </div>
         </div>
-        <div className="bg-white p-5 rounded-sm">
-          <Line className="mb-5" options={intensityOptions} data={intensityData}/>
-          <Line options={sizeOptions} data={sizeData}/>
+        <div className="bg-white p-5 rounded-md">
+          <Line options={intensityOptions} data={intensityData}/>
+          <Line className="my-5"  options={sizeOptions} data={sizeData}/>
+          <Bar options={durationOptions} data={durationData}/>
         </div>
       </>}
     </div>

@@ -3,6 +3,8 @@ const Danielle = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Danielle_2022-09-07_1305Z.jpg/800px-Danielle_2022-09-07_1305Z.jpg",
     "id": "AL042022_Danielle",
+    "fatalaties":0,
+    "cost_usd":0
   },
   {
     "date": 20220831,

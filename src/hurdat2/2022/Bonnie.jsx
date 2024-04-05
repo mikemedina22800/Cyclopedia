@@ -3,6 +3,8 @@ const Bonnie = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bonnie_2022-07-01_1845Z.jpg/800px-Bonnie_2022-07-01_1845Z.jpg",
     "id": "AL022022_Bonnie",
+    "fatalaties":5,
+    "cost_usd":25000000
   },
   {
     "date": 20220627,

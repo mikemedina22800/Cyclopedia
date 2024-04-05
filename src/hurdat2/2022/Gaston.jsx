@@ -3,6 +3,8 @@ const Gaston = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Gaston_2022-09-23_1505Z.jpg/800px-Gaston_2022-09-23_1505Z.jpg",
     "id": "AL072022_Gaston",
+    "fatalaties":0,
+    "cost_usd":0
   },
   {
     "date": 20220919,

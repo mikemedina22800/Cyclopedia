@@ -3,6 +3,8 @@ const Ian = [
     "retired": "true",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Ian_2022-09-28_1256Z.jpg/800px-Ian_2022-09-28_1256Z.jpg",
     "id": "AL092022_Ian",
+    "fatalaties":174,
+    "cost_usd":113000000000
   },
   {
     "date": 20220922,
