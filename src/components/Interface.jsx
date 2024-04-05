@@ -4,6 +4,7 @@ import { MenuItem, Select } from "@mui/material"
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from "chart.js";
 import { Line, Bar } from "react-chartjs-2";
 import retiredImage from "../images/retired.png"
+import { point } from "leaflet";
 
 const Interface = ({year, setYear, id}) => {
 
@@ -28,6 +29,7 @@ const Interface = ({year, setYear, id}) => {
   const [daysAsTC, setDaysAsTC] = useState(null)
   const [costUSD, setCostUSD] = useState(null)
   const [fatalaties, setFatalaties] = useState(null)
+  const [ACE, setACE] = useState(null)
 
   useEffect(() => {
     const name = id.split("_")[1]
@@ -39,9 +41,9 @@ const Interface = ({year, setYear, id}) => {
 
   useEffect(() => {
     if (storm) {
-      const stormTrack = storm?.slice(1)
+      const stormTrack = storm.slice(1)
 
-      const dates = stormTrack?.map((point) => {
+      const dates = stormTrack.map((point) => {
         const dateArray = point?.date.toString().split("")
         const month = dateArray.slice(4,6).join("")
         const day = dateArray.slice(-2).join("")
@@ -50,27 +52,33 @@ const Interface = ({year, setYear, id}) => {
 
       setDates(dates)
 
-      const wind = stormTrack?.map((point) => {
+      const wind = stormTrack.map((point) => {
         return point.max_wind_kt
       })
       setWind(wind)
+  
+      const maxWind = Math.max(...wind)
+      setMaxWind(maxWind)
 
-      const pressure = stormTrack?.map((point) => {
+      const pressure = stormTrack.map((point) => {
         return point.min_pressure_mb
       })
       setPressure(pressure)
 
-      const radius34kt = stormTrack?.map((point) => {
+      const minPressure = Math.min(...pressure)
+      setMinPressure(minPressure)
+
+      const radius34kt = stormTrack.map((point) => {
         return Math.max(point["34kt_wind_radius_nm_ne"], point["34kt_wind_radius_nm_nw"], point["34kt_wind_radius_nm_se"], point["34kt_wind_radius_nm_sw"])
       })
       setRadius34kt(radius34kt)
       
-      const radius50kt = stormTrack?.map((point) => {
+      const radius50kt = stormTrack.map((point) => {
         return Math.max(point["50kt_wind_radius_nm_ne"], point["50kt_wind_radius_nm_nw"], point["50kt_wind_radius_nm_se"], point["50kt_wind_radius_nm_sw"])
       })
       setRadius50kt(radius50kt)
 
-      const radius64kt = stormTrack?.map((point) => {
+      const radius64kt = stormTrack.map((point) => {
         return Math.max(point["64kt_wind_radius_nm_ne"], point["64kt_wind_radius_nm_nw"], point["64kt_wind_radius_nm_se"], point["64kt_wind_radius_nm_sw"])
       })
       setRadius64kt(radius64kt)
@@ -102,51 +110,23 @@ const Interface = ({year, setYear, id}) => {
       })
       setLandfalls(landfalls)
 
-      const windAsTC = stormTrack?.map((point) => {
-        const status = point.status
-        if (status.includes("D") || status.includes("S") || status === "HU") {
-          return point.max_wind_kt
-        } else {
-          return 0
-        }
-      })
-      const maxWind = Math.max(...windAsTC)
-      setMaxWind(maxWind)
-
-      const pressureAsTC = stormTrack?.map((point) => {
-        const status = point.status
-        if (status.includes("D") || status.includes("S") || status === "HU") {
-          return point.min_pressure_mb
-        } else {
-          return 9999
-        }
-      })
-      const minPressure = Math.min(...pressureAsTC)
-      setMinPressure(minPressure)
+      const stormLandfalls = stormTrack.filter(point => point.record === "L")
   
-      const windAtLandfall = stormTrack?.map((point) => {
-        if (point.record == "L") {
-          return point.max_wind_kt
-        } else {
-          return 0
-        }
+      const windAtLandfall = stormLandfalls.map((point) => {
+        return point.max_wind_kt
       })
       const maxWindAtLandfall = Math.max(...windAtLandfall)
       setMaxWindAtLandfall(maxWindAtLandfall)
 
-      const pressureAtLandfall = stormTrack?.map((point) => {
-        if (point.record == "L") {
-          return point.min_pressure_mb
-        } else {
-          return 9999
-        }
+      const pressureAtLandfall = stormLandfalls.map((point) => {
+        return point.min_pressure_mb
       })
       const minPressureAtLandfall = Math.min(...pressureAtLandfall)
       setMinPressureAtLandfall(minPressureAtLandfall)
 
       let title
       let textColor
-      const status = stormTrack?.map((point) => {
+      const status = stormTrack.map((point) => {
         return point.status
       })
       if (maxWind < 34) {
@@ -213,13 +193,10 @@ const Interface = ({year, setYear, id}) => {
         const hours = milliseconds/(3600000)
         return hours
       })
-
       stormTrack.slice(1).forEach((point) => {
         const prevPoint=stormTrack[i-1]
-        const prevStatus=prevPoint.status
-        const status=point.status
-        if (status.includes("D") || status.includes("S") || status === "HU") {
-          if (prevStatus.includes("D") || prevStatus.includes("S") || prevStatus === "HU") {
+        if (["TS", "SS", "HU"].includes(point.status)) {
+          if (["TS", "SS", "HU"].includes(prevPoint.status)) {
             const wind=point.max_wind_kt
             const hours = toHours(point) - toHours(prevPoint)
             if (wind >= 34) {
@@ -266,12 +243,38 @@ const Interface = ({year, setYear, id}) => {
       const daysAsH5 = toDays(hoursAsH5)
       const daysAsTC = [daysAsTS, daysAsH1, daysAsH2, daysAsH3, daysAsH4, daysAsH5]
       setDaysAsTC(daysAsTC)
-    
+
       const costUSD = storm[0].cost_usd.toLocaleString()
       setCostUSD(costUSD)
   
       const fatalaties = storm[0].fatalaties.toLocaleString()
       setFatalaties(fatalaties)
+
+      let ACEPoint = 0
+      let windArray = []
+
+      const ACE = stormTrack.map((point) => {
+        const wind = point.max_wind_kt
+        const hour = parseInt(point.time_utc)
+        if (["TS", "SS", "HU"].includes(point.status)) {
+          if (hour % 600 == 0) {
+            ACEPoint += Math.pow(wind, 2)
+            if (windArray.length > 0) {
+              let sum = 0
+              windArray.forEach((wind) => {
+                sum += wind
+              })
+              const average = sum/windArray.length
+              ACEPoint += Math.pow(average, 2)
+              windArray = []
+            }
+          } else {
+            windArray.push(wind)
+          }
+        }
+        return ACEPoint
+      })
+      setACE(ACE)
     }
   }, [storm])
 
@@ -296,8 +299,6 @@ const Interface = ({year, setYear, id}) => {
       },
     ]
   }
-
-  console.log(daysAsTC)
 
   const intensityOptions = {
     responsive: true,
@@ -389,6 +390,30 @@ const Interface = ({year, setYear, id}) => {
     },
   };
 
+  const ACEOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: "Accumulated Cyclone Energy"
+      },
+    },
+  };
+
+  const ACEData = {
+    labels: dates,
+    datasets: [
+      {
+        data: ACE,
+        borderColor: "blue",
+        backgroundColor: "lightblue"
+      },
+    ]
+  }
+
   const years = new Array(2022 - 1850).fill(0)
 
   return (
@@ -426,6 +451,7 @@ const Interface = ({year, setYear, id}) => {
           <Line options={intensityOptions} data={intensityData}/>
           <Line className="my-5"  options={sizeOptions} data={sizeData}/>
           <Bar options={durationOptions} data={durationData}/>
+          <Line className="mt-5" options={ACEOptions} data={ACEData}/>
         </div>
       </>}
     </div>
