@@ -1,6 +1,5 @@
 const Grace = [
   {
-    "name": "Grace",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Grace_2021-08-21_0610Z.jpg",
     "id": "AL072021_Grace",

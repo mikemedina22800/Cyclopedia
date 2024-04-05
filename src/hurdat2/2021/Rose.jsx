@@ -1,6 +1,5 @@
 const Rose = [
   {
-    "name": "Rose",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Rose_2021-09-20_1550Z.jpg/800px-Rose_2021-09-20_1550Z.jpg",
     "id": "AL172021_Rose",

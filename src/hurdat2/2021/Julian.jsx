@@ -1,6 +1,5 @@
 const Julian = [
   {
-    "name": "Julian",
     "retired": "false",
     "imageUrl": "https://en.wikipedia.org/wiki/2021_Atlantic_hurricane_season#/media/File:Julian_2021-08-29_1400Z.jpg",
     "id": "AL102021_Julian",

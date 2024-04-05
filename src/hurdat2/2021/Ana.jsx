@@ -1,6 +1,5 @@
 const Ana = [
   {
-    "name": "Ana",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ana_2021-05-22_1505Z.jpg/800px-Ana_2021-05-22_1505Z.jpg",
     "id": "AL012021_Ana",

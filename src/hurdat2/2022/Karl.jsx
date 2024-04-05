@@ -1,6 +1,5 @@
 const Karl = [
   {
-    "name": "Karl",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Karl_2022-10-12_1945Z.jpg/800px-Karl_2022-10-12_1945Z.jpg",
     "id": "AL142022_Karl",

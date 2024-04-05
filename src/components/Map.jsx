@@ -3,7 +3,7 @@ import { divIcon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import hurdat2 from "../hurdat2";
 
-function Map({year, setName}) {
+function Map({year, setId}) {
 
   const dot = (color) => {
     return (
@@ -45,7 +45,8 @@ function Map({year, setName}) {
   }
 
   const storms = hurdat2[2022 - year].map((storm, i) => {
-    const name = storm[0].name
+    const id = storm[0].id
+    const name = id.split('_')[1]
     const positions = []
     const points = storm.slice(1).map((point, i) => {
       const dateArray = point.date.toString().split('')
@@ -129,7 +130,7 @@ function Map({year, setName}) {
         icon = dot(color)
       }
       return (
-        <Marker key={i} position={coords} icon={icon} eventHandlers={{click: () => {setName(name)}}}>
+        <Marker key={i} position={coords} icon={icon} eventHandlers={{click: () => {setId(id)}}}>
           <Popup className="w-64 font-bold">
             <h1 className="text-md">{status} {name}</h1>
             <h1 className="my-1">{date} at {time} UTC</h1>

@@ -1,6 +1,5 @@
 const Odette = [
   {
-    "name": "Odette",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Odette_2021-09-17_1740Z.jpg/800px-Odette_2021-09-17_1740Z.jpg",
     "id": "AL152021_Odette",

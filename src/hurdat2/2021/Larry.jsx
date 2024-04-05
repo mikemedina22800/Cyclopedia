@@ -1,6 +1,5 @@
 const Larry = [
   {
-    "name": "Larry",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Larry_2021-09-05_1405Z.jpg/800px-Larry_2021-09-05_1405Z.jpg",
     "id": "AL122021_Larry",

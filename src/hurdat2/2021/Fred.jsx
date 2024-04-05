@@ -1,6 +1,5 @@
 const Fred = [
   {
-    "name": "Fred",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fred_2021-08-16_1620Z.jpg/800px-Fred_2021-08-16_1620Z.jpg",
     "id": "AL062021_Fred",

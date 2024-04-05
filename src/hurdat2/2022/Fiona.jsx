@@ -1,6 +1,5 @@
 const Fiona = [
   {
-    "name": "Fiona",
     "retired": "true",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Fiona_2022-09-22_1750Z.jpg/800px-Fiona_2022-09-22_1750Z.jpg",
     "id": "AL062022_Fiona",

@@ -1,6 +1,5 @@
 const Sam = [
   {
-    "name": "Sam",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sam_2021-09-26_1625Z.jpg/800px-Sam_2021-09-26_1625Z.jpg",
     "id": "AL182021_Sam",

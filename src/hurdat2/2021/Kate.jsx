@@ -1,6 +1,5 @@
 const Kate = [
   {
-    "name": "Kate",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Kate_2021-08-30_1130Z.jpg/800px-Kate_2021-08-30_1130Z.jpg",
     "id": "AL112021_Kate",

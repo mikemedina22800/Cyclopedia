@@ -1,6 +1,5 @@
 const Twelve = [
   {
-    "name": 'Twelve',
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/12L_2022-10-05_0950Z.jpg/800px-12L_2022-10-05_0950Z.jpg",
     "id": "AL122022_Twelve",

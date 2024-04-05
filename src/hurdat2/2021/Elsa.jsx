@@ -1,6 +1,5 @@
 const Elsa = [
   {
-    "name": "Elsa",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Elsa_2021-07-02_1725Z.jpg/800px-Elsa_2021-07-02_1725Z.jpg",
     "id": "AL052021_Elsa",

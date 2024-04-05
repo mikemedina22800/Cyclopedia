@@ -1,6 +1,5 @@
 const Julia = [
   {
-    "name": "Julia",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Julia_2022-10-09_0710Z.jpg/800px-Julia_2022-10-09_0710Z.jpg",
     "id": "AL132022_Julia",

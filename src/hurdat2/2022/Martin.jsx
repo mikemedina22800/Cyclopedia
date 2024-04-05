@@ -1,6 +1,5 @@
 const Martin = [
   {
-    "name": "Martin",
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Martin_2022-11-02_1640Z.jpg/800px-Martin_2022-11-02_1640Z.jpg",
     "id": "AL162022_Martin",
