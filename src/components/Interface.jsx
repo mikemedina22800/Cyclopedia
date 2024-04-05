@@ -40,13 +40,12 @@ const Interface = ({year, setYear, id}) => {
       const stormTrack = storm?.slice(1)
 
       const dates = stormTrack?.map((point) => {
-        if (point.date) {
-          const dateArray = point?.date.toString().split("")
-          const month = dateArray.slice(4,6).join("")
-          const day = dateArray.slice(-2).join("")
-          return `${month}/${day}`
-        }
+        const dateArray = point?.date.toString().split("")
+        const month = dateArray.slice(4,6).join("")
+        const day = dateArray.slice(-2).join("")
+        return `${month}/${day}`
       })
+
       setDates(dates)
 
       const wind = stormTrack?.map((point) => {
@@ -80,7 +79,6 @@ const Interface = ({year, setYear, id}) => {
         setRetired(false)
       }
 
-      const storm = hurdat2[2022 - year].find(array => array[0].id === id) 
       const startArray = storm[1].date.toString().split('')
       const startYear = startArray.slice(0,4).join('')
       const startMonth = startArray.slice(4,6).join('')
@@ -316,7 +314,7 @@ const Interface = ({year, setYear, id}) => {
               {maxWind >= 83 && <h1>Days as <span className="text-[orange]">Category 2</span>{maxWind >= 100 && <span> or Higher</span>}:</h1>}
               {maxWind >= 100 && <h1>Days as <span className="text-[red]">Category 3 </span>{maxWind >= 110 && <span> or Higher</span>}:</h1>}
               {maxWind >= 110 &&<h1>Days as <span className="text-[hotpink]">Category 4 </span>{maxWind >= 135 && <span> or Higher</span>}:</h1>}
-              {maxWind >= 135 &&<h1>Days as <span className="text-[pink]">Category 5:</span></h1>}
+              {maxWind >= 135 &&<h1>Days as <span className="text-[pink]">Category 5</span>:</h1>}
               {maxWind >= 34 && <h1>Accumulated Cyclone Energy: </h1>}
             </div>
           </div>
