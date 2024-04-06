@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import hurdat2 from "../hurdat2";
-import { MenuItem, Select } from "@mui/material"
+import { MenuItem, Select, Button } from "@mui/material"
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from "chart.js";
 import { Line, Bar } from "react-chartjs-2";
 import retiredImage from "../images/retired.png"
 import { point } from "leaflet";
+
+Chart.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
 
 const Interface = ({year, setYear, id}) => {
 
@@ -26,10 +28,16 @@ const Interface = ({year, setYear, id}) => {
   const [title, setTitle] = useState(null)
   const [textColor, setTextColor] = useState(null)
   const [imageUrl, setImageUrl] = useState(null)
-  const [daysAsTC, setDaysAsTC] = useState(null)
+  const [daysAtStrength, setDaysAtStrength] = useState(null)
   const [costUSD, setCostUSD] = useState(null)
   const [fatalaties, setFatalaties] = useState(null)
   const [ACE, setACE] = useState(null)
+  const [seasonStats, setSeasonStats] = useState(false)
+  const [buttonText, setButtonText] = useState("Season Stats")
+  const [maxWinds, setMaxWinds] = useState(null)
+  const [minPressures, setMinPressures] = useState(null)
+  const [names, setNames] = useState(null)
+  const [stormsAtStrength, setStormsAtStrength] = useState(null)
 
   useEffect(() => {
     const name = id.split("_")[1]
@@ -174,12 +182,12 @@ const Interface = ({year, setYear, id}) => {
       setImageUrl(imageUrl)
       
       let i=1
-      let hoursAsTS=0
-      let hoursAsH1=0
-      let hoursAsH2=0
-      let hoursAsH3=0
-      let hoursAsH4=0
-      let hoursAsH5=0
+      let hoursAtTS=0
+      let hoursAtH1=0
+      let hoursAtH2=0
+      let hoursAtH3=0
+      let hoursAtH4=0
+      let hoursAtH5=0
       const toHours = ((point) => {
         const dateArray = point.date.toString().split('')
         const year = dateArray.slice(0,4).join('')
@@ -200,32 +208,32 @@ const Interface = ({year, setYear, id}) => {
             const wind=point.max_wind_kt
             const hours = toHours(point) - toHours(prevPoint)
             if (wind >= 34) {
-              hoursAsTS += hours
+              hoursAtTS += hours
             } if (wind >= 64) {
-              hoursAsTS += hours
-              hoursAsH1 += hours
+              hoursAtTS += hours
+              hoursAtH1 += hours
             } if (wind >= 83) {
-              hoursAsTS += hours
-              hoursAsH1 += hours
-              hoursAsH2 += hours
+              hoursAtTS += hours
+              hoursAtH1 += hours
+              hoursAtH2 += hours
             } if (wind >= 100) {
-              hoursAsTS += hours
-              hoursAsH1 += hours
-              hoursAsH2 += hours
-              hoursAsH3 += hours
+              hoursAtTS += hours
+              hoursAtH1 += hours
+              hoursAtH2 += hours
+              hoursAtH3 += hours
             } if (wind >= 110) {
-              hoursAsTS += hours
-              hoursAsH1 += hours
-              hoursAsH2 += hours
-              hoursAsH3 += hours
-              hoursAsH4 += hours
+              hoursAtTS += hours
+              hoursAtH1 += hours
+              hoursAtH2 += hours
+              hoursAtH3 += hours
+              hoursAtH4 += hours
             } if (wind >= 135) {
-              hoursAsTS += hours
-              hoursAsH1 += hours
-              hoursAsH2 += hours
-              hoursAsH3 += hours
-              hoursAsH4 += hours
-              hoursAsH5 += hours
+              hoursAtTS += hours
+              hoursAtH1 += hours
+              hoursAtH2 += hours
+              hoursAtH3 += hours
+              hoursAtH4 += hours
+              hoursAtH5 += hours
             }
           }
         }
@@ -235,14 +243,14 @@ const Interface = ({year, setYear, id}) => {
         const days = (hours/24).toFixed(1)
         return days
       })
-      const daysAsTS = toDays(hoursAsTS)
-      const daysAsH1 = toDays(hoursAsH1)
-      const daysAsH2 = toDays(hoursAsH2)
-      const daysAsH3 = toDays(hoursAsH3)
-      const daysAsH4 = toDays(hoursAsH4)
-      const daysAsH5 = toDays(hoursAsH5)
-      const daysAsTC = [daysAsTS, daysAsH1, daysAsH2, daysAsH3, daysAsH4, daysAsH5]
-      setDaysAsTC(daysAsTC)
+      const daysAtTS = toDays(hoursAtTS)
+      const daysAtH1 = toDays(hoursAtH1)
+      const daysAtH2 = toDays(hoursAtH2)
+      const daysAtH3 = toDays(hoursAtH3)
+      const daysAtH4 = toDays(hoursAtH4)
+      const daysAtH5 = toDays(hoursAtH5)
+      const daysAtStrength = [daysAtTS, daysAtH1, daysAtH2, daysAtH3, daysAtH4, daysAtH5]
+      setDaysAtStrength(daysAtStrength)
 
       const costUSD = storm[0].cost_usd.toLocaleString()
       setCostUSD(costUSD)
@@ -252,7 +260,6 @@ const Interface = ({year, setYear, id}) => {
 
       let ACEPoint = 0
       let windArray = []
-
       const ACE = stormTrack.map((point) => {
         const wind = point.max_wind_kt
         const hour = parseInt(point.time_utc)
@@ -278,7 +285,88 @@ const Interface = ({year, setYear, id}) => {
     }
   }, [storm])
 
-  Chart.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
+  useEffect(() => {
+   if (seasonStats === true) {
+    setButtonText("Storm Stats")
+   } else {
+    setButtonText("Season Stats")
+   }
+  }, [seasonStats]);
+
+  useEffect(() => {
+    const season = hurdat2[2022-year].filter(storm =>
+      storm.map((point) => {return point.status}).includes("TS") ||
+      storm.map((point) => {return point.status}).includes("SS")
+    );
+
+    const maxWinds = season.map((storm) => {
+      const wind = storm.slice(1).map((point) => {
+        return point.max_wind_kt
+      })
+      const maxWind = Math.max(...wind)
+      return maxWind
+    })
+    setMaxWinds(maxWinds)
+
+    const minPressures = season.map((storm) => {
+      const pressure = storm.slice(1).map((point) => {
+        return point.min_pressure_mb
+      })
+      const minPressure = Math.min(...pressure)
+      return minPressure
+    })
+    setMinPressure(minPressures)
+    console.log(minPressures)
+
+    const names = season.map((storm) => {
+      return storm[0].id.split('_')[1]
+    })
+    setNames(names)
+
+    let TS=0
+    let H1=0
+    let H2=0
+    let H3=0
+    let H4=0
+    let H5=0
+    season.forEach((storm) => {
+      const wind = storm.slice(1).map((point) => {
+        return point.max_wind_kt
+      })
+      const maxWind = Math.max(...wind)
+      if (maxWind >= 34) {
+        TS += 1
+      } if (maxWind >= 64) {
+        TS += 1
+        H1 += 1
+      } if (maxWind >= 83) {
+        TS += 1
+        H1 += 1
+        H2 += 1
+      } if (maxWind >= 100) {
+        TS += 1
+        H1 += 1
+        H2 += 1
+        H3 += 1
+      } if (maxWind >= 110) {
+        TS += 1
+        H1 += 1
+        H2 += 1
+        H3 += 1
+        H4 += 1
+      } if (maxWind >= 135) {
+        TS += 1
+        H1 += 1
+        H2 += 1
+        H3 += 1
+        H4 += 1
+        H5 += 1
+      }
+    })
+    const stormsAtStrength = [TS, H1, H2, H3, H4, H5]
+    setStormsAtStrength(stormsAtStrength)
+  }, [year])
+
 
   const intensityData = {
     labels: dates,
@@ -354,7 +442,6 @@ const Interface = ({year, setYear, id}) => {
     ]
   }
 
-  
   const sizeOptions = {
     responsive: true,
     plugins: {
@@ -366,11 +453,10 @@ const Interface = ({year, setYear, id}) => {
   };
 
   const durationData = {
-    labels: ["Tropical Storm","Category 1","Category 2","Category 3","Category 4","Category 5"],
+    labels: ["Tropical Storm", "Category 1", "Category 2", "Category 3", "Category 4", "Category 5"],
     datasets: [
       {
-        label: "",
-        data: daysAsTC,
+        data: daysAtStrength,
         borderColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
         backgroundColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
       },
@@ -385,7 +471,7 @@ const Interface = ({year, setYear, id}) => {
       },
       title: {
         display: true,
-        text: 'Days as Tropical Cyclone',
+        text: 'Days at Each Strength or Higher',
       },
     },
   };
@@ -414,18 +500,102 @@ const Interface = ({year, setYear, id}) => {
     ]
   }
 
+  const maxWindData = {
+    labels: names,
+    datasets: [
+      {
+        data: maxWinds,
+        borderColor: "red",
+        backgroundColor: "red",
+      },
+    ]
+  }
+
+  const maxWindOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Highest Maximum Wind (kt)',
+      },
+    },
+  };
+  
+  const minPressureData = {
+    labels: names,
+    datasets: [
+      {
+        data: minPressures,
+        borderColor: "blue",
+        backgroundColor: "blue",
+      },
+    ]
+  }
+
+  const minPressureOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Lowest Minimum Pressure (mb)',
+      },
+    },
+  };
+
+  const stormsAtStrengthData = {
+    labels: ["Tropical Storm", "Category 1", "Category 2", "Category 3", "Category 4", "Category 5"],
+    datasets: [
+      {
+        label: "",
+        data: stormsAtStrength,
+        borderColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
+        backgroundColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
+      },
+    ]
+  }
+
+  const stormsAtStrengthOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Storms at Each Strength or Higher',
+      },
+    },
+  };
+
   const years = new Array(2022 - 1850).fill(0)
+
+  const toggleStats = () => {
+    if (seasonStats === false) {
+      setSeasonStats(true)
+    } else {
+      setSeasonStats(false)
+    }
+  }
 
   return (
     <div className="w-[48rem] h-screen bg-blue-950 p-10 overflow-auto">
-      <Select className="bg-white !rounded-xl w-24 h-12" value={year} onChange={(e) => {setYear(e.target.value)}}>
-        {years.map((_, index) => {
-          const selectedYear = 2022 - index;
-          return (<MenuItem key={selectedYear} value={selectedYear}>{selectedYear}</MenuItem>);
-        })}
-      </Select>
-      {storm && <>
-        <div className="flex justify-between my-10">
+      <div className="flex items-center justify-between mb-10">
+        <Select className="bg-white !rounded-xl w-24 h-12" value={year} onChange={(e) => {setYear(e.target.value)}}>
+          {years.map((_, index) => {
+            const selectedYear = 2022 - index;
+            return (<MenuItem key={selectedYear} value={selectedYear}>{selectedYear}</MenuItem>);
+          })}
+        </Select>
+        <Button onClick={toggleStats} className="h-12" variant="contained"><h1 className="font-sans font-bold">{buttonText}</h1></Button>
+      </div>
+      {storm && seasonStats === false && <>
+        <div className="flex justify-between mb-10">
           <a className="w-96 h-[31rem] bg-cover flex items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={`https://www.nhc.noaa.gov/data/tcr/${id}.pdf`}>
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
           </a>
@@ -452,6 +622,13 @@ const Interface = ({year, setYear, id}) => {
           <Line className="my-5"  options={sizeOptions} data={sizeData}/>
           <Bar options={durationOptions} data={durationData}/>
           <Line className="mt-5" options={ACEOptions} data={ACEData}/>
+        </div>
+      </>}
+      {seasonStats && <>
+        <div className="bg-white p-5 rounded-md">
+          <Bar options={maxWindOptions} data={maxWindData}/>
+          <Bar className="my-5" options={minPressureOptions} data={minPressureData}/>
+          <Bar options={stormsAtStrengthOptions} data={stormsAtStrengthData}/>
         </div>
       </>}
     </div>
