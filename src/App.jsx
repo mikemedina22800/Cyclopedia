@@ -5,12 +5,12 @@ import 'animate.css'
 
 function App() {
   const [year, setYear] = useState(2022)
-  const [id, setId] = useState("AL172022_Nicole")
+  const [stormId, setStormId] = useState("AL012022_Alex")
 
   return (
     <div className="h-screen w-screen flex overflow-hidden">
-      <Interface year={year} setYear={setYear} id={id}/>
-      <Map year={year} setId={setId}/>
+      <Interface year={year} setYear={setYear} stormId={stormId} setStormId={setStormId}/>
+      <Map year={year} setStormId={setStormId}/>
     </div>
   )
 }

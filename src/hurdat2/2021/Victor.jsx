@@ -3,6 +3,8 @@ const Victor = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Victor_2021-10-01_1540Z.jpg/800px-Victor_2021-10-01_1540Z.jpg",
     "id": "AL202021_Victor",
+    "fatalaties": 0,
+    "cost_usd": 0,
   },
   {
     "date": 20210929,

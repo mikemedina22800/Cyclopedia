@@ -3,6 +3,8 @@ const Teresa = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/99L_2021-09-24_1710Z.jpg/800px-99L_2021-09-24_1710Z.jpg",
     "id": "AL192021_Teresa",
+    "fatalaties": 0,
+    "cost_usd": 0,
   },
   {
     "date": 20210924,

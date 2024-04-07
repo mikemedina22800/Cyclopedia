@@ -3,6 +3,8 @@ const Bill = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bill_2021-06-15_1100Z.png/800px-Bill_2021-06-15_1100Z.png",
     "id": "AL022021_Bill",
+    "fatalaties": 0,
+    "cost_usd": 0,
   },
   {
     "date": 20210613,

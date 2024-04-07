@@ -3,6 +3,8 @@ const Ida = [
     "retired": "true",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ida_2021-08-29_1400Z.png/800px-Ida_2021-08-29_1400Z.png",
     "id": "AL092021_Ida",
+    "fatalaties": 107,
+    "cost_usd": 75300000000,
   },
   {
     "date": 20210826,

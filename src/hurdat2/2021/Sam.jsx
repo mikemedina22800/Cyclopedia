@@ -3,6 +3,8 @@ const Sam = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sam_2021-09-26_1625Z.jpg/800px-Sam_2021-09-26_1625Z.jpg",
     "id": "AL182021_Sam",
+    "fatalaties": 0,
+    "cost_usd": 0,
   },
   {
     "date": 20210922,

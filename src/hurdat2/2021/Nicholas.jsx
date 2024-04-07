@@ -3,6 +3,8 @@ const Nicholas = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nicholas_2021-09-14_0404Z.png/800px-Nicholas_2021-09-14_0404Z.png",
     "id": "AL142021_Nicholas",
+    "fatalaties": 4,
+    "cost_usd": 1100000000,
   },
   {
     "date": 20210912,

@@ -4,13 +4,13 @@ import { MenuItem, Select, Button } from "@mui/material"
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from "chart.js";
 import { Line, Bar } from "react-chartjs-2";
 import retiredImage from "../images/retired.png"
-import { point } from "leaflet";
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
 
-const Interface = ({year, setYear, id}) => {
+const Interface = ({year, setYear, stormId, setStormId}) => {
 
   const [storm, setStorm] = useState(null)
+  const [stormIds, setStormIds] = useState(null)
   const [name, setName] = useState(null)
   const [dates, setDates] = useState(null)
   const [wind, setWind] = useState(null)
@@ -58,17 +58,21 @@ const Interface = ({year, setYear, id}) => {
   }
 
   useEffect(() => {
-    const name = id.split("_")[1]
+    const id = hurdat2[2022-year][0][0].id
+    setStormId(id)
+  }, [year])
+
+  useEffect(() => {
+    const name = stormId.split("_")[1]
     setName(name)
     setRetired(false)
-    const storm = hurdat2[2022 - year]?.find((storm) => storm[0]?.id === id)
+    const storm = hurdat2[2022-year]?.find((storm) => storm[0]?.id === stormId)
     setStorm(storm)
-  }, [id]);
+  }, [stormId]);
 
   useEffect(() => {
     if (storm) {
       const stormTrack = storm.slice(1)
-
       const dates = stormTrack.map((point) => {
         const dateArray = point?.date.toString().split("")
         const month = dateArray.slice(4,6).join("")
@@ -155,27 +159,7 @@ const Interface = ({year, setYear, id}) => {
       const status = stormTrack.map((point) => {
         return point.status
       })
-      if (maxWind < 34) {
-        if (!status?.includes("SD")) {
-          title = "Tropical Depression"
-          textColor = "text-[blue]"
-        } 
-        if (!status?.includes("TD")) {
-          title = "Subtropical Depression"
-          textColor = "text-[lightblue]"
-        } 
-      } 
-      if (maxWind >= 34 && maxWind < 64) {
-        if (!status?.includes("SS")) {
-          title = "Tropical Storm"
-          textColor = "text-[lime]"
-        } 
-        if (!status?.includes("TS")) {
-          title = "Subtropical Storm"
-          textColor = "text-[lightgreen]"
-        } 
-      } 
-      if (maxWind >= 64) {
+      if (status.includes("HU")) {
         title = "Hurricane"
         if (maxWind <= 82) {
           textColor = "text-[yellow]"
@@ -192,6 +176,25 @@ const Interface = ({year, setYear, id}) => {
         if (maxWind > 135) {
           textColor = "text-[pink]"
         }
+      } else {
+        if (status.includes("TS")) {
+          title = "Tropical Storm"
+          textColor = "text-[lime]"
+        } else {
+          if (status.includes("SS")) {
+            title = "Subtropical Storm"
+            textColor = "text-[lightgreen]"
+          } else {
+            if (status.includes("TD")) {
+              title = "Tropical Depression"
+              textColor = "text-[blue]"
+            } else {
+              title = "Subtropical Depression"
+              textColor = "text-[lightblue]"
+            }
+          }
+        }
+        
       }
       setTitle(title)
       setTextColor(textColor)
@@ -324,6 +327,11 @@ const Interface = ({year, setYear, id}) => {
 
   useEffect(() => {
     const season = hurdat2[2022-year]
+
+    const stormIds = season.map((storm) => {
+      return storm[0].id
+    })
+    setStormIds(stormIds)
 
     const maxWinds = season.map((storm) => {
       const wind = storm.slice(1).map((point) => {
@@ -876,14 +884,20 @@ const Interface = ({year, setYear, id}) => {
         <Select className="bg-white !rounded-xl w-24 h-12" value={year} onChange={(e) => {setYear(e.target.value)}}>
           {years.map((_, index) => {
             const selectedYear = 2022 - index;
-            return (<MenuItem key={selectedYear} value={selectedYear}>{selectedYear}</MenuItem>);
+            return (<MenuItem key={index} value={selectedYear}>{selectedYear}</MenuItem>);
           })}
         </Select>
         <Button onClick={toggleStats} className="h-12" variant="contained"><h1 className="font-sans font-bold">{buttonText}</h1></Button>
       </div>
       {storm && seasonStats === false && <>
+        <Select className="bg-white !rounded-xl w-36 h-12 mb-5" value={stormId} onChange={(e) => {setStormId(e.target.value)}}>
+          {stormIds.map((id) => {
+            const name = id.split("_")[1]
+            return (<MenuItem key={id} value={id}>{name}</MenuItem>);
+          })}
+        </Select>
         <div className="flex justify-between mb-10">
-          <a className="w-96 h-[31rem] bg-cover flex items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={`https://www.nhc.noaa.gov/data/tcr/${id}.pdf`}>
+          <a className="w-96 h-[31rem] bg-cover flex items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`}>
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
           </a>
           <div className="flex flex-col w-64 font-bold">

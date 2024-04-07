@@ -4,7 +4,7 @@ const Hermine = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Hermine_2022-09-23_1455Z.jpg/800px-Hermine_2022-09-23_1455Z.jpg",
     "id": "AL102022_Hermine",
     "fatalaties":0,
-    "cost_usd":9800000
+    "cost_usd":0
   },
   {
     "date": 20220923,

@@ -3,6 +3,8 @@ const Julian = [
     "retired": "false",
     "imageUrl": "https://en.wikipedia.org/wiki/2021_Atlantic_hurricane_season#/media/File:Julian_2021-08-29_1400Z.jpg",
     "id": "AL102021_Julian",
+    "fatalaties": 0,
+    "cost_usd": 0,
   },
   {
     "date": 20210828,
