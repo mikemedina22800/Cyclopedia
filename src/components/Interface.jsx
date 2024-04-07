@@ -232,25 +232,25 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
             if (wind < 34) {
               hoursAtTD += hours
             }
-            if (wind >= 34) {
+            if (wind >= 34 && maxWind < 64) {
               hoursAtTD += hours
               hoursAtTS += hours
-            } if (wind >= 64) {
+            } if (wind >= 64  && maxWind < 83) {
               hoursAtTD += hours
               hoursAtTS += hours
               hoursAtH1 += hours
-            } if (wind >= 83) {
+            } if (wind >= 83  && maxWind < 100) {
               hoursAtTD += hours
               hoursAtTS += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
-            } if (wind >= 100) {
+            } if (wind >= 100  && maxWind < 110) {
               hoursAtTS += hours
               hoursAtTD += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
               hoursAtH3 += hours
-            } if (wind >= 110) {
+            } if (wind >= 110  && maxWind < 135) {
               hoursAtTS += hours
               hoursAtTD += hours
               hoursAtH1 += hours
@@ -380,25 +380,25 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       if (maxWind < 34) {
         TD += 1
       }
-      if (maxWind >= 34) {
+      if (maxWind >= 34 && maxWind < 64) {
         TD += 1
         TS += 1
-      } if (maxWind >= 64) {
+      } if (maxWind >= 64  && maxWind < 83)   {
         TD += 1
         TS += 1
         H1 += 1
-      } if (maxWind >= 83) {
+      } if (maxWind >= 83  && maxWind < 100) {
         TD += 1
         TS += 1
         H1 += 1
         H2 += 1
-      } if (maxWind >= 100) {
+      } if (maxWind >= 100  && maxWind < 110) {
         TD += 1
         TS += 1
         H1 += 1
         H2 += 1
         H3 += 1
-      } if (maxWind >= 110) {
+      } if (maxWind >= 110  && maxWind < 135) {
         TD += 1
         TS += 1
         H1 += 1
