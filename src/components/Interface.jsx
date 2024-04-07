@@ -36,8 +36,26 @@ const Interface = ({year, setYear, id}) => {
   const [buttonText, setButtonText] = useState("Season Stats")
   const [maxWinds, setMaxWinds] = useState(null)
   const [minPressures, setMinPressures] = useState(null)
-  const [names, setNames] = useState(null)
-  const [stormsAtStrength, setStormsAtStrength] = useState(null)
+  const [stormNames, setStormNames] = useState(null)
+  const [tropicalStormNames, setTropicalStormNames] = useState(null)
+  const [fatalStormNames, setFatalStormNames] = useState(null)
+  const [costlyStormNames, setCostlyStormNames] = useState(null)
+  const [stormsAtStrength, setStormNamesAtStrength] = useState(null)
+  const [seasonACE, setSeasonACE] = useState(null)
+  const [seasonLandfalls, setSeasonLandfalls] = useState(null)
+  const [landfallingStormNames, setLandfallingStormNames] = useState(null)
+  const [maxWindLandfalls, setMaxWindLandfalls] = useState(null)
+  const [minPressureLandfalls, setMinPressureLandfalls] = useState(null)
+  const [seasonFatalaties, setSeasonFatalaties] = useState(null)
+  const [seasonCostUSD, setSeasonCostUSD] = useState(null)
+
+  const sum = (array) => {
+    let sum = 0
+    array?.forEach((item) => {
+      sum += item
+    })
+    return sum
+  }
 
   useEffect(() => {
     const name = id.split("_")[1]
@@ -182,6 +200,7 @@ const Interface = ({year, setYear, id}) => {
       setImageUrl(imageUrl)
       
       let i=1
+      let hoursAtTD=0
       let hoursAtTS=0
       let hoursAtH1=0
       let hoursAtH2=0
@@ -203,32 +222,41 @@ const Interface = ({year, setYear, id}) => {
       })
       stormTrack.slice(1).forEach((point) => {
         const prevPoint=stormTrack[i-1]
-        if (["TS", "SS", "HU"].includes(point.status)) {
-          if (["TS", "SS", "HU"].includes(prevPoint.status)) {
+        if (["TD","SD","TS","SS","HU"].includes(point.status)) {
+          if (["TD","SD","TS","SS","HU"].includes(prevPoint.status)) {
             const wind=point.max_wind_kt
             const hours = toHours(point) - toHours(prevPoint)
+            if (wind < 34) {
+              hoursAtTD += hours
+            }
             if (wind >= 34) {
+              hoursAtTD += hours
               hoursAtTS += hours
             } if (wind >= 64) {
+              hoursAtTD += hours
               hoursAtTS += hours
               hoursAtH1 += hours
             } if (wind >= 83) {
+              hoursAtTD += hours
               hoursAtTS += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
             } if (wind >= 100) {
               hoursAtTS += hours
+              hoursAtTD += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
               hoursAtH3 += hours
             } if (wind >= 110) {
               hoursAtTS += hours
+              hoursAtTD += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
               hoursAtH3 += hours
               hoursAtH4 += hours
             } if (wind >= 135) {
               hoursAtTS += hours
+              hoursAtTD += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
               hoursAtH3 += hours
@@ -243,16 +271,17 @@ const Interface = ({year, setYear, id}) => {
         const days = (hours/24).toFixed(1)
         return days
       })
+      const daysAtTD = toDays(hoursAtTD)
       const daysAtTS = toDays(hoursAtTS)
       const daysAtH1 = toDays(hoursAtH1)
       const daysAtH2 = toDays(hoursAtH2)
       const daysAtH3 = toDays(hoursAtH3)
       const daysAtH4 = toDays(hoursAtH4)
       const daysAtH5 = toDays(hoursAtH5)
-      const daysAtStrength = [daysAtTS, daysAtH1, daysAtH2, daysAtH3, daysAtH4, daysAtH5]
+      const daysAtStrength = [daysAtTD, daysAtTS, daysAtH1, daysAtH2, daysAtH3, daysAtH4, daysAtH5]
       setDaysAtStrength(daysAtStrength)
 
-      const costUSD = storm[0].cost_usd.toLocaleString()
+      const costUSD = (storm[0].cost_usd/1000000000).toFixed(1)
       setCostUSD(costUSD)
   
       const fatalaties = storm[0].fatalaties.toLocaleString()
@@ -265,14 +294,14 @@ const Interface = ({year, setYear, id}) => {
         const hour = parseInt(point.time_utc)
         if (["TS", "SS", "HU"].includes(point.status)) {
           if (hour % 600 == 0) {
-            ACEPoint += Math.pow(wind, 2)
+            ACEPoint += Math.pow(wind, 2)/10000
             if (windArray.length > 0) {
               let sum = 0
               windArray.forEach((wind) => {
                 sum += wind
               })
               const average = sum/windArray.length
-              ACEPoint += Math.pow(average, 2)
+              ACEPoint += Math.pow(average, 2)/10000
               windArray = []
             }
           } else {
@@ -294,10 +323,7 @@ const Interface = ({year, setYear, id}) => {
   }, [seasonStats]);
 
   useEffect(() => {
-    const season = hurdat2[2022-year].filter(storm =>
-      storm.map((point) => {return point.status}).includes("TS") ||
-      storm.map((point) => {return point.status}).includes("SS")
-    );
+    const season = hurdat2[2022-year]
 
     const maxWinds = season.map((storm) => {
       const wind = storm.slice(1).map((point) => {
@@ -315,14 +341,23 @@ const Interface = ({year, setYear, id}) => {
       const minPressure = Math.min(...pressure)
       return minPressure
     })
-    setMinPressure(minPressures)
-    console.log(minPressures)
+    setMinPressures(minPressures)
 
-    const names = season.map((storm) => {
+    const stormNames = season.map((storm) => {
       return storm[0].id.split('_')[1]
     })
-    setNames(names)
+    setStormNames(stormNames)
 
+    const tropicalStorms = season.filter(storm => 
+      storm.map((point) => {return point.status}).includes("TS") ||
+      storm.map((point) => {return point.status}).includes("SS")
+    )
+    const tropicalStormNames = tropicalStorms.map((storm) => {
+      return storm[0].id.split('_')[1]
+    })
+    setTropicalStormNames(tropicalStormNames)
+
+    let TD=0
     let TS=0
     let H1=0
     let H2=0
@@ -334,27 +369,36 @@ const Interface = ({year, setYear, id}) => {
         return point.max_wind_kt
       })
       const maxWind = Math.max(...wind)
+      if (maxWind < 34) {
+        TD += 1
+      }
       if (maxWind >= 34) {
+        TD += 1
         TS += 1
       } if (maxWind >= 64) {
+        TD += 1
         TS += 1
         H1 += 1
       } if (maxWind >= 83) {
+        TD += 1
         TS += 1
         H1 += 1
         H2 += 1
       } if (maxWind >= 100) {
+        TD += 1
         TS += 1
         H1 += 1
         H2 += 1
         H3 += 1
       } if (maxWind >= 110) {
+        TD += 1
         TS += 1
         H1 += 1
         H2 += 1
         H3 += 1
         H4 += 1
       } if (maxWind >= 135) {
+        TD += 1
         TS += 1
         H1 += 1
         H2 += 1
@@ -363,9 +407,101 @@ const Interface = ({year, setYear, id}) => {
         H5 += 1
       }
     })
-    const stormsAtStrength = [TS, H1, H2, H3, H4, H5]
-    setStormsAtStrength(stormsAtStrength)
+    const stormsAtStrength = [TD, TS, H1, H2, H3, H4, H5]
+    setStormNamesAtStrength(stormsAtStrength)
+
+    const seasonACE = season.map((storm) => {
+      let ACE = 0
+      let windArray = []
+      storm.slice(1).forEach((point) => {
+        const wind = point.max_wind_kt
+        const hour = parseInt(point.time_utc)
+        if (["TS", "SS", "HU"].includes(point.status)) {
+          if (hour % 600 == 0) {
+            ACE += Math.pow(wind, 2)/10000
+            if (windArray.length > 0) {
+              let sum = 0
+              windArray.forEach((wind) => {
+                sum += wind
+              })
+              const average = sum/windArray.length
+              ACE += Math.pow(average, 2)/10000
+              windArray = []
+            }
+          } else {
+            windArray.push(wind)
+          }
+        }
+      })
+      return ACE
+    })
+    setSeasonACE(seasonACE)
+
+    const landfallingStorms = season.filter(storm => storm.map((point) => {return point.record}).includes("L"))
+    const fatalStorms = season.filter(storm => storm[0].fatalaties > 0)
+    const costlyStorms = season.filter(storm => storm[0].cost_usd > 0)
+
+    const landfallingStormNames = landfallingStorms.map((storm) => {
+      return storm[0].id.split('_')[1]
+    })
+    setLandfallingStormNames(landfallingStormNames)
+
+    const fatalStormNames = fatalStorms.map((storm) => {
+      return storm[0].id.split('_')[1]
+    })
+    setFatalStormNames(fatalStormNames)
+
+    const costlyStormNames = costlyStorms.map((storm) => {
+      return storm[0].id.split('_')[1]
+    })
+    setCostlyStormNames(costlyStormNames)
+
+    const seasonLandfalls = landfallingStorms.map((storm) => {
+      let landfalls = 0
+      storm.forEach((point) => {
+        if (point.record === "L") {
+          landfalls +=1
+        }
+      })
+      return landfalls
+    })
+    setSeasonLandfalls(seasonLandfalls)
+
+    const maxWindLandfalls = landfallingStorms.map((storm) => {
+      let windAtLandfall = []
+      storm.forEach((point) => {
+        if (point.record === "L") {
+          windAtLandfall.push(point.max_wind_kt)
+        }
+      })
+      return Math.max(...windAtLandfall)
+    })
+    setMaxWindLandfalls(maxWindLandfalls)
+
+    const minPressureLandfalls = landfallingStorms.map((storm) => {
+      let pressureAtLandfall = []
+      storm.forEach((point) => {
+        if (point.record === "L") {
+          pressureAtLandfall.push(point.min_pressure_mb)
+        }
+      })
+      return Math.min(...pressureAtLandfall)
+    })
+    setMinPressureLandfalls(minPressureLandfalls)
+
+    const seasonCostUSD = costlyStorms.map((storm) => {
+      return storm[0].cost_usd/1000000000
+    })
+    setSeasonCostUSD(seasonCostUSD)
+
+    const seasonFatalaties = fatalStorms.map((storm) => {
+      return storm[0].fatalaties
+    })
+    setSeasonFatalaties(seasonFatalaties)
   }, [year])
+
+  const strengthLabels=["TD", "TS", "H1", "H2", "H3", "H4", "H5"]
+  const strengthColors=["blue","lime", "yellow", "orange", "red", "hotpink", "pink"]
 
 
   const intensityData = {
@@ -397,8 +533,7 @@ const Interface = ({year, setYear, id}) => {
     stacked: false,
     plugins: {
       title: {
-        display: true,
-        text: "Intensity"
+        display: false,
       },
     },
     scales: {
@@ -453,12 +588,12 @@ const Interface = ({year, setYear, id}) => {
   };
 
   const durationData = {
-    labels: ["Tropical Storm", "Category 1", "Category 2", "Category 3", "Category 4", "Category 5"],
+    labels: strengthLabels,
     datasets: [
       {
         data: daysAtStrength,
-        borderColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
-        backgroundColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
+        borderColor: strengthColors,
+        backgroundColor: strengthColors,
       },
     ]
   }
@@ -471,7 +606,7 @@ const Interface = ({year, setYear, id}) => {
       },
       title: {
         display: true,
-        text: 'Days at Each Strength or Higher',
+        text: 'Days at or Above Strength',
       },
     },
   };
@@ -484,7 +619,7 @@ const Interface = ({year, setYear, id}) => {
       },
       title: {
         display: true,
-        text: "Accumulated Cyclone Energy"
+        text: `Accumulated Cyclone Energy: ${sum(ACE).toFixed(1)}`
       },
     },
   };
@@ -493,15 +628,15 @@ const Interface = ({year, setYear, id}) => {
     labels: dates,
     datasets: [
       {
-        data: ACE,
-        borderColor: "blue",
-        backgroundColor: "lightblue"
+        data: ACE?.map((ACE) => {return ACE.toFixed(1)}),
+        borderColor: "purple",
+        backgroundColor: "pink"
       },
     ]
   }
 
   const maxWindData = {
-    labels: names,
+    labels: stormNames,
     datasets: [
       {
         data: maxWinds,
@@ -519,13 +654,13 @@ const Interface = ({year, setYear, id}) => {
       },
       title: {
         display: true,
-        text: 'Highest Maximum Wind (kt)',
+        text: 'Maximum Wind (kt)',
       },
     },
   };
   
   const minPressureData = {
-    labels: names,
+    labels: stormNames,
     datasets: [
       {
         data: minPressures,
@@ -543,19 +678,24 @@ const Interface = ({year, setYear, id}) => {
       },
       title: {
         display: true,
-        text: 'Lowest Minimum Pressure (mb)',
+        text: 'Minimum Pressure (mb)',
       },
     },
+    scales: {
+      y: {
+        min: 860
+      }
+    }
   };
 
   const stormsAtStrengthData = {
-    labels: ["Tropical Storm", "Category 1", "Category 2", "Category 3", "Category 4", "Category 5"],
+    labels: strengthLabels,
     datasets: [
       {
         label: "",
         data: stormsAtStrength,
-        borderColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
-        backgroundColor: ["lime", "yellow", "orange", "red", "hotpink", "pink"],
+        borderColor: strengthColors,
+        backgroundColor: strengthColors,
       },
     ]
   }
@@ -568,7 +708,154 @@ const Interface = ({year, setYear, id}) => {
       },
       title: {
         display: true,
-        text: 'Storms at Each Strength or Higher',
+        text: 'Storms at or Above Strength',
+      },
+    },
+  };
+
+  const seasonACEData = {
+    labels: tropicalStormNames,
+    datasets: [
+      {
+        data: seasonACE?.map((ACE) => {return ACE.toFixed(1)}),
+        borderColor: "purple",
+        backgroundColor: "purple"
+      },
+    ]
+  }
+
+  const seasonACEOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: `Accumulated Cyclone Energy: ${sum(seasonACE).toFixed(1)}`
+      }
+    },
+  };
+
+  const landfallsData = {
+    labels: landfallingStormNames,
+    datasets: [
+      {
+        data: seasonLandfalls,
+        borderColor: "brown",
+        backgroundColor: "brown",
+      },
+    ]
+  }
+
+  const landfallsOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: `Landfalls: ${sum(seasonLandfalls)}`,
+      },
+    },
+  };
+
+  const maxWindLandfallsData = {
+    labels: landfallingStormNames,
+    datasets: [
+      {
+        data: maxWindLandfalls,
+        backgroundColor: "red",
+      },
+    ]
+  }
+
+  const maxWindlandfallsOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: "Maximum Wind at Landfall (kt)"
+      },
+    },
+  };
+
+  const minPressureLandfallsData = {
+    labels: landfallingStormNames,
+    datasets: [
+      {
+        data: minPressureLandfalls,
+        backgroundColor: "blue",
+      },
+    ]
+  }
+
+  const minPressureLandfallsOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: "Minimum Pressure at Landfall (mb)",
+      },
+    },
+    scales: {
+      y: {
+        min: 860
+      }
+    }
+  };
+
+  const costData = {
+    labels: costlyStormNames,
+    datasets: [
+      {
+        data: seasonCostUSD?.map((cost) => {return cost.toFixed(1)}),
+        borderColor: "green",
+        backgroundColor: "green",
+      },
+    ]
+  }
+
+  const costOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: `Cost Estimate (Billion USD): ${sum(seasonCostUSD).toFixed(1)}`,
+      },
+    },
+  };
+
+  const fatalatiesData = {
+    labels: fatalStormNames,
+    datasets: [
+      {
+        data: seasonFatalaties,
+        borderColor: "darkred",
+        backgroundColor: "darkred",
+      },
+    ]
+  }
+
+  const fatalatiesOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: `Fatalaties: ${sum(seasonFatalaties)}`,
       },
     },
   };
@@ -613,22 +900,28 @@ const Interface = ({year, setYear, id}) => {
                 </>
               }
               <h1>Fatalaties: {fatalaties}</h1>
-              <h1>Cost Estimate (USD): {costUSD}</h1>
+              <h1>Cost Estimate (Billion USD): {costUSD}</h1>
             </div>
           </div>
         </div>
         <div className="bg-white p-5 rounded-md">
-          <Line options={intensityOptions} data={intensityData}/>
-          <Line className="my-5"  options={sizeOptions} data={sizeData}/>
           <Bar options={durationOptions} data={durationData}/>
-          <Line className="mt-5" options={ACEOptions} data={ACEData}/>
+          <Line className="my-5" options={intensityOptions} data={intensityData}/>
+          <Line options={ACEOptions} data={ACEData}/>
+          <Line className="mt-5" options={sizeOptions} data={sizeData}/>
         </div>
       </>}
       {seasonStats && <>
         <div className="bg-white p-5 rounded-md">
-          <Bar options={maxWindOptions} data={maxWindData}/>
-          <Bar className="my-5" options={minPressureOptions} data={minPressureData}/>
           <Bar options={stormsAtStrengthOptions} data={stormsAtStrengthData}/>
+          <Bar className="my-5" options={maxWindOptions} data={maxWindData}/>
+          <Bar options={minPressureOptions} data={minPressureData}/>
+          <Bar className="my-5" options={seasonACEOptions} data={seasonACEData}/>
+          <Bar options={landfallsOptions} data={landfallsData}/>
+          <Bar className="my-5" options={maxWindlandfallsOptions} data={maxWindLandfallsData}/>
+          <Bar options={minPressureLandfallsOptions} data={minPressureLandfallsData}/>
+          <Bar className="my-5" options={fatalatiesOptions} data={fatalatiesData}/>
+          <Bar options={costOptions} data={costData}/>
         </div>
       </>}
     </div>
