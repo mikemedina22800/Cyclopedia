@@ -750,8 +750,8 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
     datasets: [
       {
         data: seasonLandfalls,
-        borderColor: "brown",
-        backgroundColor: "brown",
+        borderColor: "#654321",
+        backgroundColor: "#654321",
       },
     ]
   }
