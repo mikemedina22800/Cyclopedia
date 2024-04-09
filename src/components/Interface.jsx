@@ -32,6 +32,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   const [costUSD, setCostUSD] = useState(null)
   const [fatalaties, setFatalaties] = useState(null)
   const [ACE, setACE] = useState(null)
+  const [totalACE, setTotalACE] = useState(null) 
   const [seasonStats, setSeasonStats] = useState(false)
   const [buttonText, setButtonText] = useState("Season Stats")
   const [maxWinds, setMaxWinds] = useState(null)
@@ -232,25 +233,25 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
             if (wind < 34) {
               hoursAtTD += hours
             }
-            if (wind >= 34 && maxWind < 64) {
+            if (wind >= 34 && wind < 64) {
               hoursAtTD += hours
               hoursAtTS += hours
-            } if (wind >= 64  && maxWind < 83) {
+            } if (wind >= 64  && wind < 83) {
               hoursAtTD += hours
               hoursAtTS += hours
               hoursAtH1 += hours
-            } if (wind >= 83  && maxWind < 100) {
+            } if (wind >= 83  && wind < 100) {
               hoursAtTD += hours
               hoursAtTS += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
-            } if (wind >= 100  && maxWind < 110) {
+            } if (wind >= 100  && wind < 110) {
               hoursAtTS += hours
               hoursAtTD += hours
               hoursAtH1 += hours
               hoursAtH2 += hours
               hoursAtH3 += hours
-            } if (wind >= 110  && maxWind < 135) {
+            } if (wind >= 110  && wind < 135) {
               hoursAtTS += hours
               hoursAtTD += hours
               hoursAtH1 += hours
@@ -314,7 +315,10 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
         return ACEPoint
       })
       setACE(ACE)
+      const totalACE = Math.max(...ACE)
+      setTotalACE(totalACE)
     }
+  
   }, [storm])
 
   useEffect(() => {
@@ -627,7 +631,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       },
       title: {
         display: true,
-        text: `Accumulated Cyclone Energy: ${sum(ACE).toFixed(1)}`
+        text: `Accumulated Cyclone Energy: ${totalACE?.toFixed(1)}`
       },
     },
   };
