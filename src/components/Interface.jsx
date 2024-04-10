@@ -594,7 +594,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
     plugins: {
       title: {
         display: true,
-        text: "Wind Radius Maximum (nm)"
+        text: "Maximum Radius of Wind (nm)"
       },
     },
   };
@@ -905,7 +905,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
           </a>
           <div className="flex flex-col w-64 font-bold">
-            <h1 className={`${textColor} text-2xl font-bold`}>{title} {name}</h1>
+            <h1 className={`${textColor} text-2xl mb-1 font-bold`}>{title} {name}</h1>
             <h1 className="text-lg text-white font-bold mb-5">{duration}</h1>
             <div className="text-sm text-white flex flex-col gap-1">
               <h1>Maximum Wind: {maxWind} kt</h1>
