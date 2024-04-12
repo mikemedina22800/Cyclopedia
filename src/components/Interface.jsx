@@ -34,7 +34,6 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   const [ACE, setACE] = useState(null)
   const [totalACE, setTotalACE] = useState(null) 
   const [seasonStats, setSeasonStats] = useState(false)
-  const [buttonText, setButtonText] = useState("Season Stats")
   const [maxWinds, setMaxWinds] = useState(null)
   const [minPressures, setMinPressures] = useState(null)
   const [stormNames, setStormNames] = useState(null)
@@ -49,6 +48,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   const [minPressureLandfalls, setMinPressureLandfalls] = useState(null)
   const [seasonFatalaties, setSeasonFatalaties] = useState(null)
   const [seasonCostUSD, setSeasonCostUSD] = useState(null)
+  const [retiredNames, setRetiredNames] = useState(null)
 
   const sum = (array) => {
     let sum = 0
@@ -59,7 +59,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   }
 
   useEffect(() => {
-    const id = hurdat2[2022-year][0][0].id
+    const id = hurdat2[year - 1851][0][0].id
     setStormId(id)
   }, [year])
 
@@ -67,7 +67,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
     const name = stormId.split("_")[1]
     setName(name)
     setRetired(false)
-    const storm = hurdat2[2022-year]?.find((storm) => storm[0]?.id === stormId)
+    const storm = hurdat2[year - 1851]?.find((storm) => storm[0]?.id === stormId)
     setStorm(storm)
   }, [stormId]);
 
@@ -228,7 +228,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
         const prevPoint=stormTrack[i-1]
         if (["TD","SD","TS","SS","HU"].includes(point.status)) {
           if (["TD","SD","TS","SS","HU"].includes(prevPoint.status)) {
-            const wind=point.max_wind_kt
+            const wind = point.max_wind_kt
             const hours = toHours(point) - toHours(prevPoint)
             if (wind < 34) {
               hoursAtTD += hours
@@ -322,15 +322,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   }, [storm])
 
   useEffect(() => {
-   if (seasonStats === true) {
-    setButtonText("Storm Stats")
-   } else {
-    setButtonText("Season Stats")
-   }
-  }, [seasonStats]);
-
-  useEffect(() => {
-    const season = hurdat2[2022-year]
+    const season = hurdat2[year - 1851]
 
     const stormIds = season.map((storm) => {
       return storm[0].id
@@ -422,12 +414,12 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
     const stormsAtStrength = [TD, TS, H1, H2, H3, H4, H5]
     setStormNamesAtStrength(stormsAtStrength)
 
-    const seasonACE = season.map((storm) => {
+    const seasonACE = tropicalStorms.map((storm) => {
       let ACE = 0
       let windArray = []
       storm.slice(1).forEach((point) => {
         const wind = point.max_wind_kt
-        const hour = parseInt(point.time_utc)
+        const hour = point.time_utc
         if (["TS", "SS", "HU"].includes(point.status)) {
           if (hour % 600 == 0) {
             ACE += Math.pow(wind, 2)/10000
@@ -448,6 +440,8 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       return ACE
     })
     setSeasonACE(seasonACE)
+
+    console.log(seasonACE)
 
     const landfallingStorms = season.filter(storm => storm.map((point) => {return point.record}).includes("L"))
     const fatalStorms = season.filter(storm => storm[0].fatalaties > 0)
@@ -510,6 +504,13 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       return storm[0].fatalaties
     })
     setSeasonFatalaties(seasonFatalaties)
+
+    const retiredStorms = season.filter(storm => storm[0].retired === "true")
+    const retiredNames  = retiredStorms.map((storm) => {
+      const name = storm[0].id.split('_')[1]
+      return name
+    })
+    setRetiredNames(retiredNames)
   }, [year])
 
   const strengthLabels=["TD", "TS", "H1", "H2", "H3", "H4", "H5"]
@@ -891,7 +892,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
             return (<MenuItem key={index} value={selectedYear}>{selectedYear}</MenuItem>);
           })}
         </Select>
-        <Button onClick={toggleStats} className="h-12" variant="contained"><h1 className="font-sans font-bold">{buttonText}</h1></Button>
+        <Button onClick={toggleStats} className="h-12" variant="contained"><h1 className="font-sans font-bold">{seasonStats == true ? ("Storm") : ("Season")} Stats</h1></Button>
       </div>
       {storm && seasonStats === false && <>
         <Select className="bg-white !rounded-xl w-36 h-12 mb-5" value={stormId} onChange={(e) => {setStormId(e.target.value)}}>
@@ -930,6 +931,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
         </div>
       </>}
       {seasonStats && <>
+        <h1 className="text-white mb-5 font-bold text-xl">Retired Names: {retiredNames.join(", ")}</h1>
         <div className="bg-white p-5 rounded-md">
           <Bar options={stormsAtStrengthOptions} data={stormsAtStrengthData}/>
           <Bar className="my-5" options={maxWindOptions} data={maxWindData}/>

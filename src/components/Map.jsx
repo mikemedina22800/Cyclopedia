@@ -44,7 +44,7 @@ function Map({year, setStormId}) {
     )
   }
 
-  const storms = hurdat2[2022 - year].map((storm, i) => {
+  const storms = hurdat2[year - 1851].map((storm, i) => {
     const id = storm[0].id
     const name = id.split('_')[1]
     const positions = []
@@ -58,12 +58,8 @@ function Map({year, setStormId}) {
       const hour = timeArray.slice(0,2).join('')
       const minute = timeArray.slice(-2).join('')
       const time = `${hour}:${minute}`
-      const latArray = point.lat.split('')
-      const lngArray = point.lng.split('')
-      latArray.pop()
-      lngArray.pop()
-      const lat = parseFloat(latArray.join(''))
-      const lng = -parseFloat(lngArray.join(''))
+      const lat = point.lat
+      const lng = point.lng
       const coords = [lat, lng]
       positions.push(coords)
       const wind = point.max_wind_kt
