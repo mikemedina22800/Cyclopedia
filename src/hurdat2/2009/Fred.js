@@ -1,5 +1,12 @@
 const Fred = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hurricane_Fred_2009-09-09_1250Z.jpg/800px-Hurricane_Fred_2009-09-09_1250Z.jpg",
+    "id": "AL072009_Fred",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20090907",
     "time_utc": "1800",
     "record": "",

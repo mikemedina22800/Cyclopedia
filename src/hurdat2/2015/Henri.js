@@ -1,5 +1,12 @@
 const Henri = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Henri_2015-09-10_1430Z.jpg/800px-Henri_2015-09-10_1430Z.jpg",
+    "id": "AL082015_Henri",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20150908",
     "time_utc": "0600",
     "record": "",

@@ -1,5 +1,12 @@
 const Cristobal = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cristobal_2008-07-22_1745Z.jpg/800px-Cristobal_2008-07-22_1745Z.jpg",
+    "id": "AL032008_Cristobal",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20080719",
     "time_utc": "0000",
     "record": "",

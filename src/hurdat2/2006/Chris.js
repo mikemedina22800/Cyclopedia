@@ -1,5 +1,12 @@
 const Chris = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/03L_Chris_2006.jpg/800px-03L_Chris_2006.jpg",
+    "id": "AL032006_Chris",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20060801",
     "time_utc": "0000",
     "record": "",

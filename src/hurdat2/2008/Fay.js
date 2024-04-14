@@ -1,5 +1,12 @@
 const Fay = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Fay_19_aug_2008_1615Z_Cropped.jpg/800px-Fay_19_aug_2008_1615Z_Cropped.jpg",
+    "id": "AL062008_Fay",
+    "fatalaties": 36,
+    "cost_usd": 560000000
+  },
+  {
     "date": "20080815",
     "time_utc": "1200",
     "record": "",

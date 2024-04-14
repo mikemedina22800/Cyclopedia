@@ -1,5 +1,12 @@
 const Lee = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Lee_2005-08-31_1415Z.jpg/800px-Lee_2005-08-31_1415Z.jpg",
+    "id": "AL132005_Lee",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20050828",
     "time_utc": "1200",
     "record": "",

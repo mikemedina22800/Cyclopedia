@@ -1,5 +1,12 @@
 const Omar = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Omar_2008-10-16.jpg/1024px-Omar_2008-10-16.jpg",
+    "id": "AL152008_Omar",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "20081013",
     "time_utc": "0600",
     "record": "",

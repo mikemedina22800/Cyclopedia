@@ -1,5 +1,12 @@
 const Maria = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Hurricane_Maria_Sept_15_2011_1740Z.jpg/800px-Hurricane_Maria_Sept_15_2011_1740Z.jpg",
+    "id": "AL142011_Maria",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20110906",
     "time_utc": "1800",
     "record": "",

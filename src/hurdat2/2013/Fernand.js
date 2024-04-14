@@ -1,5 +1,12 @@
 const Fernand = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/06L_Aug_25_2013_1710Z.jpg/1024px-06L_Aug_25_2013_1710Z.jpg",
+    "id": "AL062013_Fernand",
+    "fatalaties": 14,
+    "cost_usd": 0
+  },
+  {
     "date": "20130825",
     "time_utc": "1200",
     "record": "",

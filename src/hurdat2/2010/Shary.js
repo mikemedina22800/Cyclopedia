@@ -1,5 +1,12 @@
 const Shary = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Hurricane_Shary_2010-10-30_1424Z.jpg/800px-Hurricane_Shary_2010-10-30_1424Z.jpg",
+    "id": "AL192010_Shary",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20101028",
     "time_utc": "1800",
     "record": "",

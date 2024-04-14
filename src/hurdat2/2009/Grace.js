@@ -1,5 +1,12 @@
 const Grace = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Tropical_Storm_Grace_2009_at_peak_intensity.jpg/1024px-Tropical_Storm_Grace_2009_at_peak_intensity.jpg",
+    "id": "AL092009_Grace",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20090927",
     "time_utc": "1800",
     "record": "",

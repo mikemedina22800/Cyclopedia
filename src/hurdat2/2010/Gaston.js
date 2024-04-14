@@ -1,5 +1,12 @@
 const Gaston = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Gaston_Sept_1_2010_1310Z.jpg/1024px-Gaston_Sept_1_2010_1310Z.jpg",
+    "id": "AL092010_Gaston",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20100901",
     "time_utc": "0000",
     "record": "",

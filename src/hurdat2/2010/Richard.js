@@ -1,5 +1,12 @@
 const Richard = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hurricane_Richard_2010-10-24_1645Z.jpg/800px-Hurricane_Richard_2010-10-24_1645Z.jpg",
+    "id": "AL182010_Richard",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "20101019",
     "time_utc": "1800",
     "record": "",

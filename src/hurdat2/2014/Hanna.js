@@ -1,5 +1,12 @@
 const Hanna = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Hanna_Oct_27_2014_1600Z.jpg/800px-Hanna_Oct_27_2014_1600Z.jpg",
+    "id": "AL092014_Hanna",
+    "fatalaties": 28,
+    "cost_usd": 0
+  },
+  {
     "date": "20141021",
     "time_utc": "0000",
     "record": "",

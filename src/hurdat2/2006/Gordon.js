@@ -1,5 +1,12 @@
 const Gordon = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hurricane_Gordon_2006.jpg/800px-Hurricane_Gordon_2006.jpg",
+    "id": "AL072006_Gordon",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20060910",
     "time_utc": "1800",
     "record": "",

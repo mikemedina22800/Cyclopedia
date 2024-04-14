@@ -1,5 +1,12 @@
 const Gordon = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Gordon_Aug_18_2012_15.50%28UTC%29.jpg/1024px-Gordon_Aug_18_2012_15.50%28UTC%29.jpg",
+    "id": "AL072012_Gordon",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120815",
     "time_utc": "1200",
     "record": "",

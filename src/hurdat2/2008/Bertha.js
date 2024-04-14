@@ -1,5 +1,12 @@
 const Bertha = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Bertha_07_july_2008_1630Z.jpg/800px-Bertha_07_july_2008_1630Z.jpg",
+    "id": "AL022008_Bertha",
+    "fatalaties": 3,
+    "cost_usd": 0
+  },
+  {
     "date": "20080703",
     "time_utc": "0600",
     "record": "",

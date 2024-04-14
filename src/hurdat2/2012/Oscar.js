@@ -1,5 +1,12 @@
 const Oscar = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Oscar_Oct_4_2012_1330Z.jpg/1024px-Oscar_Oct_4_2012_1330Z.jpg",
+    "id": "AL152012_Oscar",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20121002",
     "time_utc": "1200",
     "record": "",

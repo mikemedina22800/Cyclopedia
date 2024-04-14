@@ -1,5 +1,12 @@
 const Gustav = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Gustav_2008-08-30.jpg/800px-Gustav_2008-08-30.jpg",
+    "id": "AL072008_Gustav",
+    "fatalaties": 153,
+    "cost_usd": 8310000000
+  },
+  {
     "date": "20080825",
     "time_utc": "0000",
     "record": "",

@@ -1,5 +1,12 @@
 const Ernesto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Ernesto_Aug_7_2012_1920Z.jpg/1024px-Ernesto_Aug_7_2012_1920Z.jpg",
+    "id": "AL052012_Ernesto",
+    "fatalaties": 12,
+    "cost_usd": 252000000
+  },
+  {
     "date": "20120801",
     "time_utc": "1200",
     "record": "",

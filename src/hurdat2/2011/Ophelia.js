@@ -1,5 +1,12 @@
 const Ophelia = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ophelia250m_Oct_1_2011_17.40%28UTC%29.jpg/800px-Ophelia250m_Oct_1_2011_17.40%28UTC%29.jpg",
+    "id": "AL162011_Ophelia",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20110920",
     "time_utc": "0600",
     "record": "",

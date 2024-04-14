@@ -1,5 +1,12 @@
 const Karl = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Karl_2010-09-17_1415Z.png",
+    "id": "AL122010_Karl",
+    "fatalaties": 0,
+    "cost_usd": 3900000000
+  },
+  {
     "date": "20100913",
     "time_utc": "1800",
     "record": "",

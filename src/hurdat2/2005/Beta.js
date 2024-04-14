@@ -1,5 +1,12 @@
 const Beta = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Beta_2005-10-30_0655Z.jpg/800px-Beta_2005-10-30_0655Z.jpg",
+    "id": "AL262005_Beta",
+    "fatalaties": 9,
+    "cost_usd": 0
+  },
+  {
     "date": "20051026",
     "time_utc": "1800",
     "record": "",

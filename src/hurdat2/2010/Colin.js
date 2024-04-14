@@ -1,5 +1,12 @@
 const Colin = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tropical_Storm_Colin_August_5_1505UTC.jpg/1024px-Tropical_Storm_Colin_August_5_1505UTC.jpg",
+    "id": "AL042010_Colin",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "20100802",
     "time_utc": "1200",
     "record": "",

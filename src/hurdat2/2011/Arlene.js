@@ -1,5 +1,12 @@
 const Arlene = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Arlene_2011-06-30_1950Z.jpg/800px-Arlene_2011-06-30_1950Z.jpg",
+    "id": "AL012011_Arlene",
+    "fatalaties": 22,
+    "cost_usd": 223000000
+  },
+  {
     "date": "20110628",
     "time_utc": "0600",
     "record": "",

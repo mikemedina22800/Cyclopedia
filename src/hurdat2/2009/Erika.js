@@ -1,5 +1,12 @@
 const Erika = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Erika_2009-09-01_1700Z.jpg/800px-Erika_2009-09-01_1700Z.jpg",
+    "id": "AL062009_Erika",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20090901",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Paloma = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Paloma_2008-11-08_0315Z.jpg/800px-Paloma_2008-11-08_0315Z.jpg",
+    "id": "AL172008_Paloma",
+    "fatalaties": 1,
+    "cost_usd": 455000000
+  },
+  {
     "date": "20081105",
     "time_utc": "1800",
     "record": "",

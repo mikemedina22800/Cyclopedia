@@ -1,5 +1,12 @@
 const Sean = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tropical_Storm_Sean_Nov_10_2011_1515Z.jpg/800px-Tropical_Storm_Sean_Nov_10_2011_1515Z.jpg",
+    "id": "AL192011_Sean",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20111106",
     "time_utc": "0000",
     "record": "",

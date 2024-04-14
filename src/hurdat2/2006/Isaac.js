@@ -1,5 +1,12 @@
 const Isaac = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Isaac_2006-09-30_1710Z.jpg/800px-Isaac_2006-09-30_1710Z.jpg",
+    "id": "AL092006_Issac",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20060927",
     "time_utc": "1800",
     "record": "",

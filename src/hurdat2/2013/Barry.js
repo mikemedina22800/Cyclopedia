@@ -1,5 +1,12 @@
 const Barry = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Barry_Jun_20_2013_1720Z.jpg/1024px-Barry_Jun_20_2013_1720Z.jpg",
+    "id": "AL022013_Barry",
+    "fatalaties": 5,
+    "cost_usd": 0
+  },
+  {
     "date": "20130616",
     "time_utc": "0000",
     "record": "",

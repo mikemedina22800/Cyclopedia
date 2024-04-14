@@ -1,5 +1,12 @@
 const Ike = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ike_2008-09-04_1440Z.jpg/800px-Ike_2008-09-04_1440Z.jpg",
+    "id": "AL092008_Ike",
+    "fatalaties": 214,
+    "cost_usd": 3800000000
+  },
+  {
     "date": "20080901",
     "time_utc": "0600",
     "record": "",

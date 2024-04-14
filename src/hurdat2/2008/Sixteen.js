@@ -1,5 +1,12 @@
 const Sixteen = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/16L_2008-10-15_1620Z.jpg/800px-16L_2008-10-15_1620Z.jpg",
+    "id": "AL162008_Sixteen",
+    "fatalaties": 93,
+    "cost_usd": 230000000
+  },
+  {
     "date": "20081014",
     "time_utc": "1200",
     "record": "",

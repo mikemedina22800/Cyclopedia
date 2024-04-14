@@ -1,5 +1,12 @@
 const Tomas = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Tomas_2010-10-30_1735Z.jpg/800px-Tomas_2010-10-30_1735Z.jpg",
+    "id": "AL202010_Tomas",
+    "fatalaties": 44,
+    "cost_usd": 463000000
+  },
+  {
     "date": "20101029",
     "time_utc": "0600",
     "record": "",

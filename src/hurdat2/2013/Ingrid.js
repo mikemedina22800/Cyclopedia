@@ -1,5 +1,12 @@
 const Ingrid = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ingrid_Sept_14_2013_1645Z.jpg/800px-Ingrid_Sept_14_2013_1645Z.jpg",
+    "id": "AL102013_Ingrid",
+    "fatalaties": 32,
+    "cost_usd": 1500000000
+  },
+  {
     "date": "20130912",
     "time_utc": "0600",
     "record": "",

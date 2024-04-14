@@ -1,5 +1,12 @@
 const Grace = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Grace_2015-09-06_1515Z.jpg/800px-Grace_2015-09-06_1515Z.jpg",
+    "id": "AL072015_Grace",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20150905",
     "time_utc": "0600",
     "record": "",

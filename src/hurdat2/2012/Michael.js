@@ -1,5 +1,12 @@
 const Michael = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Michael_Sept_6_2012_1620Z.jpg/800px-Michael_Sept_6_2012_1620Z.jpg",
+    "id": "AL132012_Michael",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120902",
     "time_utc": "0000",
     "record": "",

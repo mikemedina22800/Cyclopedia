@@ -1,5 +1,12 @@
 const Claudette = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Claudette_2015-07-13_1730Z.jpg/800px-Claudette_2015-07-13_1730Z.jpg",
+    "id": "AL032015_Claudette",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20150712",
     "time_utc": "0000",
     "record": "",

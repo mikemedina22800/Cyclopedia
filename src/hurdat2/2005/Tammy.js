@@ -1,5 +1,12 @@
 const Tammy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tammy_2005-10-05_1625Z.jpg/1024px-Tammy_2005-10-05_1625Z.jpg",
+    "id": "AL212005_Tammy",
+    "fatalaties": 10,
+    "cost_usd": 0
+  },
+  {
     "date": "20051005",
     "time_utc": "0600",
     "record": "",

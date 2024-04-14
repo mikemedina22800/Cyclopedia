@@ -1,5 +1,12 @@
 const Eight = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/08L_Sept_6_2013_1735Z.jpg/1024px-08L_Sept_6_2013_1735Z.jpg",
+    "id": "AL082013_Eight",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20130906",
     "time_utc": "1200",
     "record": "",

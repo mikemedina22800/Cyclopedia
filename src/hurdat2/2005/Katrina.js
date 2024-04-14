@@ -1,5 +1,12 @@
 const Katrina = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Katrina_2005-08-28_1700Z.jpg/800px-Katrina_2005-08-28_1700Z.jpg",
+    "id": "AL122005_Katrina",
+    "fatalaties": 1392,
+    "cost_usd": 125000000000
+  },
+  {
     "date": "20050823",
     "time_utc": "1800",
     "record": "",

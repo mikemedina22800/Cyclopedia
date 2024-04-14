@@ -1,5 +1,12 @@
 const Leslie = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Leslie_Sept_5_2012_1710Z.jpg/1024px-Leslie_Sept_5_2012_1710Z.jpg",
+    "id": "AL122012_Leslie",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120828",
     "time_utc": "1200",
     "record": "",

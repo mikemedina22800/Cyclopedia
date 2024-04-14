@@ -1,5 +1,12 @@
 const Fred = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Fred_2015-08-31_1215Z.jpg/800px-Fred_2015-08-31_1215Z.jpg",
+    "id": "AL062015_Fred",
+    "fatalaties": 9,
+    "cost_usd": 0
+  },
+  {
     "date": "20150830",
     "time_utc": "0000",
     "record": "",

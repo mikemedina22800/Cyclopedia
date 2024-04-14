@@ -1,5 +1,12 @@
 const Julia = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Julia_2010-09-15_1445Z.png/800px-Julia_2010-09-15_1445Z.png",
+    "id": "AL122010_Julia",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20100912",
     "time_utc": "0600",
     "record": "",

@@ -1,5 +1,12 @@
 const Fay = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fay_Oct_12_2014_1455Z.jpg/800px-Fay_Oct_12_2014_1455Z.jpg",
+    "id": "AL072014_Fay",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20141010",
     "time_utc": "0000",
     "record": "",

@@ -1,5 +1,12 @@
 const Chris = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Hurricane_Chris_Jun_21_2012_1330Z.jpg/800px-Hurricane_Chris_Jun_21_2012_1330Z.jpg",
+    "id": "AL032012_Chris",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120617",
     "time_utc": "0000",
     "record": "",

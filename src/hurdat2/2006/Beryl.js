@@ -1,5 +1,12 @@
 const Beryl = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Beryl_2006-07-20_1800Z.jpg/800px-Beryl_2006-07-20_1800Z.jpg",
+    "id": "AL022006_Beryl",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20060718",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Nineteen = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/TD_19_2005-09-30.jpg/800px-TD_19_2005-09-30.jpg",
+    "id": "AL192005_Nineteen",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20050930",
     "time_utc": "1200",
     "record": "",

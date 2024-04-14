@@ -1,5 +1,12 @@
 const Humberto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/HU_Humberto_Sep_13_2007_AQUA_MODIS.png/1024px-HU_Humberto_Sep_13_2007_AQUA_MODIS.png",
+    "id": "AL082007_Humberto",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "20070912",
     "time_utc": "0600",
     "record": "",

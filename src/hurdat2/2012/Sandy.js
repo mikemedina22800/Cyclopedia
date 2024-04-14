@@ -1,5 +1,12 @@
 const Sandy = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sandy_2012-10-25_0320Z.png/800px-Sandy_2012-10-25_0320Z.png",
+    "id": "AL182012_Sandy",
+    "fatalaties": 233,
+    "cost_usd": 68700000000
+  },
+  {
     "date": "20121021",
     "time_utc": "1800",
     "record": "",

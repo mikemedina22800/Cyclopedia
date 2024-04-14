@@ -1,5 +1,12 @@
 const Dorian = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dorian_Jul_25_2013_1255Z.jpg/1024px-Dorian_Jul_25_2013_1255Z.jpg",
+    "id": "AL042013_Dorian",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20130722",
     "time_utc": "1800",
     "record": "",

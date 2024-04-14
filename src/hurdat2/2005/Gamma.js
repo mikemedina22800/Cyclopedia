@@ -1,5 +1,12 @@
 const Gamma = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Gamma_2005-11-19_1515Z.jpg/800px-Gamma_2005-11-19_1515Z.jpg",
+    "id": "AL272005_Gamma",
+    "fatalaties": 39,
+    "cost_usd": 0
+  },
+  {
     "date": "20051114",
     "time_utc": "0000",
     "record": "",

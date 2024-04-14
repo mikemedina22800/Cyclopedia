@@ -516,7 +516,6 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   const strengthLabels=["TD", "TS", "H1", "H2", "H3", "H4", "H5"]
   const strengthColors=["blue","lime", "yellow", "orange", "red", "hotpink", "pink"]
 
-
   const intensityData = {
     labels: dates,
     datasets: [

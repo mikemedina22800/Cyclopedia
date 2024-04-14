@@ -1,5 +1,12 @@
 const Rafael = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rafael_Oct_16_2012_1710Z.jpg/800px-Rafael_Oct_16_2012_1710Z.jpg",
+    "id": "AL172012_Rafael",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "20121012",
     "time_utc": "1800",
     "record": "",

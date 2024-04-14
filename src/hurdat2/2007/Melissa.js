@@ -1,5 +1,12 @@
 const Melissa = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Melissa_29_sept_2007_1245Z.jpg/800px-Melissa_29_sept_2007_1245Z.jpg",
+    "id": "AL142007_Melissa",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20070928",
     "time_utc": "0600",
     "record": "",

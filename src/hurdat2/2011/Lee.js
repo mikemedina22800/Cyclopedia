@@ -1,5 +1,12 @@
 const Lee = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tropical_Storm_Lee_on_2nd_Sept_2011.JPG/1024px-Tropical_Storm_Lee_on_2nd_Sept_2011.JPG",
+    "id": "AL132011_Lee",
+    "fatalaties": 18,
+    "cost_usd": 2800000000
+  },
+  {
     "date": "20110902",
     "time_utc": "0000",
     "record": "",

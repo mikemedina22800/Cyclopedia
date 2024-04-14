@@ -1,5 +1,12 @@
 const Dean = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dean_2007-08-21_0845Z.jpg/1024px-Dean_2007-08-21_0845Z.jpg",
+    "id": "AL042007_Dean",
+    "fatalaties": 45,
+    "cost_usd": 1660000000
+  },
+  {
     "date": "20070813",
     "time_utc": "0600",
     "record": "",

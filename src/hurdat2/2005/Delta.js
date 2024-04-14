@@ -1,5 +1,12 @@
 const Delta = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ts_delta_112405.jpg/1024px-Ts_delta_112405.jpg",
+    "id": "AL282005_Delta",
+    "fatalaties": 19,
+    "cost_usd": 364000000
+  },
+  {
     "date": "20051119",
     "time_utc": "1200",
     "record": "",

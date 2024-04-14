@@ -1,5 +1,12 @@
 const Zeta = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/TS_Zeta_03_jan_2006_1345Z.jpg/800px-TS_Zeta_03_jan_2006_1345Z.jpg",
+    "id": "AL302005_Zeta",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20051230",
     "time_utc": "0000",
     "record": "",

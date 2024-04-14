@@ -1,5 +1,12 @@
 const Rina = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hurricane_Rina_Oct_25_2011_1745Z.jpg/1024px-Hurricane_Rina_Oct_25_2011_1745Z.jpg",
+    "id": "AL182011_Rina",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20111022",
     "time_utc": "0000",
     "record": "",

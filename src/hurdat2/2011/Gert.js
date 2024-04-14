@@ -1,5 +1,12 @@
 const Gert = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tropical_Storm_Gert_Aug_15_2011_1505Z.jpg/800px-Tropical_Storm_Gert_Aug_15_2011_1505Z.jpg",
+    "id": "AL072011_Gert",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20110813",
     "time_utc": "0600",
     "record": "",

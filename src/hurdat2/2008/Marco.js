@@ -1,5 +1,12 @@
 const Marco = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Marco_6_oct_2008.jpg/800px-Marco_6_oct_2008.jpg",
+    "id": "AL132008_Marco",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20081006",
     "time_utc": "0000",
     "record": "",

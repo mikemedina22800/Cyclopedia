@@ -1,5 +1,12 @@
 const Stan = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Stan_2005-10-04_0755Z.jpg/800px-Stan_2005-10-04_0755Z.jpg",
+    "id": "AL202005_Stan",
+    "fatalaties": 1673,
+    "cost_usd": 3960000000
+  },
+  {
     "date": "20051001",
     "time_utc": "1200",
     "record": "",

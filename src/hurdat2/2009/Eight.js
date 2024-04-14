@@ -1,5 +1,12 @@
 const Eight = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pre-Tropical_Depression_Eight_2009-09-25_1250Z.jpg/800px-Pre-Tropical_Depression_Eight_2009-09-25_1250Z.jpg",
+    "id": "AL082009_Eight",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20090925",
     "time_utc": "0600",
     "record": "",

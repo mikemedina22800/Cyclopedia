@@ -1,5 +1,12 @@
 const Ida = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ida_2015-09-21_1720Z.jpg/800px-Ida_2015-09-21_1720Z.jpg",
+    "id": "AL102015_Ida",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20150915",
     "time_utc": "1200",
     "record": "",

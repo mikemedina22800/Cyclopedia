@@ -1,5 +1,12 @@
 const Andrea = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Andrea_2007-05-09_1615Z.png",
+    "id": "AL012007_Andrea",
+    "fatalaties": 6,
+    "cost_usd": 0
+  },
+  {
     "date": "20070506",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Alpha = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Alpha_2005-10-22_1530Z.jpg/800px-Alpha_2005-10-22_1530Z.jpg",
+    "id": "AL252005_Alpha",
+    "fatalaties": 26,
+    "cost_usd": 0
+  },
+  {
     "date": "20051022",
     "time_utc": "1200",
     "record": "",

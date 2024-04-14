@@ -1,5 +1,12 @@
 const Debby = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/TS_debby_2006.jpg/800px-TS_debby_2006.jpg",
+    "id": "AL042006_Debby",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20060821",
     "time_utc": "1800",
     "record": "",

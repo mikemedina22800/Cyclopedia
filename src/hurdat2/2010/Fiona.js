@@ -1,5 +1,12 @@
 const Fiona = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Fiona_2010-09-01_1450Z.jpg/800px-Fiona_2010-09-01_1450Z.jpg",
+    "id": "AL082010_Fiona",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20100830",
     "time_utc": "0000",
     "record": "",

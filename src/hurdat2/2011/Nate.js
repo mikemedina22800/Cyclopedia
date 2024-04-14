@@ -1,5 +1,12 @@
 const Nate = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nate_Sept_8_2011_1905Z.jpg/1024px-Nate_Sept_8_2011_1905Z.jpg",
+    "id": "AL152011_Nate",
+    "fatalaties": 5,
+    "cost_usd": 0
+  },
+  {
     "date": "20110906",
     "time_utc": "1800",
     "record": "",

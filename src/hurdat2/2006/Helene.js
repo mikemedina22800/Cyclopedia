@@ -1,5 +1,12 @@
 const Helene = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Hurricane_Helene_18_sept_2006.jpg/800px-Hurricane_Helene_18_sept_2006.jpg",
+    "id": "AL082006_Helene",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20060912",
     "time_utc": "1200",
     "record": "",

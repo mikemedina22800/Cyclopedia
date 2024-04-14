@@ -1,5 +1,12 @@
 const Nadine = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Nadine_Sept_30_2012_1535Z.jpg/800px-Nadine_Sept_30_2012_1535Z.jpg",
+    "id": "AL142012_Nadine",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120910",
     "time_utc": "1200",
     "record": "",

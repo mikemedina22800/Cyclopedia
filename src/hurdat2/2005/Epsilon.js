@@ -1,5 +1,12 @@
 const Epsilon = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Epsilon_2005-12-05_1545Z.jpg/800px-Epsilon_2005-12-05_1545Z.jpg",
+    "id": "AL292005_Epsilon",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20051129",
     "time_utc": "0600",
     "record": "",

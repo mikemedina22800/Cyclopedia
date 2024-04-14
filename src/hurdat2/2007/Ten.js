@@ -1,5 +1,12 @@
 const Ten = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/TD_Ten_21_sept_2007_1650Z.jpg/1024px-TD_Ten_21_sept_2007_1650Z.jpg",
+    "id": "AL102007_Ten",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20070921",
     "time_utc": "1200",
     "record": "",

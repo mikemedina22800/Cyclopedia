@@ -1,5 +1,12 @@
 const Maria = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Maria_Sept_5_2005_1430Z.jpg/1024px-Maria_Sept_5_2005_1430Z.jpg",
+    "id": "AL142005_Maria",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "20050901",
     "time_utc": "1200",
     "record": "",

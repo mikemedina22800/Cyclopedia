@@ -1,5 +1,12 @@
 const Lorenzo = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Lorenzo_Oct_22_2013_1430Z.jpg/800px-Lorenzo_Oct_22_2013_1430Z.jpg",
+    "id": "AL132013_Lorenzo",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20131021",
     "time_utc": "0600",
     "record": "",

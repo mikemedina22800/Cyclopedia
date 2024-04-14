@@ -1,5 +1,12 @@
 const Helene = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Helene_Aug_17_2012_1955Z.jpg/800px-Helene_Aug_17_2012_1955Z.jpg",
+    "id": "AL082012_Helene",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "20120809",
     "time_utc": "1800",
     "record": "",

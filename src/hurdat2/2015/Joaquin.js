@@ -1,5 +1,12 @@
 const Joaquin = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Joaquin_2015-10-03_1437Z.png/1024px-Joaquin_2015-10-03_1437Z.png",
+    "id": "AL112015_Joaquin",
+    "fatalaties": 34,
+    "cost_usd": 200000000
+  },
+  {
     "date": "20150926",
     "time_utc": "1800",
     "record": "",

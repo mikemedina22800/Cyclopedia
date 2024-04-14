@@ -1,5 +1,12 @@
 const Joyce = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Joyce_Aug_23_2012_1600Z.jpg/800px-Joyce_Aug_23_2012_1600Z.jpg",
+    "id": "AL102012_Joyce",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120821",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Alex = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Alex_2010-07-01_0202Z.png",
+    "id": "AL012010_Alex",
+    "fatalaties": 73,
+    "cost_usd": 1520000000
+  },
+  {
     "date": "20100624",
     "time_utc": "1800",
     "record": "",

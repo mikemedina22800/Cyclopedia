@@ -1,5 +1,12 @@
 const Rita = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Rita_2005-09-21_1915Z.jpg/800px-Rita_2005-09-21_1915Z.jpg",
+    "id": "AL182005_Rita",
+    "fatalaties": 120,
+    "cost_usd": 18500000000
+  },
+  {
     "date": "20050918",
     "time_utc": "0000",
     "record": "",

@@ -1,5 +1,12 @@
 const Franklin = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Franklin_Aug_13_2011_1655Z.jpg/800px-Franklin_Aug_13_2011_1655Z.jpg",
+    "id": "AL062011_Franklin",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20110812",
     "time_utc": "1200",
     "record": "",

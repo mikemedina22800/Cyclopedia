@@ -1,5 +1,12 @@
 const Tony = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Tony_Oct_24_2012_1615Z.jpg/800px-Tony_Oct_24_2012_1615Z.jpg",
+    "id": "AL192012_Tony",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20121021",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Dolly = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Dolly_2008-07-21_1415Z.png",
+    "id": "AL042008_Dolly",
+    "fatalaties": 22,
+    "cost_usd": 1600000000
+  },
+  {
     "date": "20080720",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Dolly = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Dolly_Suomi_NPP_Sept_2_2014.png/1024px-Dolly_Suomi_NPP_Sept_2_2014.png",
+    "id": "AL052014_Dolly",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "20140901",
     "time_utc": "1200",
     "record": "",

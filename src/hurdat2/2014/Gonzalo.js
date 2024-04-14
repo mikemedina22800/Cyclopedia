@@ -1,5 +1,12 @@
 const Gonzalo = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Gonzalo_2014-10-16_1215Z.png/1024px-Gonzalo_2014-10-16_1215Z.png",
+    "id": "AL082014_Gonzalo",
+    "fatalaties": 6,
+    "cost_usd": 317000000
+  },
+  {
     "date": "20141011",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Paula = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hurricane_Paula_2010-10-12_1620Z.jpg/1024px-Hurricane_Paula_2010-10-12_1620Z.jpg",
+    "id": "AL172010_Paula",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "20101011",
     "time_utc": "0000",
     "record": "",

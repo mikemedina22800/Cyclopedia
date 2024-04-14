@@ -1,5 +1,12 @@
 const Igor = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Igor_2010-09-14_1945Z.png/1024px-Igor_2010-09-14_1945Z.png",
+    "id": "AL112010_Igor",
+    "fatalaties": 4,
+    "cost_usd": 200000000
+  },
+  {
     "date": "20100908",
     "time_utc": "0600",
     "record": "",

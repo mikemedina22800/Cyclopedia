@@ -1,5 +1,12 @@
 const Matthew = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Matthew_2010-09-24_1630Z.jpg/800px-Matthew_2010-09-24_1630Z.jpg",
+    "id": "AL142010_Matthew",
+    "fatalaties": 143,
+    "cost_usd": 171000000
+  },
+  {
     "date": "20100923",
     "time_utc": "1200",
     "record": "",

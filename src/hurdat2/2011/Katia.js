@@ -1,5 +1,12 @@
 const Katia = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Katia_2011-09-05_1615Z.png/800px-Katia_2011-09-05_1615Z.png",
+    "id": "AL122011_Katia",
+    "fatalaties": 4,
+    "cost_usd": 157000000
+  },
+  {
     "date": "20110828",
     "time_utc": "0000",
     "record": "",

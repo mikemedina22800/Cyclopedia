@@ -1,5 +1,12 @@
 const Kate = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Kate_2015-11-11_1440Z.jpg/800px-Kate_2015-11-11_1440Z.jpg",
+    "id": "AL122015_Kate",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20151108",
     "time_utc": "1800",
     "record": "",

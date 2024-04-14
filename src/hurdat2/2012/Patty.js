@@ -1,5 +1,12 @@
 const Patty = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Patty_Oct_11_2012_1515Z.jpg/1024px-Patty_Oct_11_2012_1515Z.jpg",
+    "id": "AL162012_Patty",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20121010",
     "time_utc": "1800",
     "record": "",

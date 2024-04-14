@@ -1,5 +1,12 @@
 const Humberto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Humberto_Sept_11_2013_1300Z.jpg/800px-Humberto_Sept_11_2013_1300Z.jpg",
+    "id": "AL092013_Humberto",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20130908",
     "time_utc": "0000",
     "record": "",

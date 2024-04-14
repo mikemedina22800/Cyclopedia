@@ -1,5 +1,12 @@
 const Kirk = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kirk_2012-08-31_0139Z.png/800px-Kirk_2012-08-31_0139Z.png",
+    "id": "AL112012_Kirk",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20120828",
     "time_utc": "1800",
     "record": "",

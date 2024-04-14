@@ -1,5 +1,12 @@
 const Cindy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hurricane_Cindy_2005-07-05.jpg/800px-Hurricane_Cindy_2005-07-05.jpg",
+    "id": "AL032005_Cindy",
+    "fatalaties": 3,
+    "cost_usd": 320000000
+  },
+  {
     "date": "20050703",
     "time_utc": "1800",
     "record": "",
