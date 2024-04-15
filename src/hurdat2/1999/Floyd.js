@@ -1,5 +1,12 @@
 const Floyd = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Floyd_1999-09-13_1415Z.png/800px-Floyd_1999-09-13_1415Z.png",
+    "id": "AL081999_Floyd",
+    "fatalaties": 85,
+    "cost_usd": 6500000000
+  },
+  {
     "date": "19990907",
     "time_utc": "1800",
     "record": "",

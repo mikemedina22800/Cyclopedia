@@ -1,5 +1,12 @@
 const Karl = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Karl_1998-09-26_2015Z.png/800px-Karl_1998-09-26_2015Z.png",
+    "id": "AL111998_Karl",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19980923",
     "time_utc": "1200",
     "record": "",

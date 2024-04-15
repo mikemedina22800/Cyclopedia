@@ -1,5 +1,12 @@
 const Dean = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dean_2001-08-27_1425Z.jpg/800px-Dean_2001-08-27_1425Z.jpg",
+    "id": "AL052001_Dean",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20010822",
     "time_utc": "1200",
     "record": "",

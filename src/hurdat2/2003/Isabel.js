@@ -1,5 +1,12 @@
 const Isabel = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Isabel_2003-09-11_1720Z.jpg/800px-Isabel_2003-09-11_1720Z.jpg",
+    "id": "AL132003_Isabel",
+    "fatalaties": 51,
+    "cost_usd": 3600000000
+  },
+  {
     "date": "20030906",
     "time_utc": "0000",
     "record": "",

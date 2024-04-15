@@ -1,5 +1,12 @@
 const Lenny = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lenny_1999-11-17_1815Z.png/1024px-Lenny_1999-11-17_1815Z.png",
+    "id": "AL161999_Lenny",
+    "fatalaties": 17,
+    "cost_usd": 786000000
+  },
+  {
     "date": "19991113",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Keith = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Keith_2000-10-01_0645Z.jpg/1024px-Keith_2000-10-01_0645Z.jpg",
+    "id": "AL152000_Keith",
+    "fatalaties": 68,
+    "cost_usd": 319000000
+  },
+  {
     "date": "20000928",
     "time_utc": "1800",
     "record": "",

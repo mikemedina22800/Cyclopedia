@@ -1,5 +1,12 @@
 const Georges = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Georges_1998-09-19_1745Z.png/1024px-Georges_1998-09-19_1745Z.png",
+    "id": "AL071998_Georges",
+    "fatalaties": 604,
+    "cost_usd": 9370000000
+  },
+  {
     "date": "19980915",
     "time_utc": "1200",
     "record": "",

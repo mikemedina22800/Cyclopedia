@@ -1,12 +1,12 @@
 import Allison from './Allison'
-import Unnamed_1 from './Unnamed_1'
+import Two from './Two'
 import Barry from './Barry'
 import Chantal from './Chantal'
 import Dean from './Dean'
 import Erin from './Erin'
 import Felix from './Felix'
 import Gabrielle from './Gabrielle'
-import Unnamed_2 from './Unnamed_2'
+import Nine from './Nine'
 import Humberto from './Humberto'
 import Iris from './Iris'
 import Jerry from './Jerry'
@@ -18,14 +18,14 @@ import Olga from './Olga'
 
 const hurdat2_2001 = [
    Allison,
-   Unnamed_1,
+   Two,
    Barry,
    Chantal,
    Dean,
    Erin,
    Felix,
    Gabrielle,
-   Unnamed_2,
+   Nine,
    Humberto,
    Iris,
    Jerry,

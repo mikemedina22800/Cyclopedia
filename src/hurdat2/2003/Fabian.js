@@ -1,5 +1,12 @@
 const Fabian = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Fabian_2003-09-01_1647Z.jpg/800px-Fabian_2003-09-01_1647Z.jpg",
+    "id": "AL102003_Fabian",
+    "fatalaties": 8,
+    "cost_usd": 300000000
+  },
+  {
     "date": "20030827",
     "time_utc": "1800",
     "record": "",

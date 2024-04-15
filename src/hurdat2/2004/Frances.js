@@ -1,5 +1,12 @@
 const Frances = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Frances_2004-08-31_1755Z.jpg/800px-Frances_2004-08-31_1755Z.jpg",
+    "id": "AL062004_Frances",
+    "fatalaties": 50,
+    "cost_usd": 10100000000
+  },
+  {
     "date": "20040825",
     "time_utc": "0000",
     "record": "",

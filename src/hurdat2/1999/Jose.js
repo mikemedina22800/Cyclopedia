@@ -1,5 +1,12 @@
 const Jose = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jose_10-20-1999_1515Z.png/1024px-Jose_10-20-1999_1515Z.png",
+    "id": "AL141999_Jose",
+    "fatalaties": 3,
+    "cost_usd": 0
+  },
+  {
     "date": "19991017",
     "time_utc": "1800",
     "record": "",

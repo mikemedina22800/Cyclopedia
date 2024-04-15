@@ -1,5 +1,12 @@
 const Hermine = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hermine_1998-09-19_1901Z.png/1024px-Hermine_1998-09-19_1901Z.png",
+    "id": "AL081998_Hermine",
+    "fatalaties": 2,
+    "cost_usd": 9370000000
+  },
+  {
     "date": "19980917",
     "time_utc": "1200",
     "record": "",

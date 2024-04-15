@@ -1,5 +1,12 @@
 const Peter = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Peter_Dec_9_2003_1535Z.jpg/1024px-Peter_Dec_9_2003_1535Z.jpg",
+    "id": "AL202003_Peter",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20031207",
     "time_utc": "1800",
     "record": "",

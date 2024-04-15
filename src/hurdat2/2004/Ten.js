@@ -1,4 +1,11 @@
-const Unnamed_1 = [
+const Ten = [
+  {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/TD_ten_2004.jpg/1024px-TD_ten_2004.jpg",
+    "id": "AL102004_Ten",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
   {
     "date": "20040907",
     "time_utc": "1200",
@@ -299,4 +306,4 @@ const Unnamed_1 = [
     "max_wind_radius_nm": -999
   }
 ]
-export default Unnamed_1
+export default Ten

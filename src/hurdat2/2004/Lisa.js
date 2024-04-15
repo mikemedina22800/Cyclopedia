@@ -1,5 +1,12 @@
 const Lisa = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lisa_2004-10-02_0105Z.jpg/800px-Lisa_2004-10-02_0105Z.jpg",
+    "id": "AL132004_Lisa",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20040919",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Earl = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Earl_2004-08-15.jpg/800px-Earl_2004-08-15.jpg",
+    "id": "AL052004_Earl",
+    "fatalaties": 20,
+    "cost_usd": 0
+  },
+  {
     "date": "20040813",
     "time_utc": "1800",
     "record": "",

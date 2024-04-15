@@ -1,5 +1,12 @@
 const Kate = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Hurricane_Kate_04_oct_2003_1420Z.jpg/800px-Hurricane_Kate_04_oct_2003_1420Z.jpg",
+    "id": "AL152003_Kate",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20030925",
     "time_utc": "1800",
     "record": "",

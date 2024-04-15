@@ -1,5 +1,12 @@
 const Grace = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tropical_Storm_Grace_Oct_15_1997_1915Z.jpg/1024px-Tropical_Storm_Grace_Oct_15_1997_1915Z.jpg",
+    "id": "AL091998_Grace",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19971014",
     "time_utc": "1200",
     "record": "",

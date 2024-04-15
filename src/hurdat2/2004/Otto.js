@@ -1,5 +1,12 @@
 const Otto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Otto_2004-11-30_1425Z.jpg/800px-Otto_2004-11-30_1425Z.jpg",
+    "id": "AL162004_Otto",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20041126",
     "time_utc": "0000",
     "record": "",

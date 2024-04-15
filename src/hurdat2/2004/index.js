@@ -7,7 +7,7 @@ import Frances from './Frances'
 import Gaston from './Gaston'
 import Hermine from './Hermine'
 import Ivan from './Ivan'
-import Unnamed_1 from './Unnamed_1'
+import Ten from './Ten'
 import Jeanne from './Jeanne'
 import Karl from './Karl'
 import Lisa from './Lisa'
@@ -25,7 +25,7 @@ const hurdat2_2004 = [
    Gaston,
    Hermine,
    Ivan,
-   Unnamed_1,
+   Ten,
    Jeanne,
    Karl,
    Lisa,

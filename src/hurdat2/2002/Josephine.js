@@ -1,5 +1,12 @@
 const Josephine = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Josephine2002.jpg/800px-Josephine2002.jpg",
+    "id": "AL112002_Josephine",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20020917",
     "time_utc": "1200",
     "record": "",

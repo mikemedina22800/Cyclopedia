@@ -1,5 +1,12 @@
 const Nicholas = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Nicholas_2003-10-17_1355Z.jpg/800px-Nicholas_2003-10-17_1355Z.jpg",
+    "id": "AL182003_Nicholas",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20031013",
     "time_utc": "0000",
     "record": "",

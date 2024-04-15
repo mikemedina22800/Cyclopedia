@@ -1,4 +1,11 @@
-const Unnamed_2 = [
+const Two = [
+  {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/02L_2000-06-23_1250Z.png/800px-02L_2000-06-23_1250Z.png",
+    "id": "AL022000_Two",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
   {
     "date": "20000623",
     "time_utc": "0000",
@@ -276,4 +283,5 @@ const Unnamed_2 = [
     "max_wind_radius_nm": -999
   }
 ]
-export default Unnamed_2
+
+export default Two

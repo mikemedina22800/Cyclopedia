@@ -1,5 +1,12 @@
 const Olga = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Olga_2001-11-27.jpg/800px-Olga_2001-11-27.jpg",
+    "id": "AL172001_Olga",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20011123",
     "time_utc": "0600",
     "record": "",

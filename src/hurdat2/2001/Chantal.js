@@ -1,5 +1,12 @@
 const Chantal = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chantal_2001-08-20_1612Z.jpg/800px-Chantal_2001-08-20_1612Z.jpg",
+    "id": "AL042001_Chantal",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "20010814",
     "time_utc": "1800",
     "record": "",

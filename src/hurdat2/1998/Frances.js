@@ -1,5 +1,12 @@
 const Frances = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Frances_1998-09-10_1845Z.png/1024px-Frances_1998-09-10_1845Z.png",
+    "id": "AL061998_Frances",
+    "fatalaties": 2,
+    "cost_usd": 500000000
+  },
+  {
     "date": "19980908",
     "time_utc": "1800",
     "record": "",

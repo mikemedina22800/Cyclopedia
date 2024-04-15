@@ -1,5 +1,12 @@
 const Matthew = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Tropical_Storm_Matthew_%282004%29.jpg/1024px-Tropical_Storm_Matthew_%282004%29.jpg",
+    "id": "AL142004_Matthew",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20041008",
     "time_utc": "1200",
     "record": "",

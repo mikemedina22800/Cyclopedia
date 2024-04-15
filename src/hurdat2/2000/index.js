@@ -1,12 +1,12 @@
-import Unnamed_1 from './Unnamed_1'
-import Unnamed_2 from './Unnamed_2'
+import One from './One'
+import Two from './Two'
 import Alberto from './Alberto'
-import Unnamed_3 from './Unnamed_3'
+import Four from './Four'
 import Beryl from './Beryl'
 import Chris from './Chris'
 import Debby from './Debby'
 import Ernesto from './Ernesto'
-import Unnamed_4 from './Unnamed_4'
+import Nine from './Nine'
 import Florence from './Florence'
 import Gordon from './Gordon'
 import Helene from './Helene'
@@ -16,18 +16,18 @@ import Keith from './Keith'
 import Leslie from './Leslie'
 import Michael from './Michael'
 import Nadine from './Nadine'
-import Unnamed_5 from './Unnamed_5'
+import Unnamed_1 from './Unnamed_1'
 
 const hurdat2_2000 = [
-   Unnamed_1,
-   Unnamed_2,
+   One,
+   Two,
    Alberto,
-   Unnamed_3,
+   Four,
    Beryl,
    Chris,
    Debby,
    Ernesto,
-   Unnamed_4,
+   Nine,
    Florence,
    Gordon,
    Helene,
@@ -37,7 +37,7 @@ const hurdat2_2000 = [
    Leslie,
    Michael,
    Nadine,
-   Unnamed_5,
+   Unnamed_1,
 ]
 
 export default hurdat2_2000

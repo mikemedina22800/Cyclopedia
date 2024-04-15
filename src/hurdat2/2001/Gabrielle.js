@@ -1,5 +1,12 @@
 const Gabrielle = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Gabrielle_2001-09-18_1525Z.jpg/800px-Gabrielle_2001-09-18_1525Z.jpg",
+    "id": "AL082001_Gabrielle",
+    "fatalaties": 3,
+    "cost_usd": 230000000
+  },
+  {
     "date": "20010911",
     "time_utc": "1800",
     "record": "",

@@ -4,14 +4,14 @@ import Cristobal from './Cristobal'
 import Dolly from './Dolly'
 import Edouard from './Edouard'
 import Fay from './Fay'
-import Unnamed_1 from './Unnamed_1'
+import Seven from './Seven'
 import Gustav from './Gustav'
 import Hanna from './Hanna'
 import Isidore from './Isidore'
 import Josephine from './Josephine'
 import Kyle from './Kyle'
 import Lili from './Lili'
-import Unnamed_2 from './Unnamed_2'
+import Fourteen from './Fourteen'
 
 const hurdat2_2002 = [
    Arthur,
@@ -20,14 +20,14 @@ const hurdat2_2002 = [
    Dolly,
    Edouard,
    Fay,
-   Unnamed_1,
+   Seven,
    Gustav,
    Hanna,
    Isidore,
    Josephine,
    Kyle,
    Lili,
-   Unnamed_2,
+   Fourteen,
 ]
 
 export default hurdat2_2002

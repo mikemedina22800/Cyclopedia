@@ -99,17 +99,19 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       const minPressure = Math.min(...pressure)
       setMinPressure(minPressure)
 
-      const radius34kt = stormTrack.map((point) => {
+      const windRadii = stormTrack.filter(point => point["34kt_wind_radius_nm_ne"] != -999)
+
+      const radius34kt = windRadii.map((point) => {
         return Math.max(point["34kt_wind_radius_nm_ne"], point["34kt_wind_radius_nm_nw"], point["34kt_wind_radius_nm_se"], point["34kt_wind_radius_nm_sw"])
       })
       setRadius34kt(radius34kt)
       
-      const radius50kt = stormTrack.map((point) => {
+      const radius50kt = windRadii.map((point) => {
         return Math.max(point["50kt_wind_radius_nm_ne"], point["50kt_wind_radius_nm_nw"], point["50kt_wind_radius_nm_se"], point["50kt_wind_radius_nm_sw"])
       })
       setRadius50kt(radius50kt)
 
-      const radius64kt = stormTrack.map((point) => {
+      const radius64kt = windRadii.map((point) => {
         return Math.max(point["64kt_wind_radius_nm_ne"], point["64kt_wind_radius_nm_nw"], point["64kt_wind_radius_nm_se"], point["64kt_wind_radius_nm_sw"])
       })
       setRadius64kt(radius64kt)
@@ -440,8 +442,6 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       return ACE
     })
     setSeasonACE(seasonACE)
-
-    console.log(seasonACE)
 
     const landfallingStorms = season.filter(storm => storm.map((point) => {return point.record}).includes("L"))
     const fatalStorms = season.filter(storm => storm[0].fatalaties > 0)
@@ -901,7 +901,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
           })}
         </Select>
         <div className="flex justify-between mb-10">
-          <a className="w-96 h-[31rem] bg-cover flex items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`}>
+          <a className="w-96 h-[31rem] bg-cover bg-center flex items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`}>
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
           </a>
           <div className="flex flex-col w-64 font-bold">
@@ -926,11 +926,11 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
           <Bar options={durationOptions} data={durationData}/>
           <Line className="my-5" options={intensityOptions} data={intensityData}/>
           <Line options={ACEOptions} data={ACEData}/>
-          <Line className="mt-5" options={sizeOptions} data={sizeData}/>
+          {year >= 2004 && <Line className="mt-5" options={sizeOptions} data={sizeData}/>}
         </div>
       </>}
       {seasonStats && <>
-        <h1 className="text-white mb-5 font-bold text-xl">Retired Names: {retiredNames.join(", ")}</h1>
+        {retiredNames > 0 && <h1 className="text-white mb-5 font-bold text-xl">Retired Names: {retiredNames.join(", ")}</h1>}
         <div className="bg-white p-5 rounded-md">
           <Bar options={stormsAtStrengthOptions} data={stormsAtStrengthData}/>
           <Bar className="my-5" options={maxWindOptions} data={maxWindData}/>

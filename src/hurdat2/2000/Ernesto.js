@@ -1,5 +1,12 @@
 const Ernesto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ernesto_2000-09-02_1432Z.jpg/800px-Ernesto_2000-09-02_1432Z.jpg",
+    "id": "AL082000_Ernesto",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20000901",
     "time_utc": "1200",
     "record": "",

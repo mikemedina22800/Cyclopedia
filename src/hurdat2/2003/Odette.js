@@ -1,5 +1,12 @@
 const Odette = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Odette_6_December_2003.jpg/800px-Odette_6_December_2003.jpg",
+    "id": "AL192003_Odette",
+    "fatalaties": 10,
+    "cost_usd": 0
+  },
+  {
     "date": "20031204",
     "time_utc": "1200",
     "record": "",

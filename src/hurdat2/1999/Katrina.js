@@ -1,5 +1,12 @@
 const Katrina = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Katrina_10-29-1999_1915Z.png/1024px-Katrina_10-29-1999_1915Z.png",
+    "id": "AL151999_Katrina",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19991028",
     "time_utc": "1800",
     "record": "",

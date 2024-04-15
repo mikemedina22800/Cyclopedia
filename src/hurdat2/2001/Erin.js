@@ -1,5 +1,12 @@
 const Erin = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hurricane_Erin_09_sept_2001_1527Z.jpg/800px-Hurricane_Erin_09_sept_2001_1527Z.jpg",
+    "id": "AL062001_Erin",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20010901",
     "time_utc": "1800",
     "record": "",

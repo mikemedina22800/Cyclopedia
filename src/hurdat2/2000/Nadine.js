@@ -1,5 +1,12 @@
 const Nadine = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nadine2000.jpg/800px-Nadine2000.jpg",
+    "id": "AL182000_Nadine",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20001019",
     "time_utc": "1200",
     "record": "",

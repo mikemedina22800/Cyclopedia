@@ -1,5 +1,12 @@
 const Ivan = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ivan_2004-09-13_1900Z_%28alternate%29.jpg/800px-Ivan_2004-09-13_1900Z_%28alternate%29.jpg",
+    "id": "AL092004_Ivan",
+    "fatalaties": 124,
+    "cost_usd": 26100000000
+  },
+  {
     "date": "20040902",
     "time_utc": "1800",
     "record": "",

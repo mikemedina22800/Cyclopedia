@@ -1,5 +1,12 @@
 const Irene = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Irene_1999-10-18_1531Z.png/1024px-Irene_1999-10-18_1531Z.png",
+    "id": "AL131999_Irene",
+    "fatalaties": 19,
+    "cost_usd": 800000000
+  },
+  {
     "date": "19991012",
     "time_utc": "1200",
     "record": "",

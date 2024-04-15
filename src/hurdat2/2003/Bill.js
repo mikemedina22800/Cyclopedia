@@ -1,5 +1,12 @@
 const Bill = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TS_Bill_2003.jpg/800px-TS_Bill_2003.jpg",
+    "id": "AL032003_Bill",
+    "fatalaties": 4,
+    "cost_usd": 0
+  },
+  {
     "date": "20030628",
     "time_utc": "0600",
     "record": "",

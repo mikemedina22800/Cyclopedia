@@ -1,5 +1,12 @@
 const Michelle = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Michelle_2001-11-03_1845Z.jpg/1024px-Michelle_2001-11-03_1845Z.jpg",
+    "id": "AL152001_Michelle",
+    "fatalaties": 48,
+    "cost_usd": 2430000000
+  },
+  {
     "date": "20011029",
     "time_utc": "1800",
     "record": "",

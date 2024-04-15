@@ -1,5 +1,12 @@
 const Lili = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Lili_2002-10-02_1645Z_%28cropped%29.jpg/1024px-Lili_2002-10-02_1645Z_%28cropped%29.jpg",
+    "id": "AL132002_Lili",
+    "fatalaties": 15,
+    "cost_usd": 1160000000
+  },
+  {
     "date": "20020921",
     "time_utc": "1800",
     "record": "",

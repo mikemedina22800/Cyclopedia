@@ -1,5 +1,12 @@
 const Leslie = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Leslie_2000-10-06_1555Z.jpg/800px-Leslie_2000-10-06_1555Z.jpg",
+    "id": "AL162000_Leslie",
+    "fatalaties": 3,
+    "cost_usd": 950000000
+  },
+  {
     "date": "20001004",
     "time_utc": "1200",
     "record": "",

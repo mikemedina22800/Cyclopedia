@@ -1,5 +1,12 @@
 const Bonnie = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bonnie_1998-08-23_1745Z.png/1024px-Bonnie_1998-08-23_1745Z.png",
+    "id": "AL021998_Bonnie",
+    "fatalaties": 5,
+    "cost_usd": 1000000000
+  },
+  {
     "date": "19980819",
     "time_utc": "1200",
     "record": "",

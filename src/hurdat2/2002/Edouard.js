@@ -1,5 +1,12 @@
 const Edouard = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Tropical_Storm_Edouard_2002.jpg/1024px-Tropical_Storm_Edouard_2002.jpg",
+    "id": "AL052002_Edouard",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20020901",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Mindy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mindy_2003-10-10_1520Z.jpg/800px-Mindy_2003-10-10_1520Z.jpg",
+    "id": "AL172003_Mindy",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20031010",
     "time_utc": "1800",
     "record": "",

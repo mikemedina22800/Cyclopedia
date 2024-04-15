@@ -1,5 +1,12 @@
 const Humberto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hurricane_humberto_2001.jpg/1024px-Hurricane_humberto_2001.jpg",
+    "id": "AL102001_Humberto",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20010921",
     "time_utc": "1200",
     "record": "",

@@ -1,17 +1,17 @@
 import Ana from './Ana'
-import Unnamed_1 from './Unnamed_1'
+import Two from './Two'
 import Bill from './Bill'
 import Claudette from './Claudette'
 import Danny from './Danny'
-import Unnamed_2 from './Unnamed_2'
-import Unnamed_3 from './Unnamed_3'
+import Six from './Six'
+import Seven from './Seven'
 import Erika from './Erika'
-import Unnamed_4 from './Unnamed_4'
+import Nine from './Nine'
 import Fabian from './Fabian'
 import Grace from './Grace'
 import Henri from './Henri'
 import Isabel from './Isabel'
-import Unnamed_5 from './Unnamed_5'
+import Fourteen from './Fourteen'
 import Juan from './Juan'
 import Kate from './Kate'
 import Larry from './Larry'
@@ -22,19 +22,19 @@ import Peter from './Peter'
 
 const hurdat2_2003 = [
    Ana,
-   Unnamed_1,
+   Two,
    Bill,
    Claudette,
    Danny,
-   Unnamed_2,
-   Unnamed_3,
+   Six,
+   Seven,
    Erika,
-   Unnamed_4,
+   Nine,
    Fabian,
    Grace,
    Henri,
    Isabel,
-   Unnamed_5,
+   Fourteen,
    Juan,
    Kate,
    Larry,

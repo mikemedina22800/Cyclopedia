@@ -1,5 +1,12 @@
 const Nicole = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Nicole_2004-10-11_1445Z.jpg/800px-Nicole_2004-10-11_1445Z.jpg",
+    "id": "AL152004_Nicole",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20041010",
     "time_utc": "0000",
     "record": "",

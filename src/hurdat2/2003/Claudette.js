@@ -1,5 +1,12 @@
 const Claudette = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Hurricane_claudette_july_15_2003.jpg/1024px-Hurricane_claudette_july_15_2003.jpg",
+    "id": "AL042003_Claudette",
+    "fatalaties": 3,
+    "cost_usd": 181000000
+  },
+  {
     "date": "20030707",
     "time_utc": "0000",
     "record": "",

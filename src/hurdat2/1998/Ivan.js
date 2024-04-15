@@ -1,5 +1,12 @@
 const Ivan = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ivan_1998-09-26_0945Z.png/800px-Ivan_1998-09-26_0945Z.png",
+    "id": "AL091998_Ivan",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19980919",
     "time_utc": "0000",
     "record": "",

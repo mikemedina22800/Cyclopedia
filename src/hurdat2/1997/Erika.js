@@ -1,5 +1,12 @@
 const Erika = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hurricane_Erika_Sep_9_1997_1744Z.jpg/1024px-Hurricane_Erika_Sep_9_1997_1744Z.jpg",
+    "id": "AL071998_Erika",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "19970903",
     "time_utc": "0600",
     "record": "",

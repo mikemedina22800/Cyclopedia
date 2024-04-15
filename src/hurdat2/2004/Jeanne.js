@@ -1,5 +1,12 @@
 const Jeanne = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Jeanne_2004-09-26_0315Z.jpg/800px-Jeanne_2004-09-26_0315Z.jpg",
+    "id": "AL112004_Jeanne",
+    "fatalaties": 3037,
+    "cost_usd": 7940000000
+  },
+  {
     "date": "20040913",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Florence = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/HurricaneFlorence2000.jpg/1024px-HurricaneFlorence2000.jpg",
+    "id": "AL102000_Florence",
+    "fatalaties": 3,
+    "cost_usd": 0
+  },
+  {
     "date": "20000910",
     "time_utc": "1800",
     "record": "",

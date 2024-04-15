@@ -1,5 +1,12 @@
 const Mitch = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Mitch_1998-10-26_1845Z.png/800px-Mitch_1998-10-26_1845Z.png",
+    "id": "AL131998_Mitch",
+    "fatalaties": 11374,
+    "cost_usd": 6080000000
+  },
+  {
     "date": "19981022",
     "time_utc": "0000",
     "record": "",

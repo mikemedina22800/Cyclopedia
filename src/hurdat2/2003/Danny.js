@@ -1,5 +1,12 @@
 const Danny = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Danny_2003-07-19.png/1024px-Danny_2003-07-19.png",
+    "id": "AL052003_Danny",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "20030716",
     "time_utc": "1200",
     "record": "",
