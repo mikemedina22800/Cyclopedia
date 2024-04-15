@@ -58,10 +58,12 @@ function Map({year, setStormId}) {
       const hour = timeArray.slice(0,2).join('')
       const minute = timeArray.slice(-2).join('')
       const time = `${hour}:${minute}`
+      
       const lat = point.lat
       const lng = point.lng
       const coords = [lat, lng]
       positions.push(coords)
+      
       const wind = point.max_wind_kt
       let status
       let color
@@ -119,19 +121,23 @@ function Map({year, setStormId}) {
           color = 'pink'
         }
       }
+      
+      const pressure=point.min_pressure_mb
+
       let icon
       if (point.record === 'L') {
         icon = strike(color)
       } else {
         icon = dot(color)
       }
+
       return (
         <Marker key={i} position={coords} icon={icon} eventHandlers={{click: () => {setStormId(id)}}}>
           <Popup className="w-64 font-bold">
-            <h1 className="text-md">{status} {name}</h1>
+            <h1 className="text-md">{name != 'Unnamed' ? (`${status} ${name}`) : (`Unnamed ${status}`)}</h1>
             <h1 className="my-1">{date} at {time} UTC</h1>
             <h1>Maximum Wind: {wind} kt</h1>
-            <h1>Minimum Pressure: {point.min_pressure_mb} mb</h1>
+            <h1>Minimum Pressure: {pressure != -999 ? (`${pressure} mb`) : 'Unknown'}</h1>
           </Popup>
         </Marker>
       )

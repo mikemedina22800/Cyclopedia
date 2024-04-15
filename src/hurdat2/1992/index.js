@@ -1,4 +1,4 @@
-import SS_One from './SS_One'
+import Unnamed from './Unnamed'
 import One from './One'
 import Two from './Two'
 import Andrew from './Andrew'
@@ -10,7 +10,7 @@ import Earl from './Earl'
 import Frances from './Frances'
 
 const hurdat2_1992 = [
-   SS_One,
+   Unnamed,
    One,
    Two,
    Andrew,

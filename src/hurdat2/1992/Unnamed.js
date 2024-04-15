@@ -2,7 +2,7 @@ const One = [
   {
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Subtropical_Storm_One_22_apr_1992_1834Z.jpg",
-    "id": "AL001992_One",
+    "id": "AL001992_Unnamed",
     "fatalaties": 0,
     "cost_usd": 0
   },

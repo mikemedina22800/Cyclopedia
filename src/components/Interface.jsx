@@ -25,7 +25,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
   const [minPressure, setMinPressure] = useState(null)
   const [maxWindAtLandfall, setMaxWindAtLandfall] = useState(null)
   const [minPressureAtLandfall, setMinPressureAtLandfall] = useState(null)
-  const [title, setTitle] = useState(null)
+  const [status, setStatus] = useState(null)
   const [textColor, setTextColor] = useState(null)
   const [imageUrl, setImageUrl] = useState(null)
   const [daysAtStrength, setDaysAtStrength] = useState(null)
@@ -157,13 +157,13 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       const minPressureAtLandfall = Math.min(...pressureAtLandfall)
       setMinPressureAtLandfall(minPressureAtLandfall)
 
-      let title
+      let status
       let textColor
-      const status = stormTrack.map((point) => {
+      const statuses = stormTrack.map((point) => {
         return point.status
       })
-      if (status.includes("HU")) {
-        title = "Hurricane"
+      if (statuses.includes("HU")) {
+        status = "Hurricane"
         if (maxWind <= 82) {
           textColor = "text-[yellow]"
         }
@@ -180,26 +180,26 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
           textColor = "text-[pink]"
         }
       } else {
-        if (status.includes("TS")) {
-          title = "Tropical Storm"
+        if (statuses.includes("TS")) {
+          status = "Tropical Storm"
           textColor = "text-[lime]"
         } else {
-          if (status.includes("SS")) {
-            title = "Subtropical Storm"
+          if (statuses.includes("SS")) {
+            status = "Subtropical Storm"
             textColor = "text-[lightgreen]"
           } else {
-            if (status.includes("TD")) {
-              title = "Tropical Depression"
+            if (statuses.includes("TD")) {
+              status = "Tropical Depression"
               textColor = "text-[blue]"
             } else {
-              title = "Subtropical Depression"
+              status = "Subtropical Depression"
               textColor = "text-[lightblue]"
             }
           }
         }
         
       }
-      setTitle(title)
+      setStatus(status)
       setTextColor(textColor)
 
       const imageUrl = storm[0].imageUrl
@@ -905,11 +905,11 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
           </a>
           <div className="flex flex-col w-64 font-bold">
-            <h1 className={`${textColor} text-2xl mb-1 font-bold`}>{title} {name}</h1>
+            <h1 className={`${textColor} text-2xl mb-1 font-bold`}>{name != 'Unnamed' ? (`${status} ${name}`) : (`Unnamed ${status}`)}</h1>
             <h1 className="text-lg text-white font-bold mb-5">{duration}</h1>
             <div className="text-sm text-white flex flex-col gap-1">
               <h1>Maximum Wind: {maxWind} kt</h1>
-              <h1>Minimum Pressure: {minPressure} mb</h1>
+              <h1>Minimum Pressure: {minPressure != -999 ? (`${minPressure} mb`) : 'Unknown'}</h1>
               <h1>Landfalls: {landfalls}</h1>
               {landfalls > 0 && 
                 <>
@@ -937,8 +937,10 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
           <Bar options={minPressureOptions} data={minPressureData}/>
           <Bar className="my-5" options={seasonACEOptions} data={seasonACEData}/>
           <Bar options={landfallsOptions} data={landfallsData}/>
-          <Bar className="my-5" options={maxWindlandfallsOptions} data={maxWindLandfallsData}/>
-          <Bar options={minPressureLandfallsOptions} data={minPressureLandfallsData}/>
+          {landfallingStormNames.length > 0 && <>
+            <Bar className="my-5" options={maxWindlandfallsOptions} data={maxWindLandfallsData}/>
+            <Bar options={minPressureLandfallsOptions} data={minPressureLandfallsData}/>
+          </>}
           <Bar className="my-5" options={fatalatiesOptions} data={fatalatiesData}/>
           <Bar options={costOptions} data={costData}/>
         </div>
