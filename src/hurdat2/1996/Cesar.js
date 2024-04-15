@@ -1,5 +1,12 @@
 const Cesar = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Douglas_1996-08-01_1745Z.png/1024px-Douglas_1996-08-01_1745Z.png",
+    "id": "AL031996_Cesar",
+    "fatalaties": 142,
+    "cost_usd": 203000000
+  },
+  {
     "date": "19960724",
     "time_utc": "1800",
     "record": "",

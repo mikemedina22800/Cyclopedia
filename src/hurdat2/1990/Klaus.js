@@ -1,5 +1,12 @@
 const Klaus = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Klaus_1990-10-05_1401Z.png",
+    "id": "AL131990_Klaus",
+    "fatalaties": 11,
+    "cost_usd": 1000000
+  },
+  {
     "date": "19901003",
     "time_utc": "1200",
     "record": "",

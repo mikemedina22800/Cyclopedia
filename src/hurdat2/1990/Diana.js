@@ -1,5 +1,12 @@
 const Diana = [
   {
+    "retired": "true",
+    "imageUrl": "https://en.wikipedia.org/wiki/Hurricane_Diana#/media/File:Diana_1990-08-07_1801Z.png",
+    "id": "AL051990_Diana",
+    "fatalaties": 139,
+    "cost_usd": 90700000000
+  },
+  {
     "date": "19900804",
     "time_utc": "0000",
     "record": "",

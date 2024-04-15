@@ -1,5 +1,12 @@
 const Charley = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Charley_24_sept_1992_1745Z.jpg",
+    "id": "AL051992_Charley",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19920921",
     "time_utc": "1800",
     "record": "",

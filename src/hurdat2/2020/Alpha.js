@@ -4,7 +4,7 @@ const Alpha = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Alpha_2020-09-18_1410Z.jpg/800px-Alpha_2020-09-18_1410Z.jpg",
     "id": "AL232020_Alpha",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 24200000
   },
   {
     "date": "20200914",

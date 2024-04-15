@@ -4,7 +4,7 @@ const Karen = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Hurricane_Karen_13_oct_2001_1520Z.jpg/1024px-Hurricane_Karen_13_oct_2001_1520Z.jpg",
     "id": "AL132001_Karen",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 1400000
   },
   {
     "date": "20011011",

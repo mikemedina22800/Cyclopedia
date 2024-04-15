@@ -1,5 +1,12 @@
 const Luis = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Luis_1995-09-03_1645Z.png/1024px-Luis_1995-09-03_1645Z.png",
+    "id": "AL131995_Luis",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19950828",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Karen = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karen_1995-08-28_1645Z.png/1024px-Karen_1995-08-28_1645Z.png",
+    "id": "AL121995_Karen",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19950826",
     "time_utc": "1200",
     "record": "",

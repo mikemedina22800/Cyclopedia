@@ -1,5 +1,12 @@
 const Fabian = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Fabian_1991-10-15_1801Z.png",
+    "id": "AL091991_Fabian",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19911015",
     "time_utc": "0000",
     "record": "",

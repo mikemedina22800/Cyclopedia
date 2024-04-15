@@ -1,5 +1,12 @@
 const Marco = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Marco_1990-10-10_1630Z.jpg/1024px-Marco_1990-10-10_1630Z.jpg",
+    "id": "AL151990_Marco",
+    "fatalaties": 12,
+    "cost_usd": 57000000
+  },
+  {
     "date": "19901009",
     "time_utc": "1200",
     "record": "",

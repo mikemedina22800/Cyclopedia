@@ -4,7 +4,7 @@ const Earl = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Earl_1998-09-02_1745Z.png/1024px-Earl_1998-09-02_1745Z.png",
     "id": "AL051998_Earl",
     "fatalaties": 3,
-    "cost_usd": 0
+    "cost_usd": 79000000
   },
   {
     "date": "19980831",

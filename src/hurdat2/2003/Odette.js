@@ -4,7 +4,7 @@ const Odette = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Odette_6_December_2003.jpg/800px-Odette_6_December_2003.jpg",
     "id": "AL192003_Odette",
     "fatalaties": 10,
-    "cost_usd": 0
+    "cost_usd": 8000000
   },
   {
     "date": "20031204",

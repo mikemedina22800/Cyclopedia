@@ -4,7 +4,7 @@ const Karen = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Karen_2019-09-24_1800Z.jpg/800px-Karen_2019-09-24_1800Z.jpg",
     "id": "AL122019_Karen",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 3530000
   },
   {
     "date": "20190922",

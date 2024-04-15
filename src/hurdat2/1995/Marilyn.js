@@ -1,5 +1,12 @@
 const Marilyn = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Marilyn_1995-09-16_1915Z.png/1024px-Marilyn_1995-09-16_1915Z.png",
+    "id": "AL151995_Marilyn",
+    "fatalaties": 13,
+    "cost_usd": 2500000000
+  },
+  {
     "date": "19950912",
     "time_utc": "1800",
     "record": "",

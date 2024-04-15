@@ -1,5 +1,12 @@
 const Jerry = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jerry_1995-08-23_1531Z.png/800px-Jerry_1995-08-23_1531Z.png",
+    "id": "AL111995_Jerry",
+    "fatalaties": 8,
+    "cost_usd": 40000000
+  },
+  {
     "date": "19950822",
     "time_utc": "1800",
     "record": "",

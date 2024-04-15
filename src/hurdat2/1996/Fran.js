@@ -1,5 +1,12 @@
 const Fran = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fran_September_4_1996_1700Z.png/1024px-Fran_September_4_1996_1700Z.png",
+    "id": "AL061996_Fran",
+    "fatalaties": 27,
+    "cost_usd": 5000000000
+  },
+  {
     "date": "19960823",
     "time_utc": "1200",
     "record": "",

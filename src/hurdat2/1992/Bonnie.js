@@ -1,5 +1,12 @@
 const Bonnie = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bonnie_1992-09-21_1830Z.png/1024px-Bonnie_1992-09-21_1830Z.png",
+    "id": "AL041992_Bonnie",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "19920917",
     "time_utc": "1800",
     "record": "",

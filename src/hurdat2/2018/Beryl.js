@@ -4,7 +4,7 @@ const Beryl = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Beryl_2018-07-06_1350Z.jpg/1024px-Beryl_2018-07-06_1350Z.jpg",
     "id": "AL022018_Beryl",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 1000000
   },
   {
     "date": "20180704",

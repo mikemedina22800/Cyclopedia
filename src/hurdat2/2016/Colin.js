@@ -4,7 +4,7 @@ const Colin = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Colin_2016-06-06_1620Z.jpg/800px-Colin_2016-06-06_1620Z.jpg",
     "id": "AL032016_Colin",
     "fatalaties": 6,
-    "cost_usd": 0
+    "cost_usd": 1040000
   },
   {
     "date": "20160605",

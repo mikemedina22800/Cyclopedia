@@ -4,7 +4,7 @@ const Larry = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Larry_2003-10-03_1700Z.jpg/800px-Larry_2003-10-03_1700Z.jpg",
     "id": "AL162003_Larry",
     "fatalaties": 5,
-    "cost_usd": 0
+    "cost_usd": 53600000
   },
   {
     "date": "20030927",

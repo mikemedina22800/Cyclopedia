@@ -1,5 +1,12 @@
 const Floyd = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Floyd_1993-09-09_1801Z.png",
+    "id": "AL071993_Floyd",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19930907",
     "time_utc": "1200",
     "record": "",

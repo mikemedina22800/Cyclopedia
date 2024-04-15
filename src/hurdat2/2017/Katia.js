@@ -4,7 +4,7 @@ const Katia = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Katia_2017-09-08_1930Z.jpg/800px-Katia_2017-09-08_1930Z.jpg",
     "id": "AL122017_Karia",
     "fatalaties": 3,
-    "cost_usd": 0
+    "cost_usd": 3260000
   },
   {
     "date": "20170905",

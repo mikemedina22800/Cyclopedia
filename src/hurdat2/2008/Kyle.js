@@ -4,7 +4,7 @@ const Kyle = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Kyle_2008-09-27_1800Z.jpg/800px-Kyle_2008-09-27_1800Z.jpg",
     "id": "AL112008_Kyle",
     "fatalaties": 8,
-    "cost_usd": 0
+    "cost_usd": 57100000
   },
   {
     "date": "20080925",

@@ -1,5 +1,12 @@
 const Danielle = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/09-25-1992-1731z-Danielle.png",
+    "id": "AL061992_Danielle",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "19920922",
     "time_utc": "1200",
     "record": "",

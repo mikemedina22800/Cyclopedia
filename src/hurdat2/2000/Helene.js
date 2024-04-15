@@ -4,7 +4,7 @@ const Helene = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Helene_2000-09-25_1435Z.jpg/800px-Helene_2000-09-25_1435Z.jpg",
     "id": "AL122000_Helene",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 16000000
   },
   {
     "date": "20000915",

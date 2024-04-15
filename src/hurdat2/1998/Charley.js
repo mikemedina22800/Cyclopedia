@@ -4,7 +4,7 @@ const Charley = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Charley_1998-08-21_1800Z.png/1024px-Charley_1998-08-21_1800Z.png",
     "id": "AL031998_Charlie",
     "fatalaties": 26,
-    "cost_usd": 0
+    "cost_usd": 50000000
   },
   {
     "date": "19980821",

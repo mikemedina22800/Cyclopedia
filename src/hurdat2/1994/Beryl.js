@@ -1,5 +1,12 @@
 const Beryl = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Beryl_1994-08-15_1448Z.png/1024px-Beryl_1994-08-15_1448Z.png",
+    "id": "AL031994_Beryl",
+    "fatalaties": 5,
+    "cost_usd": 74200000
+  },
+  {
     "date": "19940814",
     "time_utc": "1200",
     "record": "",

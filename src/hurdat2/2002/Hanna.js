@@ -4,7 +4,7 @@ const Hanna = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hanna_2002-09-13.jpg/1024px-Hanna_2002-09-13.jpg",
     "id": "AL092002_Hanna",
     "fatalaties": 3,
-    "cost_usd": 0
+    "cost_usd": 20000000
   },
   {
     "date": "20020912",

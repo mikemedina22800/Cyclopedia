@@ -1,5 +1,12 @@
 const Edouard = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Edouard_1996-08-25_1215Z.jpg/1024px-Edouard_1996-08-25_1215Z.jpg",
+    "id": "AL051996_Edouard",
+    "fatalaties": 2,
+    "cost_usd": 20000000
+  },
+  {
     "date": "19960819",
     "time_utc": "1800",
     "record": "",

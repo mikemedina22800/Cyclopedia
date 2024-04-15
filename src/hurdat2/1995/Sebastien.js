@@ -1,5 +1,12 @@
 const Sebastien = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sebastien_October_22_1995_1815Z.png/1024px-Sebastien_October_22_1995_1815Z.png",
+    "id": "AL201995_Sebastien",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19951020",
     "time_utc": "1200",
     "record": "",

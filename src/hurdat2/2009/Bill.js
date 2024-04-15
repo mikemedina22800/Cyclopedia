@@ -4,7 +4,7 @@ const Bill = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bill_2009-08-19_1725Z.jpg/800px-Bill_2009-08-19_1725Z.jpg",
     "id": "AL032009_Bill",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 46200000
   },
   {
     "date": "20090815",

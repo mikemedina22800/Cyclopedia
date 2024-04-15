@@ -4,7 +4,7 @@ const Gert = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Gert_09-15-1999_1715Z.png/1024px-Gert_09-15-1999_1715Z.png",
     "id": "AL091999_Gert",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 1900000
   },
   {
     "date": "19990911",

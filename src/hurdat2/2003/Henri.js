@@ -4,7 +4,7 @@ const Henri = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Henri_2003-09-05_1630Z.jpg/800px-Henri_2003-09-05_1630Z.jpg",
     "id": "AL122003_Henri",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 19600000
   },
   {
     "date": "20030903",

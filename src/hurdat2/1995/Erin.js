@@ -1,5 +1,12 @@
 const Erin = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Erin_1995-08-03_1359Z.png/1024px-Erin_1995-08-03_1359Z.png",
+    "id": "AL051995_Erin",
+    "fatalaties": 16,
+    "cost_usd": 700000000
+  },
+  {
     "date": "19950731",
     "time_utc": "0000",
     "record": "",

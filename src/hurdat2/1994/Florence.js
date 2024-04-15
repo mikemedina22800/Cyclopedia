@@ -1,5 +1,12 @@
 const Florence = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Hurricane_Florence_Nov_7_1994_1451Z.jpg/1024px-Hurricane_Florence_Nov_7_1994_1451Z.jpg",
+    "id": "AL111994_Florence",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19941102",
     "time_utc": "0000",
     "record": "",

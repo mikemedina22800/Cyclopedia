@@ -1,5 +1,12 @@
 const Kyle = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kyle_1996-10-11_1845Z.png/800px-Kyle_1996-10-11_1845Z.png",
+    "id": "AL111996_Kyle",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19961011",
     "time_utc": "1200",
     "record": "",

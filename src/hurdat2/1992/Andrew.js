@@ -1,5 +1,12 @@
 const Andrew = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Andrew_1992-08-23_1231Z_%28Cropped%29.png/1024px-Andrew_1992-08-23_1231Z_%28Cropped%29.png",
+    "id": "AL031992_Andrew",
+    "fatalaties": 65,
+    "cost_usd": 27300000000
+  },
+  {
     "date": "19920816",
     "time_utc": "1800",
     "record": "",

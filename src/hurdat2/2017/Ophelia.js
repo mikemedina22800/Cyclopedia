@@ -4,7 +4,7 @@ const Ophelia = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ophelia_2017-10-14_1454Z.jpg/800px-Ophelia_2017-10-14_1454Z.jpg",
     "id": "AL162017_Ophelia",
     "fatalaties": 3,
-    "cost_usd": 0
+    "cost_usd": 8770000
   },
   {
     "date": "20171006",

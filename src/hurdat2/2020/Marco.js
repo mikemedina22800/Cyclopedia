@@ -4,7 +4,7 @@ const Marco = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Marco_2020-08-23_1940Z.jpg/800px-Marco_2020-08-23_1940Z.jpg",
     "id": "AL142020_Marco",
     "fatalaties": 0,
-    "cost_usd": 0,
+    "cost_usd": 35000000,
   },
   {
     "date": "20200820",

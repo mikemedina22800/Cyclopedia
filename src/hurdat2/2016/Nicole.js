@@ -4,7 +4,7 @@ const Nicole = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Nicole_2016-10-13_0555Z.jpg/800px-Nicole_2016-10-13_0555Z.jpg",
     "id": "AL152016_Nicole",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 15000000
   },
   {
     "date": "20161004",

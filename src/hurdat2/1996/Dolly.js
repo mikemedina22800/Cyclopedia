@@ -1,5 +1,12 @@
 const Dolly = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Dolly_1996-08-20_1800Z.png/1024px-Dolly_1996-08-20_1800Z.png",
+    "id": "AL041996_Dolly",
+    "fatalaties": 14,
+    "cost_usd": 0
+  },
+  {
     "date": "19960819",
     "time_utc": "0600",
     "record": "",

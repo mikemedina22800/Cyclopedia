@@ -3,8 +3,8 @@ const Ida = [
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hurricane_Ida_2009-11-08_16-30_UTC.jpg/800px-Hurricane_Ida_2009-11-08_16-30_UTC.jpg",
     "id": "AL112009_Ida",
-    "fatalaties": 4,
-    "cost_usd": 0
+    "fatalaties": 10,
+    "cost_usd": 311400000
   },
   {
     "date": "20091104",

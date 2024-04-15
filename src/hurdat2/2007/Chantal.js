@@ -4,7 +4,7 @@ const Chantal = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Chantal_2007-07-31_1710Z.jpg/800px-Chantal_2007-07-31_1710Z.jpg",
     "id": "AL032007_Chantal",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 24300000
   },
   {
     "date": "20070731",

@@ -1,4 +1,4 @@
-import Unnamed_1 from './Unnamed_1'
+import One from './One'
 import Arlene from './Arlene'
 import Bret from './Bret'
 import Cindy from './Cindy'
@@ -7,10 +7,10 @@ import Dennis from './Dennis'
 import Floyd from './Floyd'
 import Gert from './Gert'
 import Harvey from './Harvey'
-import Unnamed_2 from './Unnamed_2'
+import Ten from './Ten'
 
 const hurdat2_1993 = [
-   Unnamed_1,
+   One,
    Arlene,
    Bret,
    Cindy,
@@ -19,7 +19,7 @@ const hurdat2_1993 = [
    Floyd,
    Gert,
    Harvey,
-   Unnamed_2,
+   Ten,
 ]
 
 export default hurdat2_1993

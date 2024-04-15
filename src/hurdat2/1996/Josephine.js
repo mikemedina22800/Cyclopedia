@@ -1,5 +1,12 @@
 const Josephine = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Josephine_1996-10-07_1415Z.png/1024px-Josephine_1996-10-07_1415Z.png",
+    "id": "AL101996_Josephine",
+    "fatalaties": 3,
+    "cost_usd": 130000000
+  },
+  {
     "date": "19961004",
     "time_utc": "1800",
     "record": "",

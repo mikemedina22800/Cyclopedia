@@ -1,5 +1,12 @@
 const Gert = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gert_1993-09-20_1831Z.png/1024px-Gert_1993-09-20_1831Z.png",
+    "id": "AL081993_Gert",
+    "fatalaties": 132,
+    "cost_usd": 170000000
+  },
+  {
     "date": "19930914",
     "time_utc": "1800",
     "record": "",

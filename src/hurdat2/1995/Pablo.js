@@ -1,5 +1,12 @@
 const Pablo = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pablo_1995-10-05_1545Z.png/1024px-Pablo_1995-10-05_1545Z.png",
+    "id": "AL181995_Pablo",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19951004",
     "time_utc": "1800",
     "record": "",

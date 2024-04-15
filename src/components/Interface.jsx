@@ -287,7 +287,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       const daysAtStrength = [daysAtTD, daysAtTS, daysAtH1, daysAtH2, daysAtH3, daysAtH4, daysAtH5]
       setDaysAtStrength(daysAtStrength)
 
-      const costUSD = (storm[0].cost_usd/1000000000).toFixed(1)
+      const costUSD = (storm[0].cost_usd/1000000000).toFixed(3)
       setCostUSD(costUSD)
   
       const fatalaties = storm[0].fatalaties.toLocaleString()
@@ -828,7 +828,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
     labels: costlyStormNames,
     datasets: [
       {
-        data: seasonCostUSD?.map((cost) => {return cost.toFixed(1)}),
+        data: seasonCostUSD?.map((cost) => {return cost.toFixed(3)}),
         borderColor: "green",
         backgroundColor: "green",
       },
@@ -843,7 +843,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       },
       title: {
         display: true,
-        text: `Cost Estimate (Billion USD): ${sum(seasonCostUSD).toFixed(1)}`,
+        text: `Cost Estimate (Billion USD): ${sum(seasonCostUSD).toFixed(3)}`,
       },
     },
   };
@@ -901,7 +901,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
           })}
         </Select>
         <div className="flex justify-between mb-10">
-          <a className="w-96 h-[31rem] bg-cover bg-center flex items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`}>
+          <a className="w-96 h-[31rem] bg-cover bg-center flex flex-col items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={year > 1993 ? (`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`) : ('#')}>
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
           </a>
           <div className="flex flex-col w-64 font-bold">
@@ -930,7 +930,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
         </div>
       </>}
       {seasonStats && <>
-        {retiredNames > 0 && <h1 className="text-white mb-5 font-bold text-xl">Retired Names: {retiredNames.join(", ")}</h1>}
+        {retiredNames.length > 0 && <h1 className="text-white mb-5 font-bold text-xl">Retired Names: {retiredNames.join(", ")}</h1>}
         <div className="bg-white p-5 rounded-md">
           <Bar options={stormsAtStrengthOptions} data={stormsAtStrengthData}/>
           <Bar className="my-5" options={maxWindOptions} data={maxWindData}/>

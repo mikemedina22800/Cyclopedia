@@ -4,7 +4,7 @@ const Jose = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Jose_2005-08-23_Terra.jpg/1024px-Jose_2005-08-23_Terra.jpg",
     "id": "AL112005_Jose",
     "fatalaties": 16,
-    "cost_usd": 0
+    "cost_usd": 45000000
   },
   {
     "date": "20050822",

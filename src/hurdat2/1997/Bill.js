@@ -2,7 +2,7 @@ const Bill = [
   {
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Hurricane_Bill_Jul_12_1997_1515Z.jpg/1024px-Hurricane_Bill_Jul_12_1997_1515Z.jpg",
-    "id": "AL031998_Bill",
+    "id": "AL031997_Bill",
     "fatalaties": 0,
     "cost_usd": 0
   },

@@ -1,5 +1,12 @@
 const Dennis = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Tropical_Storm_Dennis_%281993%29.jpg",
+    "id": "AL051993_Dennis",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19930823",
     "time_utc": "1200",
     "record": "",

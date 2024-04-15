@@ -1,5 +1,12 @@
 const Cindy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Cindy_1993-08-16_1501Z.png/1024px-Cindy_1993-08-16_1501Z.png",
+    "id": "AL041993_Cindy",
+    "fatalaties": 4,
+    "cost_usd": 19000000
+  },
+  {
     "date": "19930814",
     "time_utc": "1200",
     "record": "",

@@ -4,7 +4,7 @@ const Arlene = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Arlene_11_june_2005_1645Z.jpg/800px-Arlene_11_june_2005_1645Z.jpg",
     "id": "AL012005_Arlene",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 11800000
   },
   {
     "date": "20050608",

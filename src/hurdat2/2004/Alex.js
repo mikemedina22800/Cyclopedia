@@ -4,7 +4,7 @@ const Alex = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Alex_2004-08-05_1245Z.png/800px-Alex_2004-08-05_1245Z.png",
     "id": "AL012004_Alex",
     "fatalaties": 1,
-    "cost_usd": 0
+    "cost_usd": 7500000
   },
   {
     "date": "20040731",

@@ -1,5 +1,12 @@
 const Chantal = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Tropical_Storm_Chantal_Jul_16_1995_1815Z.jpg/1024px-Tropical_Storm_Chantal_Jul_16_1995_1815Z.jpg",
+    "id": "AL031995_Chantal",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19950712",
     "time_utc": "0000",
     "record": "",

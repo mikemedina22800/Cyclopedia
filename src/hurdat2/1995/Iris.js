@@ -1,5 +1,12 @@
 const Iris = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Iris_2_September_1995.jpg",
+    "id": "AL101995_Iris",
+    "fatalaties": 5,
+    "cost_usd": 0
+  },
+  {
     "date": "19950822",
     "time_utc": "1200",
     "record": "",

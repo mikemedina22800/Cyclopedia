@@ -4,7 +4,7 @@ const Emily = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Emily_2011-08-03_0240Z.jpg/800px-Emily_2011-08-03_0240Z.jpg",
     "id": "AL052011_Emily",
     "fatalaties": 5,
-    "cost_usd": 0
+    "cost_usd": 5000000
   },
   {
     "date": "20110802",

@@ -1,5 +1,12 @@
 const Gordon = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Gordon_1994-11-18_1515Z.png/1024px-Gordon_1994-11-18_1515Z.png",
+    "id": "AL121994_Gordon",
+    "fatalaties": 1152,
+    "cost_usd": 594000000
+  },
+  {
     "date": "19941108",
     "time_utc": "1200",
     "record": "",

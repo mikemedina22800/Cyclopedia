@@ -1,5 +1,12 @@
 const Arthur = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Arthur_1996-06-19_1215Z.png/800px-Arthur_1996-06-19_1215Z.png",
+    "id": "AL011996_Arthur",
+    "fatalaties": 0,
+    "cost_usd": 1000000
+  },
+  {
     "date": "19960617",
     "time_utc": "1800",
     "record": "",

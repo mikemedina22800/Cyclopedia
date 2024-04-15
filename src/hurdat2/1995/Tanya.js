@@ -1,5 +1,12 @@
 const Tanya = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Tanya_-_October_31_1995.png/1024px-Tanya_-_October_31_1995.png",
+    "id": "AL211995_Tanya",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "19951027",
     "time_utc": "0000",
     "record": "",

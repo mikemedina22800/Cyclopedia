@@ -1,5 +1,12 @@
 const Hortense = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Hortense_27_August_1990.jpg",
+    "id": "AL091990_Hortense",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19900825",
     "time_utc": "0000",
     "record": "",

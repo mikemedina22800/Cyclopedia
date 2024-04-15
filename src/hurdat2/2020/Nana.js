@@ -4,7 +4,7 @@ const Nana = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Nana_2020-09-03_0725Z_%28colored%29.jpg/800px-Nana_2020-09-03_0725Z_%28colored%29.jpg",
     "id": "AL152020_Nana",
     "fatalaties": 0,
-    "cost_usd": 0,
+    "cost_usd": 20000000,
   },
   {
     "date": "20200901",

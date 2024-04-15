@@ -1,5 +1,12 @@
 const Barry = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tropical_Storm_Barry_Jul_7_1995_1815Z.jpg/1024px-Tropical_Storm_Barry_Jul_7_1995_1815Z.jpg",
+    "id": "AL021995_Barry",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19950705",
     "time_utc": "0600",
     "record": "",

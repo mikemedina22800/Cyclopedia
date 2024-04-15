@@ -4,7 +4,7 @@ const Gordon = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Gordon_2000-09-16_1620Z.jpg/800px-Gordon_2000-09-16_1620Z.jpg",
     "id": "AL112000_Gordon",
     "fatalaties": 26,
-    "cost_usd": 0
+    "cost_usd": 10800000
   },
   {
     "date": "20000914",

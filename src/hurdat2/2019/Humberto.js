@@ -4,7 +4,7 @@ const Humberto = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Humberto_2019-09-18_1535Z.jpg/800px-Humberto_2019-09-18_1535Z.jpg",
     "id": "AL092019_Humberto",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 25000000
   },
   {
     "date": "20190912",

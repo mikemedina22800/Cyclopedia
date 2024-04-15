@@ -4,7 +4,7 @@ const Cindy = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Cindy_2017-06-21_1645Z.jpg/800px-Cindy_2017-06-21_1645Z.jpg",
     "id": "AL032017_Cindy",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 25000000
   },
   {
     "date": "20170619",

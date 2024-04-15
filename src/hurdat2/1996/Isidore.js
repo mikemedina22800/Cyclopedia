@@ -1,5 +1,12 @@
 const Isidore = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Isidore_1996-09-27_1615Z.png/1024px-Isidore_1996-09-27_1615Z.png",
+    "id": "AL091996_Isidore",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19960924",
     "time_utc": "1200",
     "record": "",

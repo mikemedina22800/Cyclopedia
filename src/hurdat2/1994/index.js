@@ -1,27 +1,27 @@
 import Alberto from './Alberto'
-import Unnamed_1 from './Unnamed_1'
+import Two from './Two'
 import Beryl from './Beryl'
 import Chris from './Chris'
-import Unnamed_2 from './Unnamed_2'
+import Five from './Five'
 import Debby from './Debby'
 import Ernesto from './Ernesto'
-import Unnamed_3 from './Unnamed_3'
-import Unnamed_4 from './Unnamed_4'
-import Unnamed_5 from './Unnamed_5'
+import Eight from './Eight'
+import Nine from './Nine'
+import Ten from './Ten'
 import Florence from './Florence'
 import Gordon from './Gordon'
 
 const hurdat2_1994 = [
    Alberto,
-   Unnamed_1,
+   Two,
    Beryl,
    Chris,
-   Unnamed_2,
+   Five,
    Debby,
    Ernesto,
-   Unnamed_3,
-   Unnamed_4,
-   Unnamed_5,
+   Eight,
+   Nine,
+   Ten,
    Florence,
    Gordon,
 ]

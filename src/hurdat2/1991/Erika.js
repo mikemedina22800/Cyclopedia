@@ -1,5 +1,12 @@
 const Erika = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Erika_10_September_1991.jpg",
+    "id": "AL081991_Erika",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19910908",
     "time_utc": "1800",
     "record": "",

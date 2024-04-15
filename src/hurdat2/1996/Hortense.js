@@ -1,5 +1,12 @@
 const Hortense = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hortense_1996-09-12_2145Z.png/800px-Hortense_1996-09-12_2145Z.png",
+    "id": "AL081996_Hortense",
+    "fatalaties": 39,
+    "cost_usd": 158000000
+  },
+  {
     "date": "19960903",
     "time_utc": "1200",
     "record": "",

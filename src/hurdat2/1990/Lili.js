@@ -1,5 +1,12 @@
 const Lili = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Lili_1990-10-11_1630Z.png/1024px-Lili_1990-10-11_1630Z.png",
+    "id": "AL141990_Lili",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19901006",
     "time_utc": "0600",
     "record": "",

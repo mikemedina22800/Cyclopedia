@@ -4,7 +4,7 @@ const Julia = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Julia_2016-09-13_1825Z.jpg/800px-Julia_2016-09-13_1825Z.jpg",
     "id": "AL112016_Julia",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 6130000
   },
   {
     "date": "20160913",

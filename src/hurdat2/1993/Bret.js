@@ -1,5 +1,12 @@
 const Bret = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bret_1993-08-06_1431Z.png",
+    "id": "AL031993_Bret",
+    "fatalaties": 213,
+    "cost_usd": 35700000
+  },
+  {
     "date": "19930804",
     "time_utc": "1200",
     "record": "",

@@ -4,7 +4,7 @@ const Bonnie = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/TS_Bonnie_11_aug_2004_1650Z.jpg/800px-TS_Bonnie_11_aug_2004_1650Z.jpg",
     "id": "AL022004_Bonnie",
     "fatalaties": 4,
-    "cost_usd": 0
+    "cost_usd": 1270000
   },
   {
     "date": "20040803",

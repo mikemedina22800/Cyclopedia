@@ -4,7 +4,7 @@ const Fernand = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Fernand_2019-09-03_1930Z.jpg/800px-Fernand_2019-09-03_1930Z.jpg",
     "id": "AL072019_Fernand",
     "fatalaties": 1,
-    "cost_usd": 0
+    "cost_usd": 11300000
   },
   {
     "date": "20190903",

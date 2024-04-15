@@ -4,7 +4,7 @@ const Olga = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Olga_2007-12-11_0208Z.jpg/800px-Olga_2007-12-11_0208Z.jpg",
     "id": "AL172007_Olga",
     "fatalaties": 40,
-    "cost_usd": 0
+    "cost_usd": 45000000
   },
   {
     "date": "20071210",

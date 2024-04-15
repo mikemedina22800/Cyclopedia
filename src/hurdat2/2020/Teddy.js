@@ -4,7 +4,7 @@ const Teddy = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Teddy_2020-09-17_2025Z.jpg/800px-Teddy_2020-09-17_2025Z.jpg",
     "id": "AL202020_Teddy",
     "fatalaties": 3,
-    "cost_usd": 0,
+    "cost_usd": 35000000,
   },
   {
     "date": "20200912",

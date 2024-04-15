@@ -2,7 +2,7 @@ const Fabian = [
   {
     "retired": "false",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tropical_Storm_Fabian_Oct_6_1997_1815Z.jpg/1024px-Tropical_Storm_Fabian_Oct_6_1997_1815Z.jpg",
-    "id": "AL081998_Fabian",
+    "id": "AL081997_Fabian",
     "fatalaties": 0,
     "cost_usd": 0
   },

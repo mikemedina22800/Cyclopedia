@@ -1,5 +1,12 @@
 const Opal = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Opal_1995-10-04_1415Z.png/800px-Opal_1995-10-04_1415Z.png",
+    "id": "AL171995_Opal",
+    "fatalaties": 63,
+    "cost_usd": 4700000000
+  },
+  {
     "date": "19950927",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Roxanne = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/10-10-1995-Roxanne-Remake.png/800px-10-10-1995-Roxanne-Remake.png",
+    "id": "AL191995_Roxanne",
+    "fatalaties": 29,
+    "cost_usd": 1500000000
+  },
+  {
     "date": "19951007",
     "time_utc": "1800",
     "record": "",

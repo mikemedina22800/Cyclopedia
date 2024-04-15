@@ -4,7 +4,7 @@ const Arthur = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Arthur_31_May_2008.jpg/800px-Arthur_31_May_2008.jpg",
     "id": "AL012008_Arthur",
     "fatalaties": 9,
-    "cost_usd": 0
+    "cost_usd": 78000000
   },
   {
     "date": "20080531",

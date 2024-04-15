@@ -1,5 +1,12 @@
 const Bertha = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Bertha_1990-08-01_1601Z.png/1024px-Bertha_1990-08-01_1601Z.png",
+    "id": "AL031990_Bertha",
+    "fatalaties": 9,
+    "cost_usd": 3910000
+  },
+  {
     "date": "19900724",
     "time_utc": "1200",
     "record": "",

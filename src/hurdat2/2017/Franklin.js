@@ -4,7 +4,7 @@ const Franklin = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Franklin_2017-08-09_2335Z.jpg/800px-Franklin_2017-08-09_2335Z.jpg",
     "id": "AL072017_Franklin",
     "fatalaties": 0,
-    "cost_usd": 0
+    "cost_usd": 15000000
   },
   {
     "date": "20170806",

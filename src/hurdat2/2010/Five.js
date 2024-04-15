@@ -4,7 +4,7 @@ const Five = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/05L_2010-08-10_1840Z.jpg/800px-05L_2010-08-10_1840Z.jpg",
     "id": "AL052010_Five",
     "fatalaties": 2,
-    "cost_usd": 0
+    "cost_usd": 1000000
   },
   {
     "date": "20100810",

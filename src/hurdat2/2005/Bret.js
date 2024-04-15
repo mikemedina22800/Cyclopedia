@@ -4,7 +4,7 @@ const Bret = [
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Tsbret2005.jpg",
     "id": "AL022005_Bret",
     "fatalaties": 3,
-    "cost_usd": 0
+    "cost_usd": 9300000
   },
   {
     "date": "20050628",

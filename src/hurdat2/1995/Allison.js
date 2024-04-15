@@ -1,5 +1,12 @@
 const Allison = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Allison_1995-06-04_1631Z.png/1024px-Allison_1995-06-04_1631Z.png",
+    "id": "AL011995_Allison",
+    "fatalaties": 1,
+    "cost_usd": 1700000
+  },
+  {
     "date": "19950603",
     "time_utc": "0000",
     "record": "",
