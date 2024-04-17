@@ -1,5 +1,12 @@
 const Juliet = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Juliet_1978-10-09_1333Z.jpg",
+    "id": "_Juliet",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19781007",
     "time_utc": "1800",
     "record": "",

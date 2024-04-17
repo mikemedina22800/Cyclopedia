@@ -1,5 +1,12 @@
 const Anna = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/AnnamiddayJuly311976.png/1024px-AnnamiddayJuly311976.png",
+    "id": "_Anna",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19760728",
     "time_utc": "1800",
     "record": "",

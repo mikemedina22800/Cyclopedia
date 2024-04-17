@@ -1,5 +1,12 @@
 const Dorothy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Dorothy1977sep280631z.png",
+    "id": "_Dorothy",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19770926",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Ella = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Ella_1978-09-01_1800Z.png/1024px-Ella_1978-09-01_1800Z.png",
+    "id": "_Ella",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19780830",
     "time_utc": "0000",
     "record": "",

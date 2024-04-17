@@ -1,5 +1,12 @@
 const Gabrielle = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Gabrielle_1989-09-06_2000Z.png/800px-Gabrielle_1989-09-06_2000Z.png",
+    "id": "AL101989_Gabrielle",
+    "fatalaties": 9,
+    "cost_usd": 0
+  },
+  {
     "date": "19890830",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Hope = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hope_1978-09-18_1400Z.png/800px-Hope_1978-09-18_1400Z.png",
+    "id": "_Hope",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19780912",
     "time_utc": "0000",
     "record": "",

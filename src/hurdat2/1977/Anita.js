@@ -1,5 +1,12 @@
 const Anita = [
   {
+    "retired": "true",
+    "imageUrl": "https://www.weather.gov/images/lch/events/1977Anita/19770901-2301Z-1kmVIS.jpg",
+    "id": "_Anita",
+    "fatalaties": 11,
+    "cost_usd": 956800000
+  },
+  {
     "date": "19770829",
     "time_utc": "1200",
     "record": "",

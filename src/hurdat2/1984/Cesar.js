@@ -1,5 +1,12 @@
 const Cesar = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Cesar_1984-09-01_2000Z.png/800px-Cesar_1984-09-01_2000Z.png",
+    "id": "_Cesar",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19840831",
     "time_utc": "0000",
     "record": "",

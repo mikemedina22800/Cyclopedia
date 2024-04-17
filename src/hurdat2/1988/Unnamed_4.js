@@ -1,5 +1,12 @@
 const Unnamed_4 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/06L_1988-08-21_1400Z.png/1024px-06L_1988-08-21_1400Z.png",
+    "id": "AL061988_Six",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19880820",
     "time_utc": "1200",
     "record": "",

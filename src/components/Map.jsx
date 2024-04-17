@@ -85,7 +85,7 @@ function Map({year, setStormId}) {
       }
       if (point.status === 'SD') {
         status = "Subtropical Depression"
-        color = "lightblue"
+        color = "aqua"
       }
       if (point.status === 'SS') {
         status = "Subtropical Storm"
@@ -121,9 +121,9 @@ function Map({year, setStormId}) {
           color = 'pink'
         }
       }
-      
-      const pressure=point.min_pressure_mb
 
+      const pressure = point.min_pressure_mb
+      
       let icon
       if (point.record === 'L') {
         icon = strike(color)
@@ -134,7 +134,7 @@ function Map({year, setStormId}) {
       return (
         <Marker key={i} position={coords} icon={icon} eventHandlers={{click: () => {setStormId(id)}}}>
           <Popup className="w-64 font-bold">
-            <h1 className="text-md">{name != 'Unnamed' ? (`${status} ${name}`) : (`Unnamed ${status}`)}</h1>
+            <h1 className="text-md">{!name.includes('Unnamed') && !name.includes('Unnumbered') ? (`${status} ${name}`) : (`${name} ${status}`)}</h1>
             <h1 className="my-1">{date} at {time} UTC</h1>
             <h1>Maximum Wind: {wind} kt</h1>
             <h1>Minimum Pressure: {pressure != -999 ? (`${pressure} mb`) : 'Unknown'}</h1>

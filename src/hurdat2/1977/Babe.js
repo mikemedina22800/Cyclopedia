@@ -1,5 +1,12 @@
 const Babe = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Babe1977sep51230z.png/1024px-Babe1977sep51230z.png",
+    "id": "_Babe",
+    "fatalaties": 0,
+    "cost_usd": 13000000
+  },
+  {
     "date": "19770903",
     "time_utc": "0600",
     "record": "",

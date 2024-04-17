@@ -1,5 +1,12 @@
 const Frieda = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Tropical_Storm_Frieda_%281977%29.JPG",
+    "id": "_Frieda",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19771016",
     "time_utc": "1800",
     "record": "",

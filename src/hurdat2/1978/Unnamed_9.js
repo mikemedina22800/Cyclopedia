@@ -1,5 +1,12 @@
 const Unnamed_9 = [
   {
+    "retired": "false",
+    "imageUrl": "",
+    "id": "_Twelve",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19780918",
     "time_utc": "1200",
     "record": "",

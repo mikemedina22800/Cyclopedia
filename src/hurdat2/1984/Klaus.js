@@ -1,5 +1,12 @@
 const Klaus = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Klaus_1984-11-09_1500Z.png/1024px-Klaus_1984-11-09_1500Z.png",
+    "id": "_Klaus",
+    "fatalaties": 2,
+    "cost_usd": 152000000
+  },
+  {
     "date": "19841105",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Unnamed_6 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Td08aof1979Aug2715z.jpg",
+    "id": "_Eight",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19790825",
     "time_utc": "1200",
     "record": "",

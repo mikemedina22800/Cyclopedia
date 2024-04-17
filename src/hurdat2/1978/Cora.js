@@ -1,5 +1,12 @@
 const Cora = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Cora_1978-08-08_1600Z.jpg/1024px-Cora_1978-08-08_1600Z.jpg",
+    "id": "_Cora",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "19780807",
     "time_utc": "1200",
     "record": "",

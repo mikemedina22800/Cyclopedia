@@ -1,5 +1,12 @@
 const Allen = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Allen_1980-08-07_1600Z.png/800px-Allen_1980-08-07_1600Z.png",
+    "id": "_Allen",
+    "fatalaties": 269,
+    "cost_usd": 1570000000
+  },
+  {
     "date": "19800731",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Gert = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hurricane_Gert_Sept_11_1981_1856Z.jpg",
+    "id": "_Gert",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19810907",
     "time_utc": "0000",
     "record": "",

@@ -1,5 +1,12 @@
 const Bret = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bret_1981-06-30_1700Z.png/800px-Bret_1981-06-30_1700Z.png",
+    "id": "_Bret",
+    "fatalaties": 1,
+    "cost_usd": 0
+  },
+  {
     "date": "19810629",
     "time_utc": "1200",
     "record": "",

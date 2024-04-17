@@ -1,5 +1,12 @@
 const Emmy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Hurricane_Emmy_%281976%29.JPG",
+    "id": "_Emmy",
+    "fatalaties": 68,
+    "cost_usd": 0
+  },
+  {
     "date": "19760820",
     "time_utc": "1200",
     "record": "",

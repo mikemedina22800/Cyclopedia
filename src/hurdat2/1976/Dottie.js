@@ -1,5 +1,12 @@
 const Dottie = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Dottieaug211976.png/1024px-Dottieaug211976.png",
+    "id": "_Dotte",
+    "fatalaties": 4,
+    "cost_usd": 0
+  },
+  {
     "date": "19760818",
     "time_utc": "0000",
     "record": "",

@@ -1,5 +1,12 @@
 const Dennis = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Dennis_11_sept_1987_1719Z.jpg",
+    "id": "_Dennis",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19870908",
     "time_utc": "1800",
     "record": "",

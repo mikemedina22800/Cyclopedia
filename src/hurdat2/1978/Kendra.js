@@ -1,5 +1,12 @@
 const Kendra = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/KendraOctober291978.gif/800px-KendraOctober291978.gif",
+    "id": "_Kendra",
+    "fatalaties": 0,
+    "cost_usd": 6000000
+  },
+  {
     "date": "19781028",
     "time_utc": "1800",
     "record": "",

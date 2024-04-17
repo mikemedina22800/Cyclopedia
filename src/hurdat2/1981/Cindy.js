@@ -1,5 +1,12 @@
 const Cindy = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cindy_1981-08-04_1630Z.png/1024px-Cindy_1981-08-04_1630Z.png",
+    "id": "_Cindy",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19810802",
     "time_utc": "1800",
     "record": "",

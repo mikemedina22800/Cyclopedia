@@ -1,5 +1,12 @@
 const Gilbert = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gilbert_1988-09-13_2200Z.png/800px-Gilbert_1988-09-13_2200Z.png",
+    "id": "AL131988_Gilbert",
+    "fatalaties": 318,
+    "cost_usd": 2980000000
+  },
+  {
     "date": "19880908",
     "time_utc": "1800",
     "record": "",

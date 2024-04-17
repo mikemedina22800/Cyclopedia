@@ -1,7 +1,7 @@
 const Wilma = [
   {
     "retired": "true",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wilma_2005-10-19_1345Z.png/1024px-Wilma_2005-10-19_1345Z.png",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Wilma_2005-10-19_0712Z.jpg/800px-Wilma_2005-10-19_0712Z.jpg",
     "id": "AL242005_Wilma",
     "fatalaties": 52,
     "cost_usd": 26500000000

@@ -1,5 +1,12 @@
 const Frances = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Frances_20_nov_1986_1818Z.jpg",
+    "id": "_Frances",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19861118",
     "time_utc": "1800",
     "record": "",

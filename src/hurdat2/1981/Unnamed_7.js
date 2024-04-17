@@ -1,5 +1,12 @@
 const Unnamed_7 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/08-21-1500z-TD17L.png",
+    "id": "_Seven",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19810817",
     "time_utc": "0600",
     "record": "",

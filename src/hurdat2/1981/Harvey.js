@@ -1,5 +1,12 @@
 const Harvey = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvey_1981-09-14_2000Z.png/800px-Harvey_1981-09-14_2000Z.png",
+    "id": "_Harvey",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19810911",
     "time_utc": "1800",
     "record": "",

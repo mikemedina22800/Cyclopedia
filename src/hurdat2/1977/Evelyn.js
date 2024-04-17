@@ -1,5 +1,12 @@
 const Evelyn = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Evelyn1977oct150001z.gif/1024px-Evelyn1977oct150001z.gif",
+    "id": "_Evelyn",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19771013",
     "time_utc": "1800",
     "record": "",

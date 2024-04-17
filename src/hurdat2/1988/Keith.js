@@ -1,5 +1,12 @@
 const Keith = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Keith_1988-11-21_1830Z.png/800px-Keith_1988-11-21_1830Z.png",
+    "id": "AL191988_Keith",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19881117",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Amelia = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AmeliaJuly301978afternoon.gif/1024px-AmeliaJuly301978afternoon.gif",
+    "id": "_Amelia",
+    "fatalaties": 33,
+    "cost_usd": 110000000
+  },
+  {
     "date": "19780730",
     "time_utc": "1800",
     "record": "",

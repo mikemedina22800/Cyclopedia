@@ -1,5 +1,12 @@
 const Arlene = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Arlene_1981-05-07_1745Z.png/1024px-Arlene_1981-05-07_1745Z.png",
+    "id": "_Arlene",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19810506",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Danielle = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Danielle_1980-09-05_2100Z.jpg/1024px-Danielle_1980-09-05_2100Z.jpg",
+    "id": "_Danielle",
+    "fatalaties": 3,
+    "cost_usd": 25000000
+  },
+  {
     "date": "19800904",
     "time_utc": "1800",
     "record": "",

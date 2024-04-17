@@ -1,5 +1,12 @@
 const Belle = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Hurricane_Belle.png/1024px-Hurricane_Belle.png",
+    "id": "_Belle",
+    "fatalaties": 12,
+    "cost_usd": 100000000
+  },
+  {
     "date": "19760806",
     "time_utc": "0600",
     "record": "",

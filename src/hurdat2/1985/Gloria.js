@@ -1,5 +1,12 @@
 const Gloria = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Gloria_1985-09-24_2130Z.png/800px-Gloria_1985-09-24_2130Z.png",
+    "id": "_Gloria",
+    "fatalaties": 14,
+    "cost_usd": 900000000
+  },
+  {
     "date": "19850916",
     "time_utc": "1200",
     "record": "",

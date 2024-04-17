@@ -1,5 +1,12 @@
 const David = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/David_1979-08-31_1500Z.png/1024px-David_1979-08-31_1500Z.png",
+    "id": "_David",
+    "fatalaties": 2078,
+    "cost_usd": 15400000000
+  },
+  {
     "date": "19790825",
     "time_utc": "1200",
     "record": "",

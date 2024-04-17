@@ -1,5 +1,12 @@
 const Georges = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Georges_1980-09-08_1200Z.png/800px-Georges_1980-09-08_1200Z.png",
+    "id": "_Georges",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19800901",
     "time_utc": "0000",
     "record": "",

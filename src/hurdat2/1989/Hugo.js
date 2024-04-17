@@ -1,5 +1,12 @@
 const Hugo = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Hugo_1989-09-15_2000Z.png/800px-Hugo_1989-09-15_2000Z.png",
+    "id": "AL111989_Hugo",
+    "fatalaties": 67,
+    "cost_usd": 11000000000
+  },
+  {
     "date": "19890910",
     "time_utc": "1200",
     "record": "",

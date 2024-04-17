@@ -1,5 +1,12 @@
 const Frederic = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Frederic_1979-09-12_1600Z.png/800px-Frederic_1979-09-12_1600Z.png",
+    "id": "_Frederic",
+    "fatalaties": 12,
+    "cost_usd": 1770000000
+  },
+  {
     "date": "19790829",
     "time_utc": "0600",
     "record": "",

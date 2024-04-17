@@ -1,5 +1,12 @@
 const Bess = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bess1978080718GOES2VS.jpg",
+    "id": "_Bess",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19780805",
     "time_utc": "1200",
     "record": "",

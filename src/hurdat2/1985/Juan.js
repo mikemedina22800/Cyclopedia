@@ -1,5 +1,12 @@
 const Juan = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Juan_1985-10-28_2030Z.png/800px-Juan_1985-10-28_2030Z.png",
+    "id": "_Juan",
+    "fatalaties": 12,
+    "cost_usd": 1500000000
+  },
+  {
     "date": "19851026",
     "time_utc": "0000",
     "record": "",

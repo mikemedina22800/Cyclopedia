@@ -1,5 +1,12 @@
 const Alberto = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Alberto_1988-08-07_1430Z.png/1024px-Alberto_1988-08-07_1430Z.png",
+    "id": "AL021988_Alberto",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19880805",
     "time_utc": "1800",
     "record": "",

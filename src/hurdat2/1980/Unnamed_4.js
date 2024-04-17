@@ -1,5 +1,12 @@
 const Unnamed_4 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/04L_Aug_14_1980_0941Z.png",
+    "id": "_Four",
+    "fatalaties": 0,
+    "cost_usd": 1570000000
+  },
+  {
     "date": "19800813",
     "time_utc": "0000",
     "record": "",

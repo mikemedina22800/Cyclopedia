@@ -1,5 +1,12 @@
 const Dennis = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Dennis_1981-08-20_2100Z.png/800px-Dennis_1981-08-20_2100Z.png",
+    "id": "_Dennis",
+    "fatalaties": 3,
+    "cost_usd": 28500000
+  },
+  {
     "date": "19810807",
     "time_utc": "0600",
     "record": "",

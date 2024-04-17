@@ -1,5 +1,12 @@
 const Andrew = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Andrew_1986-06-06_1945Z.png/1024px-Andrew_1986-06-06_1945Z.png",
+    "id": "_Andrew",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19860605",
     "time_utc": "0000",
     "record": "",

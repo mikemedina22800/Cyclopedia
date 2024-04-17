@@ -1,5 +1,12 @@
 const Clara = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Clara1977sep82300z.png",
+    "id": "_Clara",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19770905",
     "time_utc": "1200",
     "record": "",

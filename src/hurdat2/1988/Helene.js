@@ -1,5 +1,12 @@
 const Helene = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Helene_1988-09-23_1230Z.png/800px-Helene_1988-09-23_1230Z.png",
+    "id": "AL141988_Helene",
+    "fatalaties": 318,
+    "cost_usd": 2980000000
+  },
+  {
     "date": "19880919",
     "time_utc": "1800",
     "record": "",

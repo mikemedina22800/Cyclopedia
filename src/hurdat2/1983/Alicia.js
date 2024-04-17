@@ -1,5 +1,12 @@
 const Alicia = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Alicia_1983-08-17_2330Z.png/800px-Alicia_1983-08-17_2330Z.png",
+    "id": "_Alicia",
+    "fatalaties": 21,
+    "cost_usd": 3000000000
+  },
+  {
     "date": "19830815",
     "time_utc": "1200",
     "record": "",

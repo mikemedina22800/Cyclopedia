@@ -1,5 +1,12 @@
 const Diana = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Diana_1984-09-11_2200Z.png/800px-Diana_1984-09-11_2200Z.png",
+    "id": "_Diana",
+    "fatalaties": 3,
+    "cost_usd": 65500000
+  },
+  {
     "date": "19840908",
     "time_utc": "1200",
     "record": "",

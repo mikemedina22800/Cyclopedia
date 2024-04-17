@@ -1,5 +1,12 @@
 const Debby = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Debby_1988-09-02_1846Z.png/1024px-Debby_1988-09-02_1846Z.png",
+    "id": "AL081988_Debbby",
+    "fatalaties": 20,
+    "cost_usd": 0
+  },
+  {
     "date": "19880831",
     "time_utc": "1800",
     "record": "",

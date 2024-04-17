@@ -1,5 +1,12 @@
 const Emily = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Emily_1987-09-22_1900Z.jpg/1024px-Emily_1987-09-22_1900Z.jpg",
+    "id": "_Emily",
+    "fatalaties": 3,
+    "cost_usd": 80300000
+  },
+  {
     "date": "19870920",
     "time_utc": "0000",
     "record": "",

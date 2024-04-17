@@ -1,5 +1,12 @@
 const Unnamed_8 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/TD14L1987.png/800px-TD14L1987.png",
+    "id": "_Fourteen",
+    "fatalaties": 6,
+    "cost_usd": 1800000
+  },
+  {
     "date": "19871031",
     "time_utc": "1800",
     "record": "",

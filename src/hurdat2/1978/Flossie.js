@@ -1,5 +1,12 @@
 const Flossie = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flossie_1978-09-13_1230Z.png/800px-Flossie_1978-09-13_1230Z.png",
+    "id": "_Flossie",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19780904",
     "time_utc": "0000",
     "record": "",

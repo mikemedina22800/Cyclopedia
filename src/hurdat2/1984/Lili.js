@@ -1,5 +1,12 @@
 const Lili = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lili_1984-12-20_1800Z.png/800px-Lili_1984-12-20_1800Z.png",
+    "id": "_Lili",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19841212",
     "time_utc": "1200",
     "record": "",

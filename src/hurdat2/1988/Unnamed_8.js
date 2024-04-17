@@ -1,5 +1,12 @@
 const Unnamed_8 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/18L_1988-10-20_1400Z.png/1024px-18L_1988-10-20_1400Z.png",
+    "id": "AL181988_Eighteen",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19881019",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Floyd = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Floyd_1987-10-12_1500Z.jpg/1024px-Floyd_1987-10-12_1500Z.jpg",
+    "id": "_Floyd",
+    "fatalaties": 3,
+    "cost_usd": 80300000
+  },
+  {
     "date": "19871009",
     "time_utc": "0600",
     "record": "",

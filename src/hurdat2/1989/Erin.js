@@ -1,5 +1,12 @@
 const Erin = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Erin_1989-08-24_1501Z.png/1024px-Erin_1989-08-24_1501Z.png",
+    "id": "AL071989_Erin",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19890818",
     "time_utc": "0000",
     "record": "",

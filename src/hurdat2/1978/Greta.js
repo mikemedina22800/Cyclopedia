@@ -1,5 +1,12 @@
 const Greta = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Greta_1978-09-17_1800Z.png/1024px-Greta_1978-09-17_1800Z.png",
+    "id": "_Greta",
+    "fatalaties": 5,
+    "cost_usd": 26000000
+  },
+  {
     "date": "19780913",
     "time_utc": "1800",
     "record": "",

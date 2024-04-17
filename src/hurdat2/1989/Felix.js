@@ -1,5 +1,12 @@
 const Felix = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Felix_1989-09-05_1801Z.jpg/1024px-Felix_1989-09-05_1801Z.jpg",
+    "id": "AL081989_Felix",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19890826",
     "time_utc": "0000",
     "record": "",

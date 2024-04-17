@@ -1,5 +1,12 @@
 const Irma = [
   {
+    "retired": "false",
+    "imageUrl": "",
+    "id": "_Irma",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19781002",
     "time_utc": "1200",
     "record": "",

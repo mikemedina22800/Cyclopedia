@@ -1,5 +1,12 @@
 const Elena = [
   {
+    "retired": "true",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Elena_1985-09-01_1800Z.png/800px-Elena_1985-09-01_1800Z.png",
+    "id": "_Elena",
+    "fatalaties": 9,
+    "cost_usd": 1300000000
+  },
+  {
     "date": "19850828",
     "time_utc": "0000",
     "record": "",

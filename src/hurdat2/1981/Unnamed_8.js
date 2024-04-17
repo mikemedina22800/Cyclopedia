@@ -1,5 +1,12 @@
 const Unnamed_8 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Satellite_image_of_T._D._8_in_1981_.gif",
+    "id": "_Eight",
+    "fatalaties": 5,
+    "cost_usd": 56200000
+  },
+  {
     "date": "19810826",
     "time_utc": "1800",
     "record": "",

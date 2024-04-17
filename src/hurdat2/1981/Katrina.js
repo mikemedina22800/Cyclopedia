@@ -1,5 +1,12 @@
 const Katrina = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Katrina_1981-11-05_1230Z.png/800px-Katrina_1981-11-05_1230Z.png",
+    "id": "_Katrina",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "19811103",
     "time_utc": "0000",
     "record": "",

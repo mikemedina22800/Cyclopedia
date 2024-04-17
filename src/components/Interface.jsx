@@ -91,8 +91,14 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
       const maxWind = Math.max(...wind)
       setMaxWind(maxWind)
 
+      let prevPressure
       const pressure = stormTrack.map((point) => {
-        return point.min_pressure_mb
+        let pressure = point.min_pressure_mb
+        if (pressure === -999) {
+          pressure = prevPressure
+        }
+        prevPressure = pressure
+        return pressure
       })
       setPressure(pressure)
 
@@ -193,7 +199,7 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
               textColor = "text-[blue]"
             } else {
               status = "Subtropical Depression"
-              textColor = "text-[lightblue]"
+              textColor = "text-[aqua]"
             }
           }
         }
@@ -884,14 +890,17 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
 
   return (
     <div className="w-[48rem] h-screen bg-blue-950 p-10 overflow-auto">
-      <div className="flex items-center justify-between mb-10">
+      <h1 className="text-white text-xl font-bold mb-5">Note: Older data may be incomplete.</h1>
+      <div className="flex items-center justify-between mb-5">
         <Select className="bg-white !rounded-xl w-24 h-12" value={year} onChange={(e) => {setYear(e.target.value)}}>
           {years.map((_, index) => {
             const selectedYear = 2022 - index;
             return (<MenuItem key={index} value={selectedYear}>{selectedYear}</MenuItem>);
           })}
         </Select>
-        <Button onClick={toggleStats} className="h-12" variant="contained"><h1 className="font-sans font-bold">{seasonStats == true ? ("Storm") : ("Season")} Stats</h1></Button>
+        <Button onClick={toggleStats} className="h-12" variant="contained">
+          <h1 className="font-sans font-bold">{seasonStats == true ? ("Storm") : ("Season")} Stats</h1>
+        </Button>
       </div>
       {storm && seasonStats === false && <>
         <Select className="bg-white !rounded-xl w-36 h-12 mb-5" value={stormId} onChange={(e) => {setStormId(e.target.value)}}>
@@ -901,22 +910,21 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
           })}
         </Select>
         <div className="flex justify-between mb-10">
-          <a className="w-96 h-[31rem] bg-cover bg-center flex flex-col items-center justify-center rounded-md" style={{backgroundImage: `url(${imageUrl})`}} href={year > 1993 ? (`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`) : ('#')}>
+          <a className="w-96 h-[31rem] bg-cover bg-center flex flex-col items-center justify-center rounded-md bg-gray-400" style={{backgroundImage: `url(${imageUrl})`}} href={year > 1993 ? (`https://www.nhc.noaa.gov/data/tcr/${stormId}.pdf`) : ('#')}>
             {retired == true && <img className="w-80 animate__bounceIn" src={retiredImage}/>}
+            {imageUrl == "" && <h1 className="text-xl font-bold text-gray-600">Image Unavailable</h1>}
           </a>
           <div className="flex flex-col w-64 font-bold">
-            <h1 className={`${textColor} text-2xl mb-1 font-bold`}>{name != 'Unnamed' ? (`${status} ${name}`) : (`Unnamed ${status}`)}</h1>
+            <h1 className={`${textColor} text-2xl mb-1 font-bold`}>{!name.includes('Unnamed') && !name.includes('Unnumbered') ? (`${status} ${name}`) : (`${name} ${status}`)}</h1>
             <h1 className="text-lg text-white font-bold mb-5">{duration}</h1>
             <div className="text-sm text-white flex flex-col gap-1">
               <h1>Maximum Wind: {maxWind} kt</h1>
               <h1>Minimum Pressure: {minPressure != -999 ? (`${minPressure} mb`) : 'Unknown'}</h1>
-              <h1>Landfalls: {landfalls}</h1>
-              {landfalls > 0 && 
-                <>
-                  <h1>Maximum Wind at Landfall: {maxWindAtLandfall} kt</h1>
-                  <h1>Minimum Pressure at Landfall: {minPressureAtLandfall} mb</h1>
-                </>
-              }
+              {year > 1982 && <h1>Landfalls: {landfalls}</h1>}
+              {landfalls > 0 && <>
+                <h1>Maximum Wind at Landfall: {maxWindAtLandfall} kt</h1>
+                <h1>Minimum Pressure at Landfall: {minPressureAtLandfall} mb</h1>
+              </>}
               <h1>Fatalaties: {fatalaties}</h1>
               <h1>Cost Estimate (Billion USD): {costUSD}</h1>
             </div>
@@ -930,13 +938,18 @@ const Interface = ({year, setYear, stormId, setStormId}) => {
         </div>
       </>}
       {seasonStats && <>
-        {retiredNames.length > 0 && <h1 className="text-white mb-5 font-bold text-xl">Retired Names: {retiredNames.join(", ")}</h1>}
+        <a href={`https://www.nhc.noaa.gov/data/mwreview/${year}.pdf`}>
+          <Button className="h-12" variant="contained">
+            <h1 className="font-sans font-bold">Season Report</h1>
+          </Button>
+        </a>
+        {retiredNames.length > 0 && <h1 className="text-white mb-y font-bold text-xl my-5">Retired Names: {retiredNames.join(", ")}</h1>}
         <div className="bg-white p-5 rounded-md">
           <Bar options={stormsAtStrengthOptions} data={stormsAtStrengthData}/>
           <Bar className="my-5" options={maxWindOptions} data={maxWindData}/>
           <Bar options={minPressureOptions} data={minPressureData}/>
           <Bar className="my-5" options={seasonACEOptions} data={seasonACEData}/>
-          <Bar options={landfallsOptions} data={landfallsData}/>
+          {year > 1982 && <Bar options={landfallsOptions} data={landfallsData}/>}
           {landfallingStormNames.length > 0 && <>
             <Bar className="my-5" options={maxWindlandfallsOptions} data={maxWindLandfallsData}/>
             <Bar options={minPressureLandfallsOptions} data={minPressureLandfallsData}/>

@@ -1,5 +1,12 @@
 const Charley = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Charley_1986-08-17_1900Z.png/800px-Charley_1986-08-17_1900Z.png",
+    "id": "_Charley",
+    "fatalaties": 15,
+    "cost_usd": 15000000
+  },
+  {
     "date": "19860813",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Ana = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ana_1985-07-18_1830Z.png/1024px-Ana_1985-07-18_1830Z.png",
+    "id": "_Ana",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19850715",
     "time_utc": "1800",
     "record": "",

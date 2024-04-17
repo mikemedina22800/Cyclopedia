@@ -1,5 +1,12 @@
 const Debra = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/DebraAugust281978afternoon.gif/800px-DebraAugust281978afternoon.gif",
+    "id": "_Debra",
+    "fatalaties": 2,
+    "cost_usd": 0
+  },
+  {
     "date": "19780826",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Unnamed_5 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/TD_8L_6_sept_1987_1956Z.jpg",
+    "id": "_Eight",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19870906",
     "time_utc": "0000",
     "record": "",

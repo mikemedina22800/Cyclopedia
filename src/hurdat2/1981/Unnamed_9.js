@@ -1,5 +1,12 @@
 const Unnamed_9 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Td13sep23198118zvis.gif",
+    "id": "_Thirteen",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19810912",
     "time_utc": "0000",
     "record": "",

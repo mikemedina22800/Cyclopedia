@@ -1,5 +1,12 @@
 const Debby = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Debby_1982-09-17_2100Z.png/800px-Debby_1982-09-17_2100Z.png",
+    "id": "_Debby",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19820913",
     "time_utc": "1200",
     "record": "",

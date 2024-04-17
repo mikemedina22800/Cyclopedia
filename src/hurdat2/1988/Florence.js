@@ -1,5 +1,12 @@
 const Florence = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Florence_1988-09-09_1801Z.png/1024px-Florence_1988-09-09_1801Z.png",
+    "id": "AL121988_Florence",
+    "fatalaties": 1,
+    "cost_usd": 2900000
+  },
+  {
     "date": "19880907",
     "time_utc": "0600",
     "record": "",

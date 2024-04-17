@@ -1,5 +1,12 @@
 const Unnamed_2 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tropical_Depression_One-L_1980-07-20_1800Z.png/1024px-Tropical_Depression_One-L_1980-07-20_1800Z.png",
+    "id": "_One",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19800717",
     "time_utc": "1200",
     "record": "",

@@ -1,5 +1,12 @@
 const Holly = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hollyoctober241976.gif/1024px-Hollyoctober241976.gif",
+    "id": "_Holly",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19761022",
     "time_utc": "1800",
     "record": "",

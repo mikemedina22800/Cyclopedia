@@ -1,5 +1,12 @@
 const Unnamed_7 = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/14L_Nov_16_1980_1323Z.png",
+    "id": "_Fourteen",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19801112",
     "time_utc": "1200",
     "record": "",

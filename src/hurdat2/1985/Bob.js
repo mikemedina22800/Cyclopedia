@@ -1,5 +1,12 @@
 const Bob = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Bob_1985-07-24_1801Z.png/1024px-Bob_1985-07-24_1801Z.png",
+    "id": "_Bob",
+    "fatalaties": 5,
+    "cost_usd": 20000000
+  },
+  {
     "date": "19850721",
     "time_utc": "0600",
     "record": "",

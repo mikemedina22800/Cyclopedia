@@ -1,5 +1,12 @@
 const Jeanne = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jeanne_1980-11-11_2030Z.png/800px-Jeanne_1980-11-11_2030Z.png",
+    "id": "_Jeanne",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19801107",
     "time_utc": "1800",
     "record": "",

@@ -1,5 +1,12 @@
 const Dean = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dean_1983-09-29_1401Z.png/1024px-Dean_1983-09-29_1401Z.png",
+    "id": "_Dean",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19830926",
     "time_utc": "1800",
     "record": "",

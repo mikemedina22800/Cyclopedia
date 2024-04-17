@@ -1,5 +1,12 @@
 const Candice = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Candiceaug221976.png",
+    "id": "_Candice",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19760818",
     "time_utc": "1200",
     "record": "",

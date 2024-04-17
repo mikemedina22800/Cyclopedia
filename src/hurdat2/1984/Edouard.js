@@ -1,5 +1,12 @@
 const Edouard = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Edouard_1984-09-14_1600Z.png/800px-Edouard_1984-09-14_1600Z.png",
+    "id": "_Edouard",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19840914",
     "time_utc": "0000",
     "record": "",

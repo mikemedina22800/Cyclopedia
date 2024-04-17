@@ -1,5 +1,12 @@
 const Frances = [
   {
+    "retired": "false",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Hurricane_Frances_%281976%29.JPG",
+    "id": "_Frances",
+    "fatalaties": 0,
+    "cost_usd": 0
+  },
+  {
     "date": "19760827",
     "time_utc": "1200",
     "record": "",
