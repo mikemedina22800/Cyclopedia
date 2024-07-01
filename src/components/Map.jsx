@@ -1,9 +1,11 @@
+import { useContext } from "react";
+import { Context } from "../App";
 import { MapContainer, Polyline, TileLayer, Popup, Marker } from "react-leaflet";
 import { divIcon } from "leaflet";
 import "leaflet/dist/leaflet.css";
-import hurdat2 from "../hurdat2";
 
-function Map({year, setStormId}) {
+function Map() {
+  const {season, setStormId} = useContext(Context)
 
   const dot = (color) => {
     return (
@@ -44,11 +46,11 @@ function Map({year, setStormId}) {
     )
   }
 
-  const storms = hurdat2[year - 1851].map((storm, i) => {
-    const id = storm[0].id
+  const storms = season.map((storm, i) => {
+    const id = storm.id
     const name = id.split('_')[1]
     const positions = []
-    const points = storm.slice(1).map((point, i) => {
+    const points = storm.data.map((point, i) => {
       const dateArray = point.date.toString().split('')
       const year = dateArray.slice(0,4).join('')
       const month = dateArray.slice(4,6).join('')
@@ -132,7 +134,7 @@ function Map({year, setStormId}) {
       }
 
       return (
-        <Marker key={i} position={coords} icon={icon} eventHandlers={{click: () => {setStormId(id)}}}>
+        <Marker key={i} position={coords} icon={icon} eventHandlers={{click:() => {setStormId(id)}}}>
           <Popup className="w-64 font-bold">
             <h1 className="text-md">{!name.includes('Unnamed') && !name.includes('Unnumbered') ? (`${status} ${name}`) : (`${name} ${status}`)}</h1>
             <h1 className="my-1">{date} at {time} UTC</h1>
@@ -151,7 +153,7 @@ function Map({year, setStormId}) {
   })  
   
   return (
-    <MapContainer className="w-[calc(100%-48rem)] h-full" maxBounds={[[90, 180], [-90, -180]]} center={[30, -60]} maxZoom={15} minZoom={5} zoom={5}>
+    <MapContainer className="w-[calc(100%-48rem)] h-full" maxBounds={[[90, 180], [-90, -180]]} center={[30, -60]} maxZoom={15} minZoom={4} zoom={4}>
       <TileLayer url='https://tile.openstreetmap.org/{z}/{x}/{y}.png'/>  
       {storms}
     </MapContainer>
